@@ -9,7 +9,7 @@ namespace Consultancy_Project.Entity.Concrate
 {
     public class Education : IBaseEntity
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         public string School { get; set; }
         public string Faculty { get; set; }
         public string Department { get; set; }

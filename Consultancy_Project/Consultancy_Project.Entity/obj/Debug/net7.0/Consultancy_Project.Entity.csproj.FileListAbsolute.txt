@@ -1,0 +1,12 @@
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\bin\Debug\net7.0\Consultancy_Project.Entity.deps.json
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\bin\Debug\net7.0\Consultancy_Project.Entity.dll
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\bin\Debug\net7.0\Consultancy_Project.Entity.pdb
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\Consultancy_Project.Entity.csproj.AssemblyReference.cache
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\Consultancy_Project.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\Consultancy_Project.Entity.AssemblyInfoInputs.cache
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\Consultancy_Project.Entity.AssemblyInfo.cs
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\Consultancy_Project.Entity.csproj.CoreCompileInputs.cache
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\Consultancy_Project.Entity.dll
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\refint\Consultancy_Project.Entity.dll
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\Consultancy_Project.Entity.pdb
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Entity\obj\Debug\net7.0\ref\Consultancy_Project.Entity.dll

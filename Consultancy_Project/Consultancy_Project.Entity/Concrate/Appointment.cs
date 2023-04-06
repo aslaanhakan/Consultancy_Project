@@ -9,7 +9,7 @@ namespace Consultancy_Project.Entity.Concrate
 {
     public class Appointment : IBaseEntity
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         public DateTime CreateDate { get; set; }
         public DateTime AppointmentTime { get; set; }
 

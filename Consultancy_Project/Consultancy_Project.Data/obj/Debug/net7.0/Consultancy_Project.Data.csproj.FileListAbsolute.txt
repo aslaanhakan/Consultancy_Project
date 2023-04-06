@@ -1,0 +1,15 @@
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\bin\Debug\net7.0\Consultancy_Project.Data.deps.json
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\bin\Debug\net7.0\Consultancy_Project.Data.dll
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\bin\Debug\net7.0\Consultancy_Project.Data.pdb
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\bin\Debug\net7.0\Consultancy_Project.Entity.dll
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\bin\Debug\net7.0\Consultancy_Project.Entity.pdb
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.csproj.AssemblyReference.cache
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.AssemblyInfoInputs.cache
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.AssemblyInfo.cs
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.csproj.CoreCompileInputs.cache
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.csproj.CopyComplete
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.dll
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\refint\Consultancy_Project.Data.dll
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.pdb
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\ref\Consultancy_Project.Data.dll

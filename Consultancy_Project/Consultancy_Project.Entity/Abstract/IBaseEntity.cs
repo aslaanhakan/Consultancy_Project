@@ -8,7 +8,7 @@ namespace Consultancy_Project.Entity.Abstract
 {
     public interface IBaseEntity
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
 
     }
 }

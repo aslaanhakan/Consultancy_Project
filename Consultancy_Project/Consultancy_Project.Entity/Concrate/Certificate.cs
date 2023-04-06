@@ -9,7 +9,7 @@ namespace Consultancy_Project.Entity.Concrate
 {
     public class Certificate:IBaseEntity
     {
-        public string Id { get; set; }
+        public Guid Id { get; set; }
         public string Institution { get; set; }
         public string CertificateName { get; set; }
         public DateTime CertificateTime { get; set; }
