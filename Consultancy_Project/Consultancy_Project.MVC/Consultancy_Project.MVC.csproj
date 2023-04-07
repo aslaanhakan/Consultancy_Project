@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Consultancy_Project.Data\Consultancy_Project.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
 </Project>

@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\Consultancy_Project.Data.csproj": {}
+    "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\Consultancy_Project.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\Consultancy_Project.Data.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\Consultancy_Project.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\Consultancy_Project.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\Consultancy_Project.Data.csproj",
         "projectName": "Consultancy_Project.Data",
-        "projectPath": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\Consultancy_Project.Data.csproj",
-        "packagesPath": "C:\\Users\\Bahar Hakan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\Consultancy_Project.Data.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Data\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bahar Hakan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj": {
-                "projectPath": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj"
+              "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj"
               }
             }
           }
@@ -69,17 +73,21 @@
         }
       }
     },
-    "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj": {
+    "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj",
         "projectName": "Consultancy_Project.Entity",
-        "projectPath": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj",
-        "packagesPath": "C:\\Users\\Bahar Hakan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\Consultancy_Project.Entity.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Entity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Bahar Hakan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

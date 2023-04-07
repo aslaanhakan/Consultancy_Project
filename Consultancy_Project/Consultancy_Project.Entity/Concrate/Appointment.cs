@@ -11,7 +11,7 @@ namespace Consultancy_Project.Entity.Concrate
     {
         public Guid Id { get; set; }
         public DateTime CreateDate { get; set; }
-        public DateTime AppointmentTime { get; set; }
+        public DateTime AppointmentDate { get; set; }
 
     }
 }

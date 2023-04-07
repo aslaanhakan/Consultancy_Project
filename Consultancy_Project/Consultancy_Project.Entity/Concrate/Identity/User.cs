@@ -15,9 +15,6 @@ namespace Consultancy_Project.Entity.Concrate.Identity
         public DateTime? DateOfBirth { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
-        public string ConsultantId { get; set; }
-        public Consultant Consultant { get; set; }
-        public string CustomerId { get; set; }
-        public Customer Customer { get; set; }
+        
     }
 }

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,12 +11,13 @@ namespace Consultancy_Project.Entity.Concrate
     public class Education : IBaseEntity
     {
         public Guid Id { get; set; }
-        public string School { get; set; }
-        public string Faculty { get; set; }
-        public string Department { get; set; }
-        public string Description { get; set; }
+        public string SchoolName { get; set; }
+        public string FacultyName { get; set; }
+        public string DepartmentName { get; set; }
         public string DegreeofGraduation { get; set; }
-        public DateTime StartDate { get; set; }
-        public DateTime GraduationTime { get; set; }
+        public int StartYear { get; set; }
+        public int GraduationYear { get; set; }
+        public int ConsultantId { get; set; }
+        public virtual Consultant Consultant { get; set; }
     }
 }

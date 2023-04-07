@@ -8,7 +8,6 @@ namespace Consultancy_Project.Entity.Concrate
 {
     public class CustomersConsultans
     {
-        public Guid Id { get; set; }
         public string CustomerId { get; set; }
         public string ConsultantId { get; set; }
         public virtual Customer Customer { get; set; }

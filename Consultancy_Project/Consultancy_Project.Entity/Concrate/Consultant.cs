@@ -14,7 +14,7 @@ namespace Consultancy_Project.Entity.Concrate
         public Guid Id { get; set; }
         public string UserId { get; set; }
         public virtual User User { get; set; }
-        public string Promotion { get; set; }
+        public string Promotion { get; set; }        
         public decimal? VisitsPrice { get; set; }
         public string JobTitle { get; set; }
         public virtual List<Education> Educations { get; set; }
