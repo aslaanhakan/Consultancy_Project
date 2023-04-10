@@ -11,7 +11,7 @@ namespace Consultancy_Project.Entity.Concrate
     public class Consultant : IBaseEntity
 
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string UserId { get; set; }
         public virtual User User { get; set; }
         public string Promotion { get; set; }        
@@ -21,6 +21,8 @@ namespace Consultancy_Project.Entity.Concrate
         public virtual List<Specialization> Specializations { get; set; }
         public virtual List<Certificate> Certificates { get; set; }
         public virtual List<CustomersConsultans> Customers { get; set; }
+        public virtual Image Images { get; set; }
+
 
     }
 }

@@ -10,7 +10,7 @@ namespace Consultancy_Project.Entity.Concrate
 {
     public class Customer : IBaseEntity
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string UserId { get; set; }
         public virtual User User { get; set; }
         public virtual List<CustomersConsultans> CustomersConsultans { get; set; }

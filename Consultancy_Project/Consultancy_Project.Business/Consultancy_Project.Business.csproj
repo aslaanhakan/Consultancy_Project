@@ -6,4 +6,8 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Consultancy_Project.Data\Consultancy_Project.Data.csproj" />
+  </ItemGroup>
+
 </Project>

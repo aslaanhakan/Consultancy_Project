@@ -9,9 +9,10 @@ namespace Consultancy_Project.Entity.Concrate
 {
     public class Specialization:IBaseEntity
     {
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        List<Consultant> Consultants { get; set; }
 
 
     }
