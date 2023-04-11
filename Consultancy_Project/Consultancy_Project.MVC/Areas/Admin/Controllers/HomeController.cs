@@ -2,6 +2,7 @@
 
 namespace Consultancy_Project.MVC.Areas.Admin.Controllers
 {
+    [Area("Admin")]
     public class HomeController : Controller
     {
         public IActionResult Index()

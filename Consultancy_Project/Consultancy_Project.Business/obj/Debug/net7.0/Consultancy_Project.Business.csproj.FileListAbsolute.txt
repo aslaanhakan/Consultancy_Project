@@ -1,0 +1,17 @@
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\bin\Debug\net7.0\Consultancy_Project.Business.deps.json
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\bin\Debug\net7.0\Consultancy_Project.Business.dll
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\bin\Debug\net7.0\Consultancy_Project.Business.pdb
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\bin\Debug\net7.0\Consultancy_Project.Data.dll
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\bin\Debug\net7.0\Consultancy_Project.Entity.dll
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\bin\Debug\net7.0\Consultancy_Project.Data.pdb
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\bin\Debug\net7.0\Consultancy_Project.Entity.pdb
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\Consultancy_Project.Business.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\Consultancy_Project.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\Consultancy_Project.Business.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\Consultancy_Project.Business.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\Consultancy_Project.Business.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\Consultancy_Project.Business.csproj.CopyComplete
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\Consultancy_Project.Business.dll
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\refint\Consultancy_Project.Business.dll
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\Consultancy_Project.Business.pdb
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Business\obj\Debug\net7.0\ref\Consultancy_Project.Business.dll

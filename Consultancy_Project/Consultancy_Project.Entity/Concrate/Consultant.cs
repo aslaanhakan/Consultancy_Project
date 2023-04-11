@@ -20,9 +20,7 @@ namespace Consultancy_Project.Entity.Concrate
         public virtual List<Education> Educations { get; set; }
         public virtual List<Specialization> Specializations { get; set; }
         public virtual List<Certificate> Certificates { get; set; }
-        public virtual List<CustomersConsultans> Customers { get; set; }
-        public virtual Image Images { get; set; }
-
+        public virtual List<CustomersConsultans> CustomersConsultans { get; set; }
 
     }
 }
