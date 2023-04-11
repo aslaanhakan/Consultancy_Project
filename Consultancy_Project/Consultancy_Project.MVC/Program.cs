@@ -1,4 +1,11 @@
+using Consultancy_Project.Business.Abstract;
+using Consultancy_Project.Business.Concrate;
+using Consultancy_Project.Data.Abstract;
+using Consultancy_Project.Data.Concrate.EfCore;
 using Consultancy_Project.Data.Concrate.EfCore.Context;
+using Consultancy_Project.Entity.Concrate.Identity;
+using Microsoft.AspNetCore.Cors.Infrastructure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +14,22 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ConsultancyProjectContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("SqliteConnection")));
+builder.Services.AddIdentity<User, Role>()
+    .AddEntityFrameworkStores<ConsultancyProjectContext>()
+    .AddDefaultTokenProviders();
+
+builder.Services.AddScoped<IImageService, ImageManager>();
+builder.Services.AddScoped<IConsultantService, ConsultantManager>();
+builder.Services.AddScoped<ICustomerService, CustomerManager>();
+builder.Services.AddScoped<ISpecializationService, SpecializationManager>();
+
+builder.Services.AddScoped<ISpecializationRepository, EfCoreSpecializationRepository>();
+builder.Services.AddScoped<ICustomerRepository, EfCoreCustomerRepository>();
+builder.Services.AddScoped<IConsultantRepository, EfCoreConsultantRepository>();
+builder.Services.AddScoped<IImageRepository, EfCoreImageRepository>();
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

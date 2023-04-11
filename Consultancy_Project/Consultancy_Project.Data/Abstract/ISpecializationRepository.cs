@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Consultancy_Project.Data.Abstract
 {
-    public interface ICustomerRepository:IGenericRepository<Customer>
+    public interface ISpecializationRepository:IGenericRepository<Specialization>
     {
     }
 }
