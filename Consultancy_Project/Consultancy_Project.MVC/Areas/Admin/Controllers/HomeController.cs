@@ -21,8 +21,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             {
                 FirstName = u.FirstName,
                 LastName = u.LastName,
-                ImageUrl=u.Images.Url,
-                               
+                ImageUrl=u.Images.Url
             }).ToList();
             return View(users);
         }

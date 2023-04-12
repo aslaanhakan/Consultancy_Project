@@ -633,3 +633,4 @@ C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Co
 C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\bin\Debug\net7.0\Consultancy_Project.Business.pdb
 C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\bin\Debug\net7.0\Consultancy_Project.Core.pdb
 C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
