@@ -30,3 +30,5 @@ C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consulta
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\ref\Consultancy_Project.Data.dll
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\bin\Debug\net7.0\Consultancy_Project.Data.runtimeconfig.json
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.genruntimeconfig.cache
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\bin\Debug\net7.0\Consultancy_Project.Data.runtimeconfig.json
+C:\Users\Bahar Hakan\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.Data\obj\Debug\net7.0\Consultancy_Project.Data.genruntimeconfig.cache
