@@ -47,7 +47,7 @@ builder.Services.ConfigureApplicationCookie(options =>
     {
         HttpOnly = true,
         SameSite = SameSiteMode.Strict,
-        Name = ".BooksApp.Security.Cookie"
+        Name = ".Consultancy.Security.Cookie"
     };
 });
 builder.Services.AddScoped<IImageService, ImageManager>();

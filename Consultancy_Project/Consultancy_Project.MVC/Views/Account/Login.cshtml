@@ -1,7 +1,8 @@
-﻿@section Styles{
+﻿
+@section Styles{
     <link href="~/css/login.css" rel="stylesheet">
 }
-
+@model LoginViewModel
 <div id="container" class="container">
     <!-- FORM SECTION -->
     <div class="row">
@@ -49,13 +50,15 @@
                           asp-controller="Account"
                           asp-action="Login"
                           method="post">
+                        <input type="hidden" asp-for="ReturnUrl" />
+
                         <div class="input-group">
                             <i class='bx bxs-user'></i>
-                            <input type="text" placeholder="Username">
+                            <input asp-for="UserName" type="text" placeholder="Username">
                         </div>
                         <div class="input-group">
                             <i class='bx bxs-lock-alt'></i>
-                            <input type="password" placeholder="Password">
+                            <input asp-for="Password" type="password" placeholder="Password">
                         </div>
                         <button type="submit">
                             Sign in

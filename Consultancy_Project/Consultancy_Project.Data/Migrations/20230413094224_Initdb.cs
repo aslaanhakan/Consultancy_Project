@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Consultancy_Project.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class InitDb : Migration
+    public partial class Initdb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -361,9 +361,9 @@ namespace Consultancy_Project.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "a743e6cd-3ef3-41fb-8762-15f35532d5bb", null, "Danışanman", "Consultant", "CONSULTANT" },
-                    { "c3fd5009-ad6e-4079-a668-7b007c1ac98c", null, "Yönetici", "Admin", "ADMIN" },
-                    { "d7fe43d9-043c-4860-afbd-d49707cad173", null, "Kullanıcı", "Customer", "CUSTOMER" }
+                    { "09eb9be9-ab6f-4a7d-b782-d57ec2900ef9", null, "Yönetici", "Admin", "ADMIN" },
+                    { "7cb4fdf0-da38-4c39-b094-c0132e7d27e3", null, "Kullanıcı", "Customer", "CUSTOMER" },
+                    { "d6a9f350-cab9-4f80-8692-0c2bde055bbc", null, "Danışanman", "Consultant", "CONSULTANT" }
                 });
 
             migrationBuilder.InsertData(
@@ -371,19 +371,19 @@ namespace Consultancy_Project.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "Address", "City", "ConcurrencyStamp", "DateOfBirth", "Email", "EmailConfirmed", "FirstName", "Gender", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "0222e488-3879-4166-9b86-9205d177c1d9", 0, "Mecidiyeköy Mah. Dereboyu Cad. No:23 Şişli", "İstanbul", "65e46b41-d30c-4386-9956-f23ff334e9ab", new DateTime(1988, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "melis.ozturk@gmail.com", true, "Melis", "Kadın", "Öztürk", false, null, "MELIS.OZTURK@GMAIL.COM", "MELISOZTURK", null, null, false, "02f84f26-443d-4b4b-b93a-20950ee1085f", false, "melisozturk" },
-                    { "46011f1e-158e-4662-8c72-5780301b9935", 0, "Turan Cd. No:7 Bornova", "İzmir", "a2976286-fa40-41f0-bf88-6ab06bf95c8f", new DateTime(1993, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "can.ergun@gmail.com", true, "Can", "Erkek", "Ergün", false, null, "CAN.ERGUN@GMAIL.COM", "CANERGUN", null, null, false, "a3a476a8-3531-4856-ab40-d448a470a95e", false, "canergun" },
-                    { "53b875d2-c8d2-4241-a2c2-cb2363fed268", 0, "Halilpaşa Konağı Ap. No:18 Beşiktaş", "İstanbul", "bb879b8b-dbd9-41f4-bd94-61b685638734", new DateTime(1985, 5, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), "deniz@asdasd.com", true, "Deniz", "Kadın", "Kartal", false, null, "DENIZ@ASDASD.COM", "DENIZ", null, null, false, "f5392379-1716-48d7-86df-90c69e476e9b", false, "deniz" },
-                    { "618a9587-0777-4025-a9e8-e00cbf5f8032", 0, "Kuştepe Mah. Gümüşsuyu Cad. No:12 Şişli", "İstanbul", "d6cb471e-e2d7-475a-80ef-87ac97ea98ba", new DateTime(1992, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "ali.yildirim@hotmail.com", true, "Ali", "Erkek", "Yıldırım", false, null, "ALI.YILDIRIM@HOTMAIL.COM", "ALIYILDIRIM", null, null, false, "e451276d-def5-4bc9-ab41-15ae059fff95", false, "aliyildirim" },
-                    { "635aaef7-edd5-4d60-ae13-e7c687142967", 0, " Özger Cad.No:6 Beşiktaş", "İstanbul", "34fe789d-5f98-4054-a262-4ff219537997", new DateTime(1996, 1, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@consultancy.com", true, "Hakan", "Erkek", "Aslan", false, null, "ADMIN.CONSULTANCY.COM", "ADMIN", null, null, false, "cd9e946a-649a-4794-81f3-7c134279aba6", false, "admin" },
-                    { "88f0eb29-bd71-4273-864c-9842e3b96a27", 0, "Karşıyaka Cd. No:8/3 Alsancak", "İzmir", "8cb3efed-ffdb-46a3-83c8-b245a947edc0", new DateTime(1995, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), "zeynep.gunes@gmail.com", true, "Zeynep", "Kadın", "Güneş", false, null, "ZEYNEP.GUNES@GMAIL.COM", "ZEYNEPGUNES", null, null, false, "0672dd42-b338-4402-a0aa-bb8b5ed59395", false, "zeynepgunes" },
-                    { "9b9ec15d-8213-4579-8dce-4b68f5a0011d", 0, "Atatürk Mah. No:4 Bahçelievler", "İstanbul", "fce9d50d-9cef-4b3b-aff6-47309075a796", new DateTime(1990, 2, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "ali.demir@gmail.com", true, "Ali", "Erkek", "Demir", false, null, "ALI.DEMIR@GMAIL.COM", "ALIDEMIR", null, null, false, "eac91b4e-3aa8-4a85-a7cc-eafc729a07f9", false, "alidemir" },
-                    { "c0c74e57-fc4d-449b-9855-eeb94e6c15ee", 0, "Cemal Gürsel Cd. No:5 Kadıköy", "İstanbul", "da6ab417-c42b-4268-9994-d45b4650274a", new DateTime(1992, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "ayse.yilmaz@gmail.com", true, "Ayşe", "Kadın", "Yılmaz", false, null, "AYSE.YILMAZ@GMAIL.COM", "AYSEYILMAZ", null, null, false, "165c419c-f79d-47ad-be07-4f5c0580472b", false, "ayseyilmaz" },
-                    { "cd43e623-b7f7-4b25-8cd9-6f4f62bc41fd", 0, "Mecidiyeköy Cd. No:23 Şişli", "İstanbul", "cbfd39aa-a0ea-4f06-a3b9-96677df59b00", new DateTime(1987, 9, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), "gizem.aydin@gmail.com", true, "Gizem", "Kadın", "Aydın", false, null, "GIZEM.AYDIN@GMAIL.COM", "GIZEMAYDIN", null, null, false, "a88f4a8d-f557-48fb-a39a-f83951c28c4f", false, "gizemaydin" },
-                    { "d1c5bc6f-5e02-410a-9f53-06a80eb712ef", 0, "Etiler Mah. Bebek Cad. No:17 Beşiktaş", "İstanbul", "9d402df2-1d86-473d-b390-c750a7a72276", new DateTime(1983, 11, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "esra.avci@gmail.com", true, "Esra", "Kadın", "Avcı", false, null, "ESRA.AVCI@GMAIL.COM", "ESRAAVCI", null, null, false, "1d24fdda-8c49-421e-8881-b72cbf180906", false, "esraavci" },
-                    { "d838b305-c9fe-40e8-84ab-1d872299e235", 0, "Mecidiyeköy Mah. Vefa Cad. No:11 Şişli", "İstanbul", "17d262b5-3cb1-4634-9e02-6718f2bcc955", new DateTime(1995, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "can.sahin@hotmail.com", true, "Can", "Erkek", "Şahin", false, null, "CAN.SAHIN@HOTMAIL.COM", "CANSAHIN", null, null, false, "42d27122-0e04-47b8-aa6e-03c9a3d24f20", false, "cansahin" },
-                    { "e41edcca-174d-4b77-b926-3b242da02fee", 0, "Atatürk Cd. No:15/4 Çankaya", "Ankara", "791cb032-ccb6-4620-b9c3-f44255ed62c3", new DateTime(1988, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), "mehmet.ozkan@gmail.com", true, "Mehmet", "Erkek", "Özkan", false, null, "MEHMET.OZKAN@GMAIL.COM", "MEHMETOZKAN", null, null, false, "4ed4c5dc-c6b9-44d6-94be-55067ebb789e", false, "mehmetozkan" },
-                    { "f0331525-2680-4b01-a168-f766e6660895", 0, "İnönü Cd. No:12/1 Kartal", "İstanbul", "2280df21-7942-404d-adb2-d425b3c33204", new DateTime(1997, 8, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "fatma.kara@gmail.com", true, "Fatma", "Kadın", "Kara", false, null, "FATMA.KARA@GMAIL.COM", "FATMAKARA", null, null, false, "7a89ee05-0e37-41b5-ac43-39ee71751e6a", false, "fatmakara" }
+                    { "04d4aec4-3564-4ac3-a099-b9a6ec4d3a42", 0, "Halilpaşa Konağı Ap. No:18 Beşiktaş", "İstanbul", "fca46bdd-15ad-4b11-aadf-9d811b4e6bca", new DateTime(1985, 5, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), "deniz@asdasd.com", true, "Deniz", "Kadın", "Kartal", false, null, "DENIZ@ASDASD.COM", "DENIZ", "AQAAAAIAAYagAAAAEEHrKShi6cXsMf9sOyKAbdz6rIaTyXIBuKk63allxlqZbivO7S6pENfqHD90fY5u+Q==", null, false, "4b55c569-b516-4621-9628-eac75dcad2a4", false, "deniz" },
+                    { "4e7eb8c8-03ba-41a1-9db0-b66a34fae9ce", 0, "Mecidiyeköy Cd. No:23 Şişli", "İstanbul", "8ff8788e-ba7c-45c1-af00-4b8c2d3a314e", new DateTime(1987, 9, 18, 0, 0, 0, 0, DateTimeKind.Unspecified), "gizem.aydin@gmail.com", true, "Gizem", "Kadın", "Aydın", false, null, "GIZEM.AYDIN@GMAIL.COM", "GIZEMAYDIN", "AQAAAAIAAYagAAAAEMjjG1stlC4OBqHRy0suOGknHO7Em9nw2N8BOUT6nShL5KEavMMBImYSJd+T7P/V8A==", null, false, "9df302f0-9a78-414e-91f5-a913841345ed", false, "gizemaydin" },
+                    { "657e8e0f-118e-4058-ad8a-226953ed48e4", 0, "Karşıyaka Cd. No:8/3 Alsancak", "İzmir", "8c30317b-86c4-45e7-8cc8-2605a267e2c5", new DateTime(1995, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified), "zeynep.gunes@gmail.com", true, "Zeynep", "Kadın", "Güneş", false, null, "ZEYNEP.GUNES@GMAIL.COM", "ZEYNEPGUNES", "AQAAAAIAAYagAAAAELch1YHGBvZmCVj4vUPFoxZWCOW70inUlyJkvmuxnoPRY03fZmCVyBFkaSAmeGvnFg==", null, false, "b0adc425-9754-4a97-8bf1-ae60c1015a2e", false, "zeynepgunes" },
+                    { "663b5466-d86d-4292-ae29-e739536907a8", 0, "Mecidiyeköy Mah. Vefa Cad. No:11 Şişli", "İstanbul", "8fb14392-6fa9-4523-9546-4ee27d0a6517", new DateTime(1995, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified), "can.sahin@hotmail.com", true, "Can", "Erkek", "Şahin", false, null, "CAN.SAHIN@HOTMAIL.COM", "CANSAHIN", "AQAAAAIAAYagAAAAEM5gfg2aAoPsdtYv9FRMnLVu0p5TLAoazOdz++CQLMKOfecjYwPUvsUrtK3ex1Evsw==", null, false, "40db63b9-a7b0-40c6-9ad3-6c19cfd0ebb4", false, "cansahin" },
+                    { "6ffdfd51-0f9a-43c9-a05a-0bc15e972d30", 0, "Turan Cd. No:7 Bornova", "İzmir", "3aaca2e2-8b33-44a5-ba44-23a8b5f33a7a", new DateTime(1993, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified), "can.ergun@gmail.com", true, "Can", "Erkek", "Ergün", false, null, "CAN.ERGUN@GMAIL.COM", "CANERGUN", "AQAAAAIAAYagAAAAEBGLxtX7IagXLVNe1WuY4D5WO6zebIpCqGo7hjTIrQr42amJfvteKBHZPY3jsFzPBw==", null, false, "9acd2c94-926f-44c2-b7a2-7bf0ebb94378", false, "canergun" },
+                    { "7832aad9-0518-48ca-9517-d1dfd3529d42", 0, "Mecidiyeköy Mah. Dereboyu Cad. No:23 Şişli", "İstanbul", "54773efc-c9c8-44d9-9167-69eb611be68c", new DateTime(1988, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "melis.ozturk@gmail.com", true, "Melis", "Kadın", "Öztürk", false, null, "MELIS.OZTURK@GMAIL.COM", "MELISOZTURK", "AQAAAAIAAYagAAAAEDS+vYUV9bFX+UH3sgbYW774IdtuwwTD1zAIVr7vilSq5iErNBNsJKRmaxngu3CAUQ==", null, false, "c5bcaa2e-f98b-48e4-9d71-23e91f3110dd", false, "melisozturk" },
+                    { "828e41dd-39e6-4750-a450-282812353eef", 0, "Etiler Mah. Bebek Cad. No:17 Beşiktaş", "İstanbul", "e1c1a6c1-b4dd-417e-951e-011a0223d819", new DateTime(1983, 11, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), "esra.avci@gmail.com", true, "Esra", "Kadın", "Avcı", false, null, "ESRA.AVCI@GMAIL.COM", "ESRAAVCI", "AQAAAAIAAYagAAAAEP+1X/9Ywa9y+AhLW6q6DEq4I+KsFxw0+pd+0w8A1bQqfuQ6tySa9j8NuOcOqy4Dsw==", null, false, "36bc8546-7516-43ca-8407-9a5fc8840c12", false, "esraavci" },
+                    { "86c2a29c-ea3a-42a2-ae55-28aad964a648", 0, "Atatürk Cd. No:15/4 Çankaya", "Ankara", "9efddf5e-d3eb-4bcb-9eed-180216f313cc", new DateTime(1988, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified), "mehmet.ozkan@gmail.com", true, "Mehmet", "Erkek", "Özkan", false, null, "MEHMET.OZKAN@GMAIL.COM", "MEHMETOZKAN", "AQAAAAIAAYagAAAAEKdt05FoFemg2EcJYVzeGctA8gCCXpevoAEqb0HhNRAzArjwDk1cm0oVR290ye+llA==", null, false, "8543c353-51f2-4504-89b2-971caa70ef97", false, "mehmetozkan" },
+                    { "88f06875-4ba5-4fde-b05b-3e4570532296", 0, "Atatürk Mah. No:4 Bahçelievler", "İstanbul", "4f0f6889-b9e2-40cf-a00d-c7a202379e21", new DateTime(1990, 2, 8, 0, 0, 0, 0, DateTimeKind.Unspecified), "ali.demir@gmail.com", true, "Ali", "Erkek", "Demir", false, null, "ALI.DEMIR@GMAIL.COM", "ALIDEMIR", "AQAAAAIAAYagAAAAECL0adxbkgPiUjwJMDeu/mnW1cNvHAGL5cGWaYHR8TIrZHTxpweN/IYKM7kCVLcaKQ==", null, false, "7075e0a9-5694-4bae-8c4d-99663475653c", false, "alidemir" },
+                    { "a7b3df57-5c10-4ac6-934d-646b471f1262", 0, "İnönü Cd. No:12/1 Kartal", "İstanbul", "f792df35-ea77-416d-a617-63d5c966fa7e", new DateTime(1997, 8, 2, 0, 0, 0, 0, DateTimeKind.Unspecified), "fatma.kara@gmail.com", true, "Fatma", "Kadın", "Kara", false, null, "FATMA.KARA@GMAIL.COM", "FATMAKARA", "AQAAAAIAAYagAAAAELhNh4nXa7gnqQ335asYjkkWTg+S9i0jCj9MfI3Vsd8UyvxnW/PkFlw0FzuKlN/tUg==", null, false, "9c89bab4-911a-45aa-b56c-8b34137cd410", false, "fatmakara" },
+                    { "bb4ae640-5453-4ad6-af0d-341899aeeaec", 0, "Cemal Gürsel Cd. No:5 Kadıköy", "İstanbul", "94d396bb-b5b4-4a86-ace8-0cc9185b3851", new DateTime(1992, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified), "ayse.yilmaz@gmail.com", true, "Ayşe", "Kadın", "Yılmaz", false, null, "AYSE.YILMAZ@GMAIL.COM", "AYSEYILMAZ", "AQAAAAIAAYagAAAAELoFfcKkopJjsZ1WGRcrZMzhaPUMt4BAjkzTwyVwixklqGBV0OjNVn0nUblcOz5Reg==", null, false, "9d6d1944-2e87-45d3-a5e6-845d0e64b332", false, "ayseyilmaz" },
+                    { "da225905-150f-48e6-9f42-68cf86864986", 0, " Özger Cad.No:6 Beşiktaş", "İstanbul", "69d9f670-38b6-43b4-b592-8de29837bdb2", new DateTime(1996, 1, 20, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@consultancy.com", true, "Hakan", "Erkek", "Aslan", false, null, "ADMIN.CONSULTANCY.COM", "ADMIN", "AQAAAAIAAYagAAAAEO4/1pL+UTKyHNHllMpaPqGX6JFoHdcZsZSa0pzrVFlI0eKHkAUJ6kG1NSQVdDpCug==", null, false, "0e8ae0d9-3d16-48f2-9a52-7a3f8bafc555", false, "admin" },
+                    { "f987533b-0204-49f7-9d8b-72ea008ff4b6", 0, "Kuştepe Mah. Gümüşsuyu Cad. No:12 Şişli", "İstanbul", "3b705823-3ea2-4781-9557-25238e68698f", new DateTime(1992, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified), "ali.yildirim@hotmail.com", true, "Ali", "Erkek", "Yıldırım", false, null, "ALI.YILDIRIM@HOTMAIL.COM", "ALIYILDIRIM", "AQAAAAIAAYagAAAAEGHeaBeu4SFOapsYxuhbjjRs8OR5qC5kHe4f/U97sqRpyPhxBBBV7RKCKXBYUQ2Omg==", null, false, "0b88741a-e83b-4504-944c-f96cfb87bcc4", false, "aliyildirim" }
                 });
 
             migrationBuilder.InsertData(
@@ -409,19 +409,19 @@ namespace Consultancy_Project.Data.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { "d7fe43d9-043c-4860-afbd-d49707cad173", "0222e488-3879-4166-9b86-9205d177c1d9" },
-                    { "a743e6cd-3ef3-41fb-8762-15f35532d5bb", "46011f1e-158e-4662-8c72-5780301b9935" },
-                    { "a743e6cd-3ef3-41fb-8762-15f35532d5bb", "53b875d2-c8d2-4241-a2c2-cb2363fed268" },
-                    { "d7fe43d9-043c-4860-afbd-d49707cad173", "618a9587-0777-4025-a9e8-e00cbf5f8032" },
-                    { "c3fd5009-ad6e-4079-a668-7b007c1ac98c", "635aaef7-edd5-4d60-ae13-e7c687142967" },
-                    { "a743e6cd-3ef3-41fb-8762-15f35532d5bb", "88f0eb29-bd71-4273-864c-9842e3b96a27" },
-                    { "a743e6cd-3ef3-41fb-8762-15f35532d5bb", "9b9ec15d-8213-4579-8dce-4b68f5a0011d" },
-                    { "a743e6cd-3ef3-41fb-8762-15f35532d5bb", "c0c74e57-fc4d-449b-9855-eeb94e6c15ee" },
-                    { "a743e6cd-3ef3-41fb-8762-15f35532d5bb", "cd43e623-b7f7-4b25-8cd9-6f4f62bc41fd" },
-                    { "d7fe43d9-043c-4860-afbd-d49707cad173", "d1c5bc6f-5e02-410a-9f53-06a80eb712ef" },
-                    { "d7fe43d9-043c-4860-afbd-d49707cad173", "d838b305-c9fe-40e8-84ab-1d872299e235" },
-                    { "a743e6cd-3ef3-41fb-8762-15f35532d5bb", "e41edcca-174d-4b77-b926-3b242da02fee" },
-                    { "d7fe43d9-043c-4860-afbd-d49707cad173", "f0331525-2680-4b01-a168-f766e6660895" }
+                    { "d6a9f350-cab9-4f80-8692-0c2bde055bbc", "04d4aec4-3564-4ac3-a099-b9a6ec4d3a42" },
+                    { "d6a9f350-cab9-4f80-8692-0c2bde055bbc", "4e7eb8c8-03ba-41a1-9db0-b66a34fae9ce" },
+                    { "d6a9f350-cab9-4f80-8692-0c2bde055bbc", "657e8e0f-118e-4058-ad8a-226953ed48e4" },
+                    { "7cb4fdf0-da38-4c39-b094-c0132e7d27e3", "663b5466-d86d-4292-ae29-e739536907a8" },
+                    { "d6a9f350-cab9-4f80-8692-0c2bde055bbc", "6ffdfd51-0f9a-43c9-a05a-0bc15e972d30" },
+                    { "7cb4fdf0-da38-4c39-b094-c0132e7d27e3", "7832aad9-0518-48ca-9517-d1dfd3529d42" },
+                    { "7cb4fdf0-da38-4c39-b094-c0132e7d27e3", "828e41dd-39e6-4750-a450-282812353eef" },
+                    { "d6a9f350-cab9-4f80-8692-0c2bde055bbc", "86c2a29c-ea3a-42a2-ae55-28aad964a648" },
+                    { "d6a9f350-cab9-4f80-8692-0c2bde055bbc", "88f06875-4ba5-4fde-b05b-3e4570532296" },
+                    { "7cb4fdf0-da38-4c39-b094-c0132e7d27e3", "a7b3df57-5c10-4ac6-934d-646b471f1262" },
+                    { "d6a9f350-cab9-4f80-8692-0c2bde055bbc", "bb4ae640-5453-4ad6-af0d-341899aeeaec" },
+                    { "09eb9be9-ab6f-4a7d-b782-d57ec2900ef9", "da225905-150f-48e6-9f42-68cf86864986" },
+                    { "7cb4fdf0-da38-4c39-b094-c0132e7d27e3", "f987533b-0204-49f7-9d8b-72ea008ff4b6" }
                 });
 
             migrationBuilder.InsertData(
@@ -429,13 +429,13 @@ namespace Consultancy_Project.Data.Migrations
                 columns: new[] { "Id", "JobTitle", "Promotion", "UserId", "VisitsPrice" },
                 values: new object[,]
                 {
-                    { 1, "Psikolojik Danışman", "Zorlu yaşam deneyimlerinizle baş etmenizde size destek olmak için burada. Kendinizi daha iyi hissetmek ve hayatınızda olumlu değişiklikler yapmak için birlikte çalışabiliriz.", "c0c74e57-fc4d-449b-9855-eeb94e6c15ee", 100m },
-                    { 2, "Klinik Psikolog", "Yıllardır psikolojik danışmanlık yapıyorum ve kişisel gelişim ve ruh sağlığı konularında uzmanım. Size uygun terapi yöntemleri kullanarak hayatınızı daha mutlu ve sağlıklı hale getirmek için buradayım.", "e41edcca-174d-4b77-b926-3b242da02fee", 100m },
-                    { 3, "Psikolog", "Hayatınızdaki stresi, kaygıyı ve depresyonu azaltmanıza yardımcı olmak için burada. Kendinize ve yaşam kalitenize yatırım yapmak istiyorsanız, size destek olabilirim.", "88f0eb29-bd71-4273-864c-9842e3b96a27", 100m },
-                    { 4, "Psikolojik Danışman", "Psikolojik danışmanlıkta uzmanım ve çift terapisi konusunda özellikle deneyimliyim. İlişkilerinizde sorun yaşıyorsanız, size yardımcı olmak için buradayım.", "9b9ec15d-8213-4579-8dce-4b68f5a0011d", 100m },
-                    { 5, "Psikolojik Danışman", "Herhangi bir sorununuzda size yardımcı olmak için burada. Kişisel gelişim, özsaygı, aile ilişkileri ve daha birçok konuda size destek olabilirim.", "cd43e623-b7f7-4b25-8cd9-6f4f62bc41fd", 100m },
-                    { 6, "Psikolojik Danışman", "Çocukluk travmaları, kayıp ve yas gibi konularda danışmanlık yapmaktayım. Kendinizi daha iyi hissetmeniz ve zihinsel sağlığınızı korumanız için size yardımcı olabilirim.", "46011f1e-158e-4662-8c72-5780301b9935", 100m },
-                    { 7, "Psikolojik Danışman", "Stres yönetimi, öfke kontrolü ve bağımlılıkla mücadele konularında deneyimliyim. Kendinizi daha iyi hissetmek ve olumlu değişiklikler yapmak için size yardımcı olabilirim.", "635aaef7-edd5-4d60-ae13-e7c687142967", 100m }
+                    { 1, "Psikolojik Danışman", "Zorlu yaşam deneyimlerinizle baş etmenizde size destek olmak için burada. Kendinizi daha iyi hissetmek ve hayatınızda olumlu değişiklikler yapmak için birlikte çalışabiliriz.", "bb4ae640-5453-4ad6-af0d-341899aeeaec", 100m },
+                    { 2, "Klinik Psikolog", "Yıllardır psikolojik danışmanlık yapıyorum ve kişisel gelişim ve ruh sağlığı konularında uzmanım. Size uygun terapi yöntemleri kullanarak hayatınızı daha mutlu ve sağlıklı hale getirmek için buradayım.", "86c2a29c-ea3a-42a2-ae55-28aad964a648", 100m },
+                    { 3, "Psikolog", "Hayatınızdaki stresi, kaygıyı ve depresyonu azaltmanıza yardımcı olmak için burada. Kendinize ve yaşam kalitenize yatırım yapmak istiyorsanız, size destek olabilirim.", "657e8e0f-118e-4058-ad8a-226953ed48e4", 100m },
+                    { 4, "Psikolojik Danışman", "Psikolojik danışmanlıkta uzmanım ve çift terapisi konusunda özellikle deneyimliyim. İlişkilerinizde sorun yaşıyorsanız, size yardımcı olmak için buradayım.", "88f06875-4ba5-4fde-b05b-3e4570532296", 100m },
+                    { 5, "Psikolojik Danışman", "Herhangi bir sorununuzda size yardımcı olmak için burada. Kişisel gelişim, özsaygı, aile ilişkileri ve daha birçok konuda size destek olabilirim.", "4e7eb8c8-03ba-41a1-9db0-b66a34fae9ce", 100m },
+                    { 6, "Psikolojik Danışman", "Çocukluk travmaları, kayıp ve yas gibi konularda danışmanlık yapmaktayım. Kendinizi daha iyi hissetmeniz ve zihinsel sağlığınızı korumanız için size yardımcı olabilirim.", "6ffdfd51-0f9a-43c9-a05a-0bc15e972d30", 100m },
+                    { 7, "Psikolojik Danışman", "Stres yönetimi, öfke kontrolü ve bağımlılıkla mücadele konularında deneyimliyim. Kendinizi daha iyi hissetmek ve olumlu değişiklikler yapmak için size yardımcı olabilirim.", "da225905-150f-48e6-9f42-68cf86864986", 100m }
                 });
 
             migrationBuilder.InsertData(
@@ -443,11 +443,11 @@ namespace Consultancy_Project.Data.Migrations
                 columns: new[] { "Id", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "618a9587-0777-4025-a9e8-e00cbf5f8032" },
-                    { 2, "0222e488-3879-4166-9b86-9205d177c1d9" },
-                    { 3, "d838b305-c9fe-40e8-84ab-1d872299e235" },
-                    { 4, "d1c5bc6f-5e02-410a-9f53-06a80eb712ef" },
-                    { 5, "f0331525-2680-4b01-a168-f766e6660895" }
+                    { 1, "f987533b-0204-49f7-9d8b-72ea008ff4b6" },
+                    { 2, "7832aad9-0518-48ca-9517-d1dfd3529d42" },
+                    { 3, "663b5466-d86d-4292-ae29-e739536907a8" },
+                    { 4, "828e41dd-39e6-4750-a450-282812353eef" },
+                    { 5, "a7b3df57-5c10-4ac6-934d-646b471f1262" }
                 });
 
             migrationBuilder.InsertData(
@@ -455,19 +455,19 @@ namespace Consultancy_Project.Data.Migrations
                 columns: new[] { "Id", "CreatedDate", "ModifiedDate", "Url", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6177), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6189), "1.jpg", "635aaef7-edd5-4d60-ae13-e7c687142967" },
-                    { 2, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6194), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6195), "2.jpg", "c0c74e57-fc4d-449b-9855-eeb94e6c15ee" },
-                    { 3, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6197), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6197), "3.jpg", "e41edcca-174d-4b77-b926-3b242da02fee" },
-                    { 4, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6199), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6200), "4.jpg", "88f0eb29-bd71-4273-864c-9842e3b96a27" },
-                    { 5, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6202), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6202), "5.jpg", "9b9ec15d-8213-4579-8dce-4b68f5a0011d" },
-                    { 6, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6205), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6206), "6.jpg", "cd43e623-b7f7-4b25-8cd9-6f4f62bc41fd" },
-                    { 7, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6208), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6208), "7.jpg", "46011f1e-158e-4662-8c72-5780301b9935" },
-                    { 8, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6210), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6211), "8.jpg", "53b875d2-c8d2-4241-a2c2-cb2363fed268" },
-                    { 9, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6212), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6213), "9.jpg", "618a9587-0777-4025-a9e8-e00cbf5f8032" },
-                    { 10, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6216), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6217), "10.jpg", "0222e488-3879-4166-9b86-9205d177c1d9" },
-                    { 11, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6219), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6219), "11.jpg", "d838b305-c9fe-40e8-84ab-1d872299e235" },
-                    { 12, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6221), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6222), "12.jpg", "d1c5bc6f-5e02-410a-9f53-06a80eb712ef" },
-                    { 13, new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6223), new DateTime(2023, 4, 11, 13, 20, 9, 280, DateTimeKind.Local).AddTicks(6224), "13.jpg", "f0331525-2680-4b01-a168-f766e6660895" }
+                    { 1, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5601), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5613), "1.jpg", "da225905-150f-48e6-9f42-68cf86864986" },
+                    { 2, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5619), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5619), "2.jpg", "bb4ae640-5453-4ad6-af0d-341899aeeaec" },
+                    { 3, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5622), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5623), "3.jpg", "86c2a29c-ea3a-42a2-ae55-28aad964a648" },
+                    { 4, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5625), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5626), "4.jpg", "657e8e0f-118e-4058-ad8a-226953ed48e4" },
+                    { 5, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5628), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5628), "5.jpg", "88f06875-4ba5-4fde-b05b-3e4570532296" },
+                    { 6, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5638), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5639), "6.jpg", "4e7eb8c8-03ba-41a1-9db0-b66a34fae9ce" },
+                    { 7, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5641), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5642), "7.jpg", "6ffdfd51-0f9a-43c9-a05a-0bc15e972d30" },
+                    { 8, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5644), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5645), "8.jpg", "04d4aec4-3564-4ac3-a099-b9a6ec4d3a42" },
+                    { 9, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5647), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5648), "9.jpg", "f987533b-0204-49f7-9d8b-72ea008ff4b6" },
+                    { 10, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5651), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5652), "10.jpg", "7832aad9-0518-48ca-9517-d1dfd3529d42" },
+                    { 11, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5654), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5654), "11.jpg", "663b5466-d86d-4292-ae29-e739536907a8" },
+                    { 12, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5656), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5657), "12.jpg", "828e41dd-39e6-4750-a450-282812353eef" },
+                    { 13, new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5659), new DateTime(2023, 4, 13, 12, 42, 21, 931, DateTimeKind.Local).AddTicks(5660), "13.jpg", "a7b3df57-5c10-4ac6-934d-646b471f1262" }
                 });
 
             migrationBuilder.InsertData(

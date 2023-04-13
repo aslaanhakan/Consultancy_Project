@@ -331,6 +331,24 @@ new User
             };
             modelBuilder.Entity<Image>().HasData(images);
             #endregion
+
+            #region Parola İşlemleri
+            var passwordHasher = new PasswordHasher<User>();
+            users[0].PasswordHash = passwordHasher.HashPassword(users[0], "Qwe123.");
+            users[1].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[2].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[3].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[4].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[5].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[6].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[7].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[8].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[9].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[10].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[11].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+            users[12].PasswordHash = passwordHasher.HashPassword(users[1], "Qwe123.");
+
+            #endregion
         }
     }
 }
