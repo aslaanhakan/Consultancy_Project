@@ -1,0 +1,22 @@
+﻿@model List<UserViewModel>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Resim</th>
+            <th>Adı</th>
+            <th>Soyadı</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var user in Model)
+        {
+
+            <tr>
+                <td><img src="~/Images/@user.ImageUrl" width="75" height="75" /></td>
+                <td>@user.FirstName</td>
+                <td>@user.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>

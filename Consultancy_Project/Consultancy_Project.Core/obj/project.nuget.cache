@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "y3hKvwkCpkCaBKIrM2mo0Ux9gCXA9jyVgRMmoYh/nr+TQJ/3FuhR9Yo5w6ViSAxbhGFDiW18HOxzA52/6siG8g==",
+  "dgSpecHash": "U1wVtJtBuLdty9UndPrPV+3guKvNuQA3zGPQwkyrQbhPPZi8JB7ZK3k1eJPiMX3ZuToj4xFl/LqbuOOZns9kOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Core\\Consultancy_Project.Core.csproj",
+  "projectFilePath": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Core\\Consultancy_Project.Core.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+    "C:\\Users\\Bahar Hakan\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\Bahar Hakan\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Bahar Hakan\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
   ],
   "logs": []
 }
