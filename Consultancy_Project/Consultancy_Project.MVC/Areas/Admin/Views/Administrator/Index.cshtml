@@ -1,22 +1,66 @@
-﻿@model List<UserViewModel>
-<table class="table table-bordered">
-    <thead>
-        <tr>
-            <th>Resim</th>
-            <th>Adı</th>
-            <th>Soyadı</th>
-        </tr>
-    </thead>
-    <tbody>
-
-        @foreach (var user in Model)
-        {
-
-            <tr>
-                <td><img src="~/Images/@user.ImageUrl" width="75" height="75" /></td>
-                <td>@user.FirstName</td>
-                <td>@user.LastName</td>
-            </tr>
-        }
-    </tbody>
-</table>
+﻿@model List<AdminViewModel>
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+        <div class="col-12">
+            <div class="bg-light rounded h-100 p-4">
+                <h6 class="mb-4">Admin Talosu</h6>
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Adı</th>
+                                <th scope="col">Soyadı</th>
+                                <th scope="col">Kullanıcı Adı</th>
+                                <th scope="col">İşlemler</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           @for(int i=0 ; i<Model.Count;i++)
+                            {
+                                <tr>
+                                    <th scope="row">@(i+1)</th>
+                                    <td>@Model[i].FirstName</td>
+                                    <td>@Model[i].LastName</td>
+                                    <td>@Model[i].UserName</td>
+                                    <td>
+                                        <a class="btn btn-outline-warning btn-sm"
+                                       asp-area="Admin"
+                                       asp-controller="Administrator"
+                                       asp-action="Edit"
+                                       asp-route-id=@Model[i].Id><i class="fa-solid fa-pen-to-square"></i></a>
+                                        <a class="btn btn-outline-danger btn-sm"
+                                       asp-area="Admin"
+                                       asp-controller="Administrator"
+                                       asp-action="Delete"
+                                       asp-route-id=@Model[i].Id><i class="fa-solid fa-trash-can"></i></a>
+                                        <a class="btn btn-outline-info btn-sm"
+                                       asp-area="Admin"
+                                       asp-controller="Administrator"
+                                       asp-action="Details"
+                                       asp-route-id=@Model[i].Id>
+                                            <i class="fa-solid fa-circle-info"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            }
+                            <tr>
+                                <th scope="row">...</th>
+                                <td>Admin Ekle</td>
+                                <td></td>
+                                <td></td>
+                                <td>
+                                    <a class="btn btn-outline-success btn-sm"
+                                       asp-area="Admin"
+                                       asp-controller="Administrator"
+                                       asp-action="Add">
+                                       <i class="fa-solid fa-square-plus"></i></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

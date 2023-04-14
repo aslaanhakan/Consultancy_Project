@@ -16,15 +16,15 @@ namespace Consultancy_Project.MVC.Areas.Admin.ViewComponents
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            var admin = await _userManager.GetUsersInRoleAsync("Admin");
-            UserViewModel users = _userManager.Users.Where(x=>x.FirstName==admin.FirstOrDefault().FirstName).Select(u => new UserViewModel
+            var admin = await _userManager.FindByNameAsync(User.Identity.Name);
+            AdminViewModel adminView = _userManager.Users.Where(x=>x.Id==admin.Id).Select(u => new AdminViewModel
             {
                 FirstName = u.FirstName,
                 LastName = u.LastName,
                 ImageUrl = u.Images.Url
             }).FirstOrDefault();
            
-            return View(users);
+            return View(adminView);
         }
     }
 }

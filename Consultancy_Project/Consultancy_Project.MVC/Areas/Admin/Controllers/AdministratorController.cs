@@ -24,10 +24,13 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             var admin = await _userManager.GetUsersInRoleAsync("Admin");
-            List<UserViewModel> adminWiew = admin.Select(a=>new UserViewModel
+            List<AdminViewModel> adminWiew = admin.Select(a=>new AdminViewModel
             {
+                Id=a.Id,
                 FirstName= a.FirstName,
                 LastName= a.LastName,
+                Email=a.Email,
+                UserName= a.UserName,
             }).ToList();
             return View(adminWiew);
         }

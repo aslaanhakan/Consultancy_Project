@@ -20,13 +20,8 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            List<UserViewModel> users = _userManager.Users.Select(u=> new UserViewModel
-            {
-                FirstName = u.FirstName,
-                LastName = u.LastName,
-                ImageUrl=u.Images.Url
-            }).ToList();
-            return View(users);
+            
+            return View();
         }
     }
 }
