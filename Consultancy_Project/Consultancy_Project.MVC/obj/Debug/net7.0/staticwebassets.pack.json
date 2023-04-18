@@ -1,559 +1,575 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Consultancy_Project.MVC.bundle.scp.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Consultancy_Project.MVC.bundle.scp.css",
       "PackagePath": "staticwebassets\\Consultancy_Project.MVC.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\1.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\02f92947-e3eb-4a2b-b229-ad27a79cbf96.jpg",
+      "PackagePath": "staticwebassets\\Images\\02f92947-e3eb-4a2b-b229-ad27a79cbf96.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\1.jpg",
       "PackagePath": "staticwebassets\\Images\\1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\10.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\10.jpg",
       "PackagePath": "staticwebassets\\Images\\10.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\11.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\11.jpg",
       "PackagePath": "staticwebassets\\Images\\11.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\12.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\12.jpg",
       "PackagePath": "staticwebassets\\Images\\12.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\13.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\13.jpg",
       "PackagePath": "staticwebassets\\Images\\13.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\14.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\14.jpg",
       "PackagePath": "staticwebassets\\Images\\14.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\2.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\1c18b0e2-360e-4052-887e-ce2877356743.jpg",
+      "PackagePath": "staticwebassets\\Images\\1c18b0e2-360e-4052-887e-ce2877356743.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\2.jpg",
       "PackagePath": "staticwebassets\\Images\\2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\3.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\3.jpg",
       "PackagePath": "staticwebassets\\Images\\3.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\4.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\4.jpg",
       "PackagePath": "staticwebassets\\Images\\4.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\5.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\5.jpg",
       "PackagePath": "staticwebassets\\Images\\5.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\6.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\56f694e6-9864-4506-aef4-aa1bf895ea4f.jpg",
+      "PackagePath": "staticwebassets\\Images\\56f694e6-9864-4506-aef4-aa1bf895ea4f.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\6.jpg",
       "PackagePath": "staticwebassets\\Images\\6.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\7.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\7.jpg",
       "PackagePath": "staticwebassets\\Images\\7.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\8.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\8.jpg",
       "PackagePath": "staticwebassets\\Images\\8.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\9.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\9.jpg",
       "PackagePath": "staticwebassets\\Images\\9.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\NonPic.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\NonPic.jpg",
       "PackagePath": "staticwebassets\\Images\\NonPic.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-1.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\a573211d-8f5c-4756-9562-176e8517be41.jpg",
+      "PackagePath": "staticwebassets\\Images\\a573211d-8f5c-4756-9562-176e8517be41.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-1.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\about-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-2.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-2.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\about-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-3.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-3.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\about-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-4.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-4.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\about-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\carousel-1.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\carousel-1.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\carousel-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\carousel-2.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\carousel-2.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\carousel-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-1.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-1.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\com-logo-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-2.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-2.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\com-logo-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-3.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-3.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\com-logo-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-4.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-4.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\com-logo-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-5.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\com-logo-5.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\com-logo-5.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\testimonial-1.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\testimonial-1.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\testimonial-1.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\testimonial-2.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\testimonial-2.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\testimonial-2.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\testimonial-3.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\testimonial-3.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\testimonial-3.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\testimonial-4.jpg",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\testimonial-4.jpg",
       "PackagePath": "staticwebassets\\Images\\img\\testimonial-4.jpg"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\adminstyle.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\adminstyle.css",
       "PackagePath": "staticwebassets\\css\\adminstyle.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\login.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\login.css",
       "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\uibootstrap.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\uibootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\uibootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\uistyle.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\uistyle.css",
       "PackagePath": "staticwebassets\\css\\uistyle.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\adminmain.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\adminmain.js",
       "PackagePath": "staticwebassets\\js\\adminmain.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\login.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\login.js",
       "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\uimain.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\uimain.js",
       "PackagePath": "staticwebassets\\js\\uimain.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\chart\\chart.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\chart\\chart.min.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\chart\\chart.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\easing\\easing.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\easing\\easing.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\easing\\easing.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\easing\\easing.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\easing\\easing.min.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\easing\\easing.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\LICENSE",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\ajax-loader.gif",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\assets\\ajax-loader.gif"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.carousel.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.carousel.css",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.carousel.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.carousel.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.default.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.default.css",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.default.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.default.min.css",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.default.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.green.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.green.css",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.green.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.green.min.css",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.theme.green.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.video.play.png",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.video.play.png",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\assets\\owl.video.play.png"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\owl.carousel.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\owl.carousel.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\owl.carousel.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\owl.carousel.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\owlcarousel\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\owlcarousel\\owl.carousel.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\js\\moment-timezone.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\js\\moment-timezone.min.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\tempusdominus\\js\\moment-timezone.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\js\\moment.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\js\\moment.min.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\tempusdominus\\js\\moment.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\waypoints\\links.php",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\waypoints\\links.php",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\waypoints\\links.php"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\waypoints\\waypoints.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\adminpaneltemplate\\waypoints\\waypoints.min.js",
       "PackagePath": "staticwebassets\\lib\\adminpaneltemplate\\waypoints\\waypoints.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\animate\\animate.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\animate\\animate.css",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\animate\\animate.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\animate\\animate.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\animate\\animate.min.css",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\animate\\animate.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\easing\\easing.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\easing\\easing.js",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\easing\\easing.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\easing\\easing.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\easing\\easing.min.js",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\easing\\easing.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\LICENSE",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\ajax-loader.gif",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\assets\\ajax-loader.gif"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.carousel.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.carousel.css",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\assets\\owl.carousel.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.carousel.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.carousel.min.css",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\assets\\owl.carousel.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.default.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.default.css",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.default.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.default.min.css",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.default.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.green.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.green.css",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.green.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.green.min.css",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\assets\\owl.theme.green.min.css"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.video.play.png",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\assets\\owl.video.play.png",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\assets\\owl.video.play.png"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\owl.carousel.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\owl.carousel.js",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\owl.carousel.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\owl.carousel.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\owlcarousel\\owl.carousel.min.js",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\owlcarousel\\owl.carousel.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\waypoints\\links.php",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\waypoints\\links.php",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\waypoints\\links.php"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\waypoints\\waypoints.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\waypoints\\waypoints.min.js",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\waypoints\\waypoints.min.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\wow\\wow.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\wow\\wow.js",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\wow\\wow.js"
     },
     {
-      "Id": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\wow\\wow.min.js",
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\lib\\uitemplate\\wow\\wow.min.js",
       "PackagePath": "staticwebassets\\lib\\uitemplate\\wow\\wow.min.js"
     },
     {

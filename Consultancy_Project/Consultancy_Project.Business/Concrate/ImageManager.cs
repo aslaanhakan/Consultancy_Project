@@ -12,9 +12,16 @@ namespace Consultancy_Project.Business.Concrate
     public class ImageManager : IImageService
     {
         private readonly IImageRepository _imageRepository;
-        public Task CreateAsync(Image image)
+
+        public ImageManager(IImageRepository imageRepository)
         {
-            throw new NotImplementedException();
+            _imageRepository = imageRepository;
+        }
+
+        public async Task CreateAsync(Image image)
+        {
+            await _imageRepository.CreateAsync(image);
+
         }
 
         public void Delete(Image image)

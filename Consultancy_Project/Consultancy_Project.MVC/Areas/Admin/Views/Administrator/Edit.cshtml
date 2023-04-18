@@ -6,15 +6,15 @@
             <div class="col-3"> <h6 class="mb-4">Admin Bilgileri</h6></div>
             @if (Model.ImageUrl!=null)
             {
-                <div class="col-3"> <img src="~/Images/@Model.ImageUrl" width="150" height="200" /></div>                
+                <div id="img-viewer" class="col-3"> <img src="~/Images/@Model.ImageUrl" width="150" height="200" /></div>
             }else
             {
-                <div class="col-3"> <img src="~/Images/NonPic.jpg" width="150" height="200" /></div>
-            }
-            
-            
+                <div class="img-viewer" class="col-3"> <img src="~/Images/NonPic.jpg" width="150" height="200" /></div>
+            }            
         </div>
-       <form asp-area="Admin" asp-controller="Administrator" asp-action="Update" method="post" enctype="multipart/form-data">
+       <form asp-area="Admin" asp-controller="Administrator" asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" class="form-control" asp-for="AdminId" >
+
             <div class="row"> 
                 <div class="row mb-3 col-sm-12 col-xl-6">
                     <label class="col col-form-label" asp-for="FirstName"></label>
@@ -31,7 +31,7 @@
                 <div class="row mb-3 col-sm-12 col-xl-6">
                     <label class="col col-form-label" asp-for="UserName"></label>
                     <div class="col-sm-12">
-                        <input type="text" class="form-control" asp-for="UserName">
+                        <input type="text" class="form-control" asp-for="UserName" disabled>
                     </div>
                 </div>
                 <div class="row mb-3 col-sm-12 col-xl-6">
@@ -93,9 +93,25 @@
                 </div>
                 <div class="col-12">
                     <label class="col col-form-label">En Son Güncelleme Zamanı: @Model.UpdateTime</label>
+                </div>                
+                <div class="col-12">
+                    <input type="file" asp-for="ImageFile" class="form-control" accept="image/" />
                 </div>
             </div>
-            <a type="submit" class="btn btn-primary" >Geri Dön</a>
+            <button type="submit" class="btn btn-success" >Kaydet</button>
        </form>
     </div>
 </div>
+@section Scripts{
+
+    <script>
+        let imgViewer = document.querySelector('#img-viewer');
+        let imgFile = document.querySelector('#ImageFile');
+
+        imgFile.addEventListener("change", function(e){
+            let files = e.target.files;
+            imgViewer.setAttribute("src", window.URL.createObjectURL(files[0]));
+        });
+
+    </script>
+}

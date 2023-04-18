@@ -17,9 +17,10 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             _dbContext = dbContext;
         }
 
-        public Task CreateAsync(T entity)
+        public async Task CreateAsync(T entity)
         {
-            throw new NotImplementedException();
+            await _dbContext.Set<T>().AddAsync(entity);
+            _dbContext.SaveChanges();
         }
 
         public void Delete(T entity)

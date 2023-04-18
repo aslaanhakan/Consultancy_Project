@@ -19,5 +19,6 @@ namespace Consultancy_Project.Data.Concrate.EfCore
         {
             get { return _dbContext as ConsultancyProjectContext; }
         }
+
     }
 }

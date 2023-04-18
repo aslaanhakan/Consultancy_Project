@@ -122,19 +122,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bahar Hakan\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Core\\Consultancy_Project.Core.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Core\\Consultancy_Project.Core.csproj",
       "projectName": "Consultancy_Project.Core",
-      "projectPath": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Core\\Consultancy_Project.Core.csproj",
-      "packagesPath": "C:\\Users\\Bahar Hakan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bahar Hakan\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Core\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Core\\Consultancy_Project.Core.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Bahar Hakan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -181,7 +186,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -69,9 +69,11 @@
     <script src="~/lib/adminpaneltemplate/tempusdominus/js/moment.min.js"></script>
     <script src="~/lib/adminpaneltemplate/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="~/lib/adminpaneltemplate/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <!-- Template Javascript -->
     <script src="~/js/adminmain.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 
 </html>
