@@ -17,6 +17,8 @@ namespace Consultancy_Project.Entity.Concrate
         public string Promotion { get; set; }        
         public decimal? VisitsPrice { get; set; }
         public string JobTitle { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public DateTime UpdatedTime { get; set; }
         public virtual List<Education> Educations { get; set; }
         public virtual List<Specialization> Specializations { get; set; }
         public virtual List<Certificate> Certificates { get; set; }

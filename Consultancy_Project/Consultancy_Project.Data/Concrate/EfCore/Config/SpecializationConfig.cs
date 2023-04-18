@@ -18,7 +18,9 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Config
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.Name).IsRequired();
             builder.Property(x => x.Description).IsRequired();
-            
+            builder.Property(x => x.CreatedTime).IsRequired();
+            builder.Property(x => x.UpdatedTime).IsRequired();
+
         }
     }
 }

@@ -14,5 +14,8 @@ namespace Consultancy_Project.Entity.Concrate
         public string CertificateName { get; set; }
         public int CertificateTime { get; set; }
         public int ConsultantId { get; set; }
+
+        public DateTime CreatedTime { get; set; }
+        public DateTime UpdatedTime { get; set; }
     }
 }

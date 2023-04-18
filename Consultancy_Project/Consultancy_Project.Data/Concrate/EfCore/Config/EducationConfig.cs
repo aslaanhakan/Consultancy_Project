@@ -23,8 +23,10 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Config
                                              .HasMaxLength(4);
             builder.Property(x => x.GraduationYear).IsRequired()
                                              .HasMaxLength(4);
+            builder.Property(x => x.CreatedTime).IsRequired();
+            builder.Property(x => x.UpdatedTime).IsRequired();
 
-           
+
         }
     }
 }

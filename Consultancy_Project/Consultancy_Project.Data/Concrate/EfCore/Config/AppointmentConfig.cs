@@ -15,8 +15,9 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Config
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
-            builder.Property(x => x.CreateDate).IsRequired();
-            builder.Property(x => x.AppointmentDate).IsRequired();
+            //builder.Property(x => x.CreatedTime).IsRequired();
+            //builder.Property(x => x.UpdatedTime).IsRequired();
+            //builder.Property(x => x.AppointmentDate).IsRequired();
             
         }
     }

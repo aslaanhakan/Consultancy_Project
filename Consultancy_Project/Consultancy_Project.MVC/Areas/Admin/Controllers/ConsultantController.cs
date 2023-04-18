@@ -1,9 +1,12 @@
-﻿using Consultancy_Project.Entity.Concrate.Identity;
+﻿using Consultancy_Project.Entity.Concrate;
+using Consultancy_Project.Entity.Concrate.Identity;
 using Consultancy_Project.MVC.Areas.Admin.Models.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Data;
+using System.Transactions;
 
 namespace Consultancy_Project.MVC.Areas.Admin.Controllers
 {
@@ -32,5 +35,8 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             }).ToList();
             return View(consultantWiew);
         }
+        
     }
 }
+// Gerekli Durumlarda kullanacağım
+//List<User> consultant = await _userManager.Users.Where(x => x.Consultant != null).Include(x => x.Consultant).ToListAsync();

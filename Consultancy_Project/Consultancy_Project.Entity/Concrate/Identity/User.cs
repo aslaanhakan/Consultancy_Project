@@ -15,7 +15,11 @@ namespace Consultancy_Project.Entity.Concrate.Identity
         public DateTime? DateOfBirth { get; set; }
         public string Address { get; set; }
         public string City { get; set; }
-        public virtual Image Images { get; set; }
+        public virtual Image Image { get; set; }
+        public virtual Consultant Consultant { get; set; }
+        public virtual Customer Customer { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public DateTime UpdatedTime { get; set; }
 
     }
 }

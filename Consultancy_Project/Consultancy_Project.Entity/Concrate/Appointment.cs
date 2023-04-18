@@ -10,8 +10,9 @@ namespace Consultancy_Project.Entity.Concrate
     public class Appointment : IBaseEntity
     {
         public int Id { get; set; }
-        public DateTime CreateDate { get; set; }
         public DateTime AppointmentDate { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public DateTime UpdatedTime { get; set; }
 
     }
 }

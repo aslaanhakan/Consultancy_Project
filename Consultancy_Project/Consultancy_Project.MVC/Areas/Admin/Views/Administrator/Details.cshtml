@@ -1,0 +1,96 @@
+﻿@model AdminDetailsViewModel
+
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light rounded h-100 p-4">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-3"> <h6 class="mb-4">Admin Bilgileri</h6></div>
+            <div class="col-3"> <img  src="~/Images/@Model.ImageUrl" width="150" height="200" /></div>
+        </div>
+        <div class="row">
+            <div class="row mb-3 col-sm-12 col-xl-6">
+                <label class="col col-form-label" asp-for="FirstName"></label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" asp-for="FirstName" disabled>
+                </div>
+            </div>
+            <div class="row mb-3 col-sm-12 col-xl-6">
+                <label class="col col-form-label" asp-for="LastName"></label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" asp-for="LastName" disabled>
+                </div>
+            </div>
+            <div class="row mb-3 col-sm-12 col-xl-6">
+                <label class="col col-form-label" asp-for="UserName"></label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" asp-for="UserName" disabled>
+                </div>
+            </div>
+            <div class="row mb-3 col-sm-12 col-xl-6">
+                <label class="col col-form-label" asp-for="Email"></label>
+                <div class="col-sm-12">
+                    <input type="email" class="form-control" asp-for="Email" disabled>
+                </div>
+            </div>
+            <div class="row mb-3 col-sm-12 col-xl-6">
+                <label class="col col-form-label" asp-for="Phone"></label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" asp-for="Phone" disabled>
+                </div>
+            </div>
+            <div class="row mb-3 col-sm-12 col-xl-6">
+                <label class="col col-form-label" asp-for="Gender"></label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" asp-for="Gender" disabled>
+                </div>
+            </div>
+            <div class="row mb-3 col-sm-12 col-xl-6">
+                <label class="col col-form-label" asp-for="DateOfBirth"></label>
+                <div class="col-sm-12">
+                    <input type="date" class="form-control" asp-for="DateOfBirth" disabled>
+                </div>
+            </div>
+            <div class="row mb-3 col-sm-12 col-xl-6">
+                <label class="col col-form-label" asp-for="City"></label>
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" asp-for="City" disabled>
+                </div>
+            </div>
+
+            <div class="row mb-3 col-sm-12 col-xl-12">
+                <label class="col col-form-label" asp-for="Address"></label>
+                <div class="col-sm-12">
+                    <textarea type="text" class="form-control" asp-for="Address" disabled></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="emailConfirm" asp-for="EmailConfirmed" disabled>
+                    <label class="form-check-label" for="emailConfirm" asp-for="EmailConfirmed">
+                    </label>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="phoneConfirm" asp-for="PhoneConfirmed" disabled>
+                    <label class="form-check-label" for="phoneConfirm" asp-for="PhoneConfirmed">
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <label class="col col-form-label">Oluşturma Zamanı: @Model.CreatedTime</label>
+            </div>
+            <div class="col-12">
+                <label class="col col-form-label">En Son Güncelleme Zamanı: @Model.UpdateTime</label>
+
+            </div>
+
+
+        </div>
+
+
+        <a type="submit" class="btn btn-primary" asp-area="Admin" asp-controller="Administrator" asp-action="Index">Geri Dön</a>
+    </div>
+</div>

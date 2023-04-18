@@ -17,7 +17,9 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Config
             builder.Property(x => x.Id).ValueGeneratedOnAdd();
             builder.Property(x => x.CertificateName).IsRequired();
             builder.Property(x => x.CertificateTime).IsRequired();
-           
+            builder.Property(x => x.CreatedTime).IsRequired();
+            builder.Property(x => x.UpdatedTime).IsRequired();
+
         }
     }
 }

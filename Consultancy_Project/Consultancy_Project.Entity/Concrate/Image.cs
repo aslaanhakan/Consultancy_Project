@@ -11,8 +11,8 @@ namespace Consultancy_Project.Entity.Concrate
     public class Image : IBaseEntity
     {
         public int Id { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime ModifiedDate { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public DateTime UpdatedTime { get; set; }
         public string Url { get; set; }
         public string UserId { get; set; }
         public User User { get; set; }

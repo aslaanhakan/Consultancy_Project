@@ -18,6 +18,9 @@ namespace Consultancy_Project.Entity.Concrate
         public int StartYear { get; set; }
         public int GraduationYear { get; set; }
         public int ConsultantId { get; set; }
+        public DateTime CreatedTime { get; set; }
+        public DateTime UpdatedTime { get; set; }
+
         public virtual Consultant Consultant { get; set; }
     }
 }
