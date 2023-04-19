@@ -60,7 +60,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
                 Phone = admin.PhoneNumber,
                 UpdateTime = admin.UpdatedTime,
                 EmailConfirmed = admin.EmailConfirmed,
-                PhoneConfirmed= admin.PhoneNumberConfirmed
+                PhoneConfirmed = admin.PhoneNumberConfirmed
             };
 
             return View(adminDetailsView);
@@ -72,7 +72,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             var admin = await _userManager.Users.Where(x => x.Id == id).Include(x => x.Image).FirstOrDefaultAsync();
             AdminUpdateViewModel adminUpdateView = new AdminUpdateViewModel()
             {
-                AdminId=admin.Id,
+                AdminId = admin.Id,
                 FirstName = admin.FirstName,
                 LastName = admin.LastName,
                 Email = admin.Email,
@@ -95,19 +95,19 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(AdminUpdateViewModel adminUpdateView)
         {
 
-            if(ModelState.IsValid)
-            { 
-            var admin = await _userManager.Users.Where(x => x.Id == adminUpdateView.AdminId).Include(x => x.Image).FirstOrDefaultAsync();
+            if (ModelState.IsValid)
+            {
+                var admin = await _userManager.Users.Where(x => x.Id == adminUpdateView.AdminId).Include(x => x.Image).FirstOrDefaultAsync();
                 admin.FirstName = adminUpdateView.FirstName;
                 admin.LastName = adminUpdateView.LastName;
                 admin.Email = adminUpdateView.Email;
                 admin.Address = adminUpdateView.Address;
                 admin.City = adminUpdateView.City;
-                admin.DateOfBirth=adminUpdateView.DateOfBirth;
+                admin.DateOfBirth = adminUpdateView.DateOfBirth;
                 admin.Gender = adminUpdateView.Gender;
                 admin.PhoneNumber = adminUpdateView.Phone;
                 admin.UpdatedTime = DateTime.Now;
-                admin.EmailConfirmed=adminUpdateView.EmailConfirmed;
+                admin.EmailConfirmed = adminUpdateView.EmailConfirmed;
                 admin.PhoneNumberConfirmed = adminUpdateView.PhoneConfirmed;
                 if (adminUpdateView.ImageFile != null)
                 {
@@ -116,11 +116,11 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
                         CreatedTime = DateTime.Now,
                         UpdatedTime = DateTime.Now,
                         Url = Jobs.UploadImage(adminUpdateView.ImageFile),
-                         UserId= adminUpdateView.AdminId
+                        UserId = adminUpdateView.AdminId
                     };
-                    
-                        await _imageService.CreateAsync(image);
-                    
+
+                    await _imageService.CreateAsync(image);
+
                 }
                 var result = await _userManager.UpdateAsync(admin);
                 return RedirectToAction("Index");
@@ -128,6 +128,81 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             }
             return View(adminUpdateView);
         }
+        [HttpGet]
+        public async Task<IActionResult> Add()
+        {
+            var users = _userManager.Users.ToList();
+            //var customers = await _userManager.GetUsersInRoleAsync("Customer");
+            var members = new List<User>();
+            var nonMembers = new List<User>();
+            foreach (var user in users)
+            {
+                
+                if ( await _userManager.IsInRoleAsync(user,"Admin") && await _userManager.IsInRoleAsync(user, "Consultant")==false)
+                {
+                    members.Add(user);
+                }else if (await _userManager.IsInRoleAsync(user, "Admin") == false && await _userManager.IsInRoleAsync(user, "Consultant") == false)
+                {
+                    nonMembers.Add(user);
+                }
+
+            }
+            AdminAddViewModel adminAddViews = new AdminAddViewModel()
+            {
+                Members = members,
+                NonMembers = nonMembers
+            };
+            return View(adminAddViews);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Add(AdminAddViewModel adminAddViews)
+        {
+            foreach (var userId in adminAddViews.IdsToAdd ?? new string[] { })
+            {
+                User user = await _userManager.FindByIdAsync(userId);
+                var resultAdd = await _userManager.AddToRoleAsync(user, "Admin");
+                if (!resultAdd.Succeeded)
+                {
+                    foreach (var error in resultAdd.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+                var resultRemove = await _userManager.RemoveFromRoleAsync(user, "Customer");
+                if (!resultRemove.Succeeded)
+                {
+                    foreach (var error in resultRemove.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                }
+            }
+            return Redirect("/Admin/Administrator/Add/Add");
+
+        }
+        public async Task<IActionResult> Remove(string id)
+        {
+
+            User user = await _userManager.FindByIdAsync(id);
+            var resultRemove = await _userManager.RemoveFromRoleAsync(user, "Admin");
+            if (!resultRemove.Succeeded)
+            {
+                foreach (var error in resultRemove.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+            var resultAdd = await _userManager.AddToRoleAsync(user, "Customer");
+            if (!resultAdd.Succeeded)
+            {
+                foreach (var error in resultAdd.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+            return RedirectToAction("Index");
+        }
+
 
     }
 }

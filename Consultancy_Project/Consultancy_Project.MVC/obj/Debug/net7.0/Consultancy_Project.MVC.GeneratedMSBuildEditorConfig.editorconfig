@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin/Documents/GitHub/Consultancy_Project/Consultancy_Project/Consultancy_Project.MVC/Areas/Admin/Views/Administrator/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5pc3RyYXRvclxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Documents/GitHub/Consultancy_Project/Consultancy_Project/Consultancy_Project.MVC/Areas/Admin/Views/Administrator/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5pc3RyYXRvclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Documents/GitHub/Consultancy_Project/Consultancy_Project/Consultancy_Project.MVC/Areas/Admin/Views/Consultant/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ29uc3VsdGFudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/Consultancy_Project/Consultancy_Project/Consultancy_Project.MVC/Areas/Admin/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Documents/GitHub/Consultancy_Project/Consultancy_Project/Consultancy_Project.MVC/Areas/Admin/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Documents/GitHub/Consultancy_Project/Consultancy_Project/Consultancy_Project.MVC/Areas/Admin/Views/Customer/Index.cshtml]
