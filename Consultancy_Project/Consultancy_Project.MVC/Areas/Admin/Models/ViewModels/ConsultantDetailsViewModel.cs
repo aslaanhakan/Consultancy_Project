@@ -1,11 +1,11 @@
-﻿using System.ComponentModel;
+﻿using Consultancy_Project.Entity.Concrate;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
 {
-    public class CustomerUpdateViewModel
+    public class ConsultantDetailsViewModel
     {
-        public string CustomerId { get; set; }
         [DisplayName("Ad")]
         [Required(ErrorMessage = "Ad alanı boş bırakılmamaz.")]
         public string FirstName { get; set; }
@@ -13,7 +13,8 @@ namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
         [Required(ErrorMessage = "Soyad alanı boş bırakılmamaz.")]
         public string LastName { get; set; }
         [DisplayName("Kullanıcı Adı")]
-        public string? UserName { get; set; }
+        [Required(ErrorMessage = "Kullanıcı Adı alanı boş bırakılmamaz.")]
+        public string UserName { get; set; }
         [DisplayName("Cinsiyet")]
         public string? Gender { get; set; }
         [DisplayName("Doğum Günü")]
@@ -22,7 +23,6 @@ namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
         public string? Address { get; set; }
         [DisplayName("Şehir")]
         public string? City { get; set; }
-        public IFormFile? ImageFile { get; set; }
         public string ImageUrl { get; set; }
         [DisplayName("Email")]
         [Required(ErrorMessage = "Email alanı boş bırakılmamaz.")]
@@ -37,5 +37,11 @@ namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
         public bool PhoneConfirmed { get; set; }
         [DisplayName("Email Doğrulaması")]
         public bool EmailConfirmed { get; set; }
+        public string Promotion { get; set; }
+        public decimal? VisitsPrice { get; set; }
+        public string JobTitle { get; set; }
+        public virtual List<Education> Educations { get; set; }
+        public virtual List<Specialization> Specializations { get; set; }
+        public virtual List<Certificate> Certificates { get; set; }
     }
 }

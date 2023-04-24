@@ -69,7 +69,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             var customer = await _userManager.Users.Where(x => x.Id == id).Include(x => x.Image).FirstOrDefaultAsync();
             CustomerUpdateViewModel customerUpdateView = new CustomerUpdateViewModel()
             {
-                AdminId = customer.Id,
+                CustomerId = customer.Id,
                 FirstName = customer.FirstName,
                 LastName = customer.LastName,
                 Email = customer.Email,
@@ -94,7 +94,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                var customer = await _userManager.Users.Where(x => x.Id == customerUpdateView.AdminId).Include(x => x.Image).FirstOrDefaultAsync();
+                var customer = await _userManager.Users.Where(x => x.Id == customerUpdateView.CustomerId).Include(x => x.Image).FirstOrDefaultAsync();
                 customer.FirstName = customerUpdateView.FirstName;
                 customer.LastName = customerUpdateView.LastName;
                 customer.Email = customerUpdateView.Email;
@@ -113,7 +113,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
                         CreatedTime = DateTime.Now,
                         UpdatedTime = DateTime.Now,
                         Url = Jobs.UploadImage(customerUpdateView.ImageFile),
-                        UserId = customerUpdateView.AdminId
+                        UserId = customerUpdateView.CustomerId
                     };
 
                     await _imageService.CreateAsync(image);

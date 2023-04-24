@@ -1,13 +1,13 @@
-﻿@model CustomerUpdateViewModel
+﻿@model ConsultantUpdateViewModel
 
 <div class="container-fluid pt-4 px-4">
     <div class="bg-light rounded h-100 p-4">
         <div class="row align-items-center justify-content-between">
-            <div class="col-3"> <h6 class="mb-4">Danışan Bilgileri</h6></div>
+            <div class="col-3"> <h6 class="mb-4">Danışman Bilgileri</h6></div>
             <div class="col-3"> <img src="~/Images/@Model.ImageUrl" width="150" height="200" /></div>
         </div>
-        <form asp-area="Admin" asp-controller="Customer" asp-action="Edit" method="post" enctype="multipart/form-data">
-            <input type="hidden" class="form-control" asp-for="CustomerId">
+        <form asp-area="Admin" asp-controller="Consultant" asp-action="Edit" method="post" enctype="multipart/form-data">
+            <input type="hidden" class="form-control" asp-for="ConsultantId">
 
             <div class="row">
                 <div class="row mb-3 col-sm-12 col-xl-6">
@@ -91,6 +91,9 @@
                 <div class="col-12">
                     <input type="file" asp-for="ImageFile" class="form-control" accept="image/" />
                 </div>
+            </div>
+            <div class="row align-items-center justify-content-between my-5">
+                <div class="col-3"> <h6 class="mb-4">Danışman Eğitim Bilgileri</h6></div>
             </div>
             <button type="submit" class="btn btn-success">Kaydet</button>
         </form>

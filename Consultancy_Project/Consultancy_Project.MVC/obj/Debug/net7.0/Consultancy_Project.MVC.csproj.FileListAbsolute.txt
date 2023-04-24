@@ -1,3 +1,11 @@
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.csproj.AssemblyReference.cache
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.RazorAssemblyInfo.cache
+C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.RazorAssemblyInfo.cs
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\bin\Debug\net7.0\appsettings.json
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\bin\Debug\net7.0\Consultancy_Project.MVC.staticwebassets.runtime.json
@@ -291,14 +299,6 @@ C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consulta
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\bin\Debug\net7.0\Consultancy_Project.Core.pdb
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\bin\Debug\net7.0\Consultancy_Project.Data.pdb
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\bin\Debug\net7.0\Consultancy_Project.Entity.pdb
-C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.csproj.AssemblyReference.cache
-C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.AssemblyInfoInputs.cache
-C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.AssemblyInfo.cs
-C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.csproj.CoreCompileInputs.cache
-C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.RazorAssemblyInfo.cache
-C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\Consultancy_Project.MVC.RazorAssemblyInfo.cs
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\staticwebassets\msbuild.Consultancy_Project.MVC.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\staticwebassets\msbuild.build.Consultancy_Project.MVC.props
 C:\Users\Admin\Documents\GitHub\Consultancy_Project\Consultancy_Project\Consultancy_Project.MVC\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Consultancy_Project.MVC.props

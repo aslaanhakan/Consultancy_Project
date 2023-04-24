@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
 {
-    public class CustomerUpdateViewModel
+    public class ConsultantUpdateViewModel
     {
-        public string CustomerId { get; set; }
+        public string ConsultantId { get; set; }
         [DisplayName("Ad")]
         [Required(ErrorMessage = "Ad alanı boş bırakılmamaz.")]
         public string FirstName { get; set; }
