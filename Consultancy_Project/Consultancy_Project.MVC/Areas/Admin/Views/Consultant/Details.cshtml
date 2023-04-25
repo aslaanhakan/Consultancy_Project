@@ -86,103 +86,96 @@
                 <label class="col col-form-label">En Son Güncelleme Zamanı: @Model.UpdateTime</label>
 
             </div>
-        </div> 
+        </div>
     </div>
 </div>
 
 <div class="container-fluid pt-4 px-4">
     <div class="bg-light rounded h-100 p-4">
-        <div class="row align-items-center justify-content-between my-5">
-            <div class="col-3"> <h6 class="mb-4">Danışman Eğitim Bilgileri</h6></div>
-        </div>
         <div class="row">
-            <div class="row mb-3 col-sm-12 col-xl-6">
-                <label class="col col-form-label" asp-for="FirstName"></label>
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" asp-for="FirstName" disabled>
-                </div>
-            </div>
-            <div class="row mb-3 col-sm-12 col-xl-6">
-                <label class="col col-form-label" asp-for="LastName"></label>
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" asp-for="LastName" disabled>
-                </div>
-            </div>
-            <div class="row mb-3 col-sm-12 col-xl-6">
-                <label class="col col-form-label" asp-for="UserName"></label>
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" asp-for="UserName" disabled>
-                </div>
-            </div>
-            <div class="row mb-3 col-sm-12 col-xl-6">
-                <label class="col col-form-label" asp-for="Email"></label>
-                <div class="col-sm-12">
-                    <input type="email" class="form-control" asp-for="Email" disabled>
-                </div>
-            </div>
-            <div class="row mb-3 col-sm-12 col-xl-6">
-                <label class="col col-form-label" asp-for="Phone"></label>
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" asp-for="Phone" disabled>
-                </div>
-            </div>
-            <div class="row mb-3 col-sm-12 col-xl-6">
-                <label class="col col-form-label" asp-for="Gender"></label>
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" asp-for="Gender" disabled>
-                </div>
-            </div>
-            <div class="row mb-3 col-sm-12 col-xl-6">
-                <label class="col col-form-label" asp-for="DateOfBirth"></label>
-                <div class="col-sm-12">
-                    <input type="date" class="form-control" asp-for="DateOfBirth" disabled>
-                </div>
-            </div>
-            <div class="row mb-3 col-sm-12 col-xl-6">
-                <label class="col col-form-label" asp-for="City"></label>
-                <div class="col-sm-12">
-                    <input type="text" class="form-control" asp-for="City" disabled>
-                </div>
-            </div>
+            <div class="row mb-3 col-sm-12  pb-5">
+                <div class="bg-light rounded h-100 p-4">
+                    <h6 class="mb-4">Danışman Eğitim Bilgileri</h6>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-education-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education"
+                                    aria-selected="true">
+                                Eğitimler
+                            </button>
+                            <button class="nav-link" id="nav-certificate-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-certificate" type="button" role="tab"
+                                    aria-controls="nav-certificate" aria-selected="false">
+                                Sertifikalar
+                            </button>
+                            <button class="nav-link" id="nav-specialization-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-specialization" type="button" role="tab"
+                                    aria-controls="nav-specialization" aria-selected="false">
+                                Uzmanlık Alanı
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content pt-3" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
+                            <div class="accordion" id="accordionEducation">
+                                @foreach (var education in Model.Educations)
+                                {
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="education-@education.Id">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#education-@education.Id" aria-expanded="true"
+                                                    aria-controls="education-@education.Id">
+                                                @education.DepartmentName (@education.DegreeofGraduation )
+                                            </button>
+                                        </h2>
+                                        <div id="education-@education.Id" class="accordion-collapse collapse"
+                                             aria-labelledby="education-@education.Id">
+                                            <div class="accordion-body">
+                                                @education.FacultyName - @education.DepartmentName - @education.GraduationYear
+                                            </div>
+                                        </div>
+                                    </div>
 
-            <div class="row mb-3 col-sm-12 col-xl-12">
-                <label class="col col-form-label" asp-for="Address"></label>
-                <div class="col-sm-12">
-                    <textarea type="text" class="form-control" asp-for="Address" disabled></textarea>
+                                }
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-certificate" role="tabpanel" aria-labelledby="nav-certificate-tab">
+                            <div class="accordion" id="accordionCertificate">
+                                @foreach (var certificate in Model.Certificates)
+                                {
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="certificate-@certificate.Id">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#certificate-@certificate.Id" aria-expanded="true"
+                                                    aria-controls="certificate-@certificate.Id">
+                                                @certificate.CertificateName (@certificate.CertificateTime )
+                                            </button>
+                                        </h2>
+                                        <div id="certificate-@certificate.Id" class="accordion-collapse collapse"
+                                             aria-labelledby="certificate-@certificate.Id">
+                                            <div class="accordion-body">
+                                                @certificate.Institution - @certificate.CertificateName - @certificate.CertificateTime
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                }
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-specialization" role="tabpanel" aria-labelledby="nav-specialization-tab">
+                            
+                                @foreach (var specialization in Model.Specializations)
+                                {
+                                    <div class=" bg-white d-inline p-2 rounded-2">@specialization.Name</div>
+                                }
+                            
+                        </div>
+                    </div>
                 </div>
+
+                <a type="submit" class="btn btn-primary" asp-area="Admin" asp-controller="Consultant" asp-action="Index">Geri Dön</a>
             </div>
         </div>
-
-        <div class="row mb-3">
-            <div class="col-6">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="emailConfirm" asp-for="EmailConfirmed" disabled>
-                    <label class="form-check-label" for="emailConfirm" asp-for="EmailConfirmed">
-                    </label>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="phoneConfirm" asp-for="PhoneConfirmed" disabled>
-                    <label class="form-check-label" for="phoneConfirm" asp-for="PhoneConfirmed">
-                    </label>
-                </div>
-            </div>
-            <div class="col-12">
-                <label class="col col-form-label">Oluşturma Zamanı: @Model.CreatedTime</label>
-            </div>
-            <div class="col-12">
-                <label class="col col-form-label">En Son Güncelleme Zamanı: @Model.UpdateTime</label>
-
-            </div>
-
-
-        </div>
-        <div class="row align-items-center justify-content-between my-5">
-            <div class="col-3"> <h6 class="mb-4">Danışman Eğitim Bilgileri</h6></div>
-        </div>
-
-        <a type="submit" class="btn btn-primary" asp-area="Admin" asp-controller="Consultant" asp-action="Index">Geri Dön</a>
     </div>
-
 </div>

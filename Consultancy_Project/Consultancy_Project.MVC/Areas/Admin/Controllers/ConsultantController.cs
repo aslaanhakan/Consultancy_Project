@@ -19,70 +19,75 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
         private IImageService _imageService;
+        private IConsultantService _consultantService;
 
-        public ConsultantController(UserManager<User> userManager, RoleManager<Role> roleManager, IImageService imageService)
+        public ConsultantController(UserManager<User> userManager, RoleManager<Role> roleManager, IImageService imageService, IConsultantService consultantService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _imageService = imageService;
+            _consultantService = consultantService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var consultant = await _userManager.GetUsersInRoleAsync("Consultant");
+            var consultant = await _userManager.Users.Where(x => x.Consultant != null).Include(x => x.Consultant).ToListAsync();
             List<ConsultantViewModel> consultantWiew = consultant.Select(c => new ConsultantViewModel
             {
-                Id = c.Id,
+                ConsultantId = c.Consultant.Id,
                 FirstName = c.FirstName,
                 LastName = c.LastName,
                 UserName = c.UserName,
             }).ToList();
             return View(consultantWiew);
         }
-        public async Task<IActionResult> Details(string id)
+        public async Task<IActionResult> Details(int id)
         {
-            var user = await _userManager.Users.Where(x => x.Id == id).Include(x=>x.Consultant).Include(x => x.Image).FirstOrDefaultAsync();
+            var user = await _userManager.Users.Include(x=>x.Image).ToListAsync();
+            var consultant = await _consultantService.GetConsultantFullDataByIdAsync(id);
             ConsultantDetailsViewModel consultantDetailsView = new ConsultantDetailsViewModel()
             {
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Email = user.Email,
-                ImageUrl = user.Image.Url,
-                UserName = user.UserName,
-                Address = user.Address,
-                City = user.City,
-                CreatedTime = user.CreatedTime,
-                DateOfBirth = user.DateOfBirth,
-                Gender = user.Gender,
-                Phone = user.PhoneNumber,
-                UpdateTime = user.UpdatedTime,
-                EmailConfirmed = user.EmailConfirmed,
-                PhoneConfirmed = user.PhoneNumberConfirmed,
-                Promotion= user.Consultant.Promotion,
-                Certificates= user.Consultant.Certificates.Select(x=> new Certificate
+                FirstName = consultant.User.FirstName,
+                LastName = consultant.User.LastName,
+                Email = consultant.User.Email,
+                ImageUrl = consultant.User.Image.Url,
+                UserName = consultant.User.UserName,
+                Address = consultant.User.Address,
+                City = consultant.User.City,
+                CreatedTime = consultant.User.CreatedTime,
+                DateOfBirth = consultant.User.DateOfBirth,
+                Gender = consultant.User.Gender,
+                Phone = consultant.User.PhoneNumber,
+                UpdateTime = consultant.User.UpdatedTime,
+                EmailConfirmed = consultant.User.EmailConfirmed,
+                PhoneConfirmed = consultant.User.PhoneNumberConfirmed,
+                Promotion = consultant.User.Consultant.Promotion,
+                Certificates = consultant.Certificates.Select(x => new Certificate
                 {
+                    Id = x.Id,
                     CertificateName = x.CertificateName,
                     CertificateTime = x.CertificateTime,
-                    Institution=x.Institution,
+                    Institution = x.Institution,
                 }).ToList(),
-                Educations=user.Consultant.Educations.Select(x=> new Education
+                Educations = consultant.Educations.Select(x => new Education
                 {
-                    DegreeofGraduation=x.DegreeofGraduation,
-                    DepartmentName=x.DepartmentName,
-                    FacultyName=x.FacultyName,
+                    Id = x.Id,
+                    DegreeofGraduation = x.DegreeofGraduation,
+                    DepartmentName = x.DepartmentName,
+                    FacultyName = x.FacultyName,
                     GraduationYear = x.GraduationYear,
                     SchoolName = x.SchoolName,
-                    StartYear= x.StartYear, 
+                    StartYear = x.StartYear,
                 }).ToList(),
-                JobTitle = user.Consultant.JobTitle,
-                Specializations = user.Consultant.Specializations.Select(x=> new Specialization
+                JobTitle = consultant.JobTitle,
+                Specializations = consultant.ConsultantsSpecializations.Select(x => new Specialization
                 {
-                    Name= x.Name,
-                    Description=x.Description,
-                    
+                    Id=x.SpecializationId,
+                    Name=x.Specialization.Name,
+                    Description=x.Specialization.Description
                 }).ToList(),
-                VisitsPrice = user.Consultant.VisitsPrice
-                
+                VisitsPrice = consultant.VisitsPrice
+
             };
 
             return View(consultantDetailsView);
@@ -91,6 +96,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Edit(string id)
         {
+
             var user = await _userManager.Users.Where(x => x.Id == id).Include(x => x.Image).FirstOrDefaultAsync();
             ConsultantUpdateViewModel consultantUpdateView = new ConsultantUpdateViewModel()
             {

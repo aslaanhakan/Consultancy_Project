@@ -20,8 +20,8 @@ namespace Consultancy_Project.Entity.Concrate
         public DateTime CreatedTime { get; set; }
         public DateTime UpdatedTime { get; set; }
         public virtual List<Education> Educations { get; set; }
-        public virtual List<Specialization> Specializations { get; set; }
         public virtual List<Certificate> Certificates { get; set; }
+        public virtual List<ConsultantsSpecializations> ConsultantsSpecializations { get; set; }
         public virtual List<CustomersConsultans> CustomersConsultans { get; set; }
 
     }

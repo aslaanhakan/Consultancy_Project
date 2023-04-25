@@ -14,7 +14,7 @@ namespace Consultancy_Project.Entity.Concrate
         public string Description { get; set; }
         public DateTime CreatedTime { get; set; }
         public DateTime UpdatedTime { get; set; }
-        List<Consultant> Consultants { get; set; }
+        public List<ConsultantsSpecializations> ConsultantsSpecializations { get; set; }
 
 
     }

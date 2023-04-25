@@ -28,17 +28,18 @@
                                        asp-area="Admin"
                                        asp-controller="Consultant"
                                        asp-action="Edit"
-                                       asp-route-id=@Model[i].Id><i class="fa-solid fa-pen-to-square"></i></a>
+                                       asp-route-id=@Model[i].ConsultantId><i class="fa-solid fa-pen-to-square"></i></a>
                                         <a class="btn btn-outline-danger btn-sm"
                                        asp-area="Admin"
                                        asp-controller="Consultant"
                                        asp-action="Delete"
-                                       asp-route-id=@Model[i].Id><i class="fa-solid fa-trash-can"></i></a>
+                                       asp-route-id=@Model[i].ConsultantId><i class="fa-solid fa-trash-can"></i></a>
                                         <a class="btn btn-outline-info btn-sm"
                                        asp-area="Admin"
                                        asp-controller="Consultant"
                                        asp-action="Details"
-                                       asp-route-id=@Model[i].Id><i class="fa-solid fa-circle-info"></i>
+                                       asp-route-id=@Model[i].ConsultantId>
+                                            <i class="fa-solid fa-circle-info"></i>
                                         </a>
                                     </td>
                                 </tr>

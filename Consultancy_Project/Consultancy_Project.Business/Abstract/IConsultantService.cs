@@ -1,4 +1,5 @@
 ﻿using Consultancy_Project.Entity.Concrate;
+using Consultancy_Project.Entity.Concrate.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace Consultancy_Project.Business.Abstract
     {
         Task CreateAsync(Consultant consultant);
         Task<Consultant> GetByIdAsync(int id);
+        Task<Consultant> GetConsultantFullDataByIdAsync(int id);
+
         Task<List<Consultant>> GetAllAsync();
         void Update(Consultant consultant);
         void Delete(Consultant consultant);
