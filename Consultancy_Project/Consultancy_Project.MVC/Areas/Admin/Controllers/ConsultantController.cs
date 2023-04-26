@@ -20,13 +20,15 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         private readonly RoleManager<Role> _roleManager;
         private IImageService _imageService;
         private IConsultantService _consultantService;
+        private ISpecializationService _specializationService;
 
-        public ConsultantController(UserManager<User> userManager, RoleManager<Role> roleManager, IImageService imageService, IConsultantService consultantService)
+        public ConsultantController(UserManager<User> userManager, RoleManager<Role> roleManager, IImageService imageService, IConsultantService consultantService, ISpecializationService specializationService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _imageService = imageService;
             _consultantService = consultantService;
+            _specializationService = specializationService;
         }
 
         public async Task<IActionResult> Index()
@@ -93,29 +95,68 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             return View(consultantDetailsView);
         }
         [HttpGet]
-
-        public async Task<IActionResult> Edit(string id)
+        public async Task<IActionResult> Edit(int id)
         {
-
-            var user = await _userManager.Users.Where(x => x.Id == id).Include(x => x.Image).FirstOrDefaultAsync();
+            var specializations = await _specializationService.GetAllAsync();
+            var user = await _userManager.Users.Include(x => x.Image).ToListAsync();
+            var consultant = await _consultantService.GetConsultantFullDataByIdAsync(id);
             ConsultantUpdateViewModel consultantUpdateView = new ConsultantUpdateViewModel()
             {
-                ConsultantId = user.Id,
-                FirstName = user.FirstName,
-                LastName = user.LastName,
-                Email = user.Email,
-                ImageUrl = user.Image.Url,
-                UserName = user.UserName,
-                Address = user.Address,
-                City = user.City,
-                CreatedTime = user.CreatedTime,
-                DateOfBirth = user.DateOfBirth,
-                Gender = user.Gender,
-                Phone = user.PhoneNumber,
-                UpdateTime = user.UpdatedTime,
-                EmailConfirmed = user.EmailConfirmed,
-                PhoneConfirmed = user.PhoneNumberConfirmed
+                ConsultantId=consultant.Id,
+                FirstName = consultant.User.FirstName,
+                LastName = consultant.User.LastName,
+                Email = consultant.User.Email,
+                ImageUrl = consultant.User.Image.Url,
+                UserName = consultant.User.UserName,
+                Address = consultant.User.Address,
+                City = consultant.User.City,
+                CreatedTime = consultant.User.CreatedTime,
+                DateOfBirth = consultant.User.DateOfBirth,
+                Gender = consultant.User.Gender,
+                Phone = consultant.User.PhoneNumber,
+                UpdateTime = consultant.User.UpdatedTime,
+                EmailConfirmed = consultant.User.EmailConfirmed,
+                PhoneConfirmed = consultant.User.PhoneNumberConfirmed,
+                Promotion = consultant.User.Consultant.Promotion,
+                Certificates = consultant.Certificates.Select(x => new Certificate
+                {
+                    Id = x.Id,
+                    CertificateName = x.CertificateName,
+                    CertificateTime = x.CertificateTime,
+                    Institution = x.Institution,
+                }).ToList(),
+                Educations = consultant.Educations.Select(x => new Education
+                {
+                    Id = x.Id,
+                    DegreeofGraduation = x.DegreeofGraduation,
+                    DepartmentName = x.DepartmentName,
+                    FacultyName = x.FacultyName,
+                    GraduationYear = x.GraduationYear,
+                    SchoolName = x.SchoolName,
+                    StartYear = x.StartYear,
+                }).ToList(),
+                JobTitle = consultant.JobTitle,
+                Specializations = consultant.ConsultantsSpecializations.Select(x => new Specialization
+                {
+                    Id = x.SpecializationId,
+                    Name = x.Specialization.Name,
+                    Description = x.Specialization.Description
+                }).ToList(),
+                VisitsPrice = consultant.VisitsPrice
+
             };
+            var specialization = consultantUpdateView.Specializations;
+            var nonSpecialization = new List<Specialization>();
+            foreach (var specializ in specializations)
+            {
+
+                if ( !specialization.Any(x=> x.Id==specializ.Id))
+                {
+                    nonSpecialization.Add(specializ);
+                }                
+
+            }
+            consultantUpdateView.NonSpecialization=nonSpecialization;
 
             return View(consultantUpdateView);
         }
@@ -125,7 +166,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                var user = await _userManager.Users.Where(x => x.Id == consultantUpdateView.ConsultantId).Include(x => x.Image).FirstOrDefaultAsync();
+                var user = await _userManager.Users/*.Where(x => x.Id == consultantUpdateView.ConsultantId)*/.Include(x => x.Image).FirstOrDefaultAsync();
                 user.FirstName = consultantUpdateView.FirstName;
                 user.LastName = consultantUpdateView.LastName;
                 user.Email = consultantUpdateView.Email;
@@ -144,7 +185,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
                         CreatedTime = DateTime.Now,
                         UpdatedTime = DateTime.Now,
                         Url = Jobs.UploadImage(consultantUpdateView.ImageFile),
-                        UserId = consultantUpdateView.ConsultantId
+                        //UserId = consultantUpdateView.ConsultantId
                     };
 
                     await _imageService.CreateAsync(image);
@@ -156,6 +197,13 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             }
             return View(consultantUpdateView);
 
+        }
+        [HttpPost]
+
+        public async Task<IActionResult> EditSpecialization(SpecializationEditViewModel specializationEditViewModel)
+        {
+            _specializationService.EditSpecializationsConsultantAsync(specializationEditViewModel.IdsToAddSpecialization,specializationEditViewModel.IdsToRemoveSpecialization, specializationEditViewModel.ConsultantId);
+            return RedirectToAction("Edit", new { id = specializationEditViewModel.ConsultantId });
         }
     }
 }

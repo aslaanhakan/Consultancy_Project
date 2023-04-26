@@ -14,5 +14,7 @@ namespace Consultancy_Project.Business.Abstract
         Task<List<Specialization>> GetAllAsync();
         void Update(Specialization specialization);
         void Delete(Specialization specialization);
+        void EditSpecializationsConsultantAsync(int[] IdsToAddSpecialization, int[] IdsToRemoveSpecialization, int ConsultantId);
+
     }
 }

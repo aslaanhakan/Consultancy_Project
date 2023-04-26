@@ -28,9 +28,9 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             throw new NotImplementedException();
         }
 
-        public Task<List<T>> GetAllAsync()
+        public async Task<List<T>> GetAllAsync()
         {
-            throw new NotImplementedException();
+           return await _dbContext.Set<T>().ToListAsync();
         }
 
         public Task<T> GetByIdAsync(int id)

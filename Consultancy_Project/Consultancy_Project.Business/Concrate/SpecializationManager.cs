@@ -12,6 +12,12 @@ namespace Consultancy_Project.Business.Concrate
     public class SpecializationManager : ISpecializationService
     {
         private readonly ISpecializationRepository _specializationRepository;
+
+        public SpecializationManager(ISpecializationRepository specializationRepository)
+        {
+            _specializationRepository = specializationRepository;
+        }
+
         public Task CreateAsync(Specialization specialization)
         {
             throw new NotImplementedException();
@@ -22,9 +28,14 @@ namespace Consultancy_Project.Business.Concrate
             throw new NotImplementedException();
         }
 
-        public Task<List<Specialization>> GetAllAsync()
+        public void EditSpecializationsConsultantAsync(int[] IdsToAddSpecialization, int[] IdsToRemoveSpecialization, int ConsultantId)
         {
-            throw new NotImplementedException();
+             _specializationRepository.EditSpecializationsConsultantAsync(IdsToAddSpecialization, IdsToRemoveSpecialization, ConsultantId);
+        }
+
+        public async Task<List<Specialization>> GetAllAsync()
+        {
+            return await _specializationRepository.GetAllAsync();
         }
 
         public Task<Specialization> GetByIdAsync(int id)

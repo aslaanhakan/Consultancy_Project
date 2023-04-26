@@ -37,11 +37,15 @@ namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
         public bool PhoneConfirmed { get; set; }
         [DisplayName("Email Doğrulaması")]
         public bool EmailConfirmed { get; set; }
+        [DisplayName("Tanıtım Yazısı")]
         public string Promotion { get; set; }
+        [DisplayName("Seans Ücreti")]
         public decimal? VisitsPrice { get; set; }
+        [DisplayName("Unvan")]
         public string JobTitle { get; set; }
-        public virtual List<Education> Educations { get; set; }
-        public virtual List<Specialization> Specializations { get; set; }
-        public virtual List<Certificate> Certificates { get; set; }
+        public  List<Education> Educations { get; set; }
+        public  List<Specialization> Specializations { get; set; }
+       
+        public  List<Certificate> Certificates { get; set; }
     }
 }

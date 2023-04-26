@@ -19,5 +19,34 @@ namespace Consultancy_Project.Data.Concrate.EfCore
         {
             get { return _dbContext as ConsultancyProjectContext; }
         }
+
+        public async void EditSpecializationsConsultantAsync(int[] IdsToAddSpecialization, int[] IdsToRemoveSpecialization, int ConsultantId)
+        {
+            List<ConsultantsSpecializations> consultantSpecilization = new List<ConsultantsSpecializations>();
+            if (IdsToAddSpecialization != null)
+            {
+                foreach (var specialization in IdsToAddSpecialization)
+                {
+                    consultantSpecilization.Add(new ConsultantsSpecializations
+                    {
+                        ConsultantId = ConsultantId,
+                        SpecializationId = specialization
+                    });
+                }
+            }
+            AppContext.ConsultantsSpecializations.AddRange(consultantSpecilization);
+            List<ConsultantsSpecializations> removeConsultantSpecilization = new List<ConsultantsSpecializations>();
+            if (IdsToRemoveSpecialization != null)
+            {
+                foreach (var specialization in IdsToRemoveSpecialization)
+                {
+
+                    var result = AppContext.ConsultantsSpecializations.Where(x => x.Consultant.Id == ConsultantId).Where(x => x.SpecializationId == specialization).FirstOrDefault();
+                    AppContext.Remove(result);
+                }
+            }
+           
+            AppContext.SaveChanges();
+        }
     }
 }
