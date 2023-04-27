@@ -44,11 +44,38 @@ namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
         public decimal? VisitsPrice { get; set; }
         [DisplayName("Unvan")]
         public string JobTitle { get; set; }
-        public virtual List<Education> Educations { get; set; }
-        public virtual List<Specialization> Specializations { get; set; }
+        public  List<Education> Educations { get; set; }
+        [DisplayName("Üniversite")]
+
+        public string SchoolName { get; set; }
+        [DisplayName("Fakülte")]
+
+        public string FacultyName { get; set; }
+        [DisplayName("Bölüm")]
+
+        public string DepartmentName { get; set; }
+        [DisplayName("Eğitim Derecesi")]
+
+        public string DegreeofGraduation { get; set; }
+        [DisplayName("Başlama Yılı")]
+
+        public int StartYear { get; set; }
+        [DisplayName("Bitirme Yılı")]
+
+        public int GraduationYear { get; set; }
+        public  List<Specialization> Specializations { get; set; }
         public List<Specialization> NonSpecialization { get; set; }
         public string[] IdsToAddSpecialization { get; set; }
         public string[] IdsToRemoveSpecialization { get; set; }
-        public virtual List<Certificate> Certificates { get; set; }
+        public  List<Certificate> Certificates { get; set; }
+        [DisplayName("Kurum Adı")]
+
+        public string Institution { get; set; }
+        [DisplayName("Sertifika Adı")]
+
+        public string CertificateName { get; set; }
+        [DisplayName("Sertifika Yılı")]
+
+        public int CertificateTime { get; set; }
     }
 }

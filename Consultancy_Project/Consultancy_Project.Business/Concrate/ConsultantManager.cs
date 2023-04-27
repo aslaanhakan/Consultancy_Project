@@ -19,6 +19,16 @@ namespace Consultancy_Project.Business.Concrate
             _consultantRepository = consultantRepository;
         }
 
+        public void ConsultantsCertificateAdd(Certificate certificate)
+        {
+            _consultantRepository.ConsultantsCertificateAdd(certificate);
+        }
+
+        public void ConsultantsEducationAdd(Education education)
+        {
+            _consultantRepository.ConsultantsEducationAdd(education);
+        }
+
         public Task CreateAsync(Consultant consultant)
         {
             throw new NotImplementedException();

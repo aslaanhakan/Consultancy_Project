@@ -21,6 +21,18 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             get { return _dbContext as ConsultancyProjectContext; }
         }
 
+        public void ConsultantsCertificateAdd(Certificate certificate)
+        {
+            AppContext.Certificates.Add(certificate);
+            AppContext.SaveChanges();
+        }
+
+        public void ConsultantsEducationAdd(Education education)
+        {
+            AppContext.Educations.Add(education);
+            AppContext.SaveChanges();
+        }
+
         public async Task<Consultant> GetConsultantFullDataByIdAsync(int id)
         {
             var result = await AppContext

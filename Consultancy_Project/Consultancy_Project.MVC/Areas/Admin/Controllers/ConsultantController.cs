@@ -205,6 +205,27 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             _specializationService.EditSpecializationsConsultantAsync(specializationEditViewModel.IdsToAddSpecialization,specializationEditViewModel.IdsToRemoveSpecialization, specializationEditViewModel.ConsultantId);
             return RedirectToAction("Edit", new { id = specializationEditViewModel.ConsultantId });
         }
+        [HttpPost]
+        public async Task<IActionResult> AddEducation(Education education)
+        {
+            education.CreatedTime= DateTime.Now;
+            education.UpdatedTime = DateTime.Now;
+            _consultantService.ConsultantsEducationAdd(education);
+            return RedirectToAction("Edit", new { id = education.ConsultantId });
+        }
+        [HttpPost]
+        public async Task<IActionResult> DeleteEducation(int id)
+        {
+
+        }
+        [HttpPost]
+        public async Task<IActionResult> AddCertificate(Certificate certificate)
+        {
+            certificate.CreatedTime = DateTime.Now;
+            certificate.UpdatedTime = DateTime.Now;
+            _consultantService.ConsultantsCertificateAdd(certificate);
+            return RedirectToAction("Edit", new { id = certificate.ConsultantId });
+        }
     }
 }
 // Gerekli Durumlarda kullanacağım
