@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SQLitePCL;
 using System.Data;
 using System.Transactions;
 
@@ -21,14 +22,18 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         private IImageService _imageService;
         private IConsultantService _consultantService;
         private ISpecializationService _specializationService;
+        private ICertificateService _certificateService;
+        private IEducationService _educationService;
 
-        public ConsultantController(UserManager<User> userManager, RoleManager<Role> roleManager, IImageService imageService, IConsultantService consultantService, ISpecializationService specializationService)
+        public ConsultantController(UserManager<User> userManager, RoleManager<Role> roleManager, IImageService imageService, IConsultantService consultantService, ISpecializationService specializationService, ICertificateService certificateService, IEducationService educationService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _imageService = imageService;
             _consultantService = consultantService;
             _specializationService = specializationService;
+            _certificateService = certificateService;
+            _educationService = educationService;
         }
 
         public async Task<IActionResult> Index()
@@ -166,18 +171,22 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
 
             if (ModelState.IsValid)
             {
-                var user = await _userManager.Users/*.Where(x => x.Id == consultantUpdateView.ConsultantId)*/.Include(x => x.Image).FirstOrDefaultAsync();
-                user.FirstName = consultantUpdateView.FirstName;
-                user.LastName = consultantUpdateView.LastName;
-                user.Email = consultantUpdateView.Email;
-                user.Address = consultantUpdateView.Address;
-                user.City = consultantUpdateView.City;
-                user.DateOfBirth = consultantUpdateView.DateOfBirth;
-                user.Gender = consultantUpdateView.Gender;
-                user.PhoneNumber = consultantUpdateView.Phone;
-                user.UpdatedTime = DateTime.Now;
-                user.EmailConfirmed = consultantUpdateView.EmailConfirmed;
-                user.PhoneNumberConfirmed = consultantUpdateView.PhoneConfirmed;
+                var consultant = await _consultantService.GetConsultantFullDataByIdAsync(consultantUpdateView.ConsultantId);
+
+                consultant.User.FirstName = consultantUpdateView.FirstName;
+                consultant.User.LastName = consultantUpdateView.LastName;
+                consultant.User.Email = consultantUpdateView.Email;
+                consultant.User.Address = consultantUpdateView.Address;
+                consultant.User.City = consultantUpdateView.City;
+                consultant.User.DateOfBirth = consultantUpdateView.DateOfBirth;
+                consultant.User.Gender = consultantUpdateView.Gender;
+                consultant.User.PhoneNumber = consultantUpdateView.Phone;
+                consultant.User.UpdatedTime = DateTime.Now;
+                consultant.User.EmailConfirmed = consultantUpdateView.EmailConfirmed;
+                consultant.User.PhoneNumberConfirmed = consultantUpdateView.PhoneConfirmed;
+                consultant.VisitsPrice=consultantUpdateView.VisitsPrice;
+                consultant.JobTitle=consultantUpdateView.JobTitle;
+                consultant.Promotion=consultantUpdateView.Promotion;
                 if (consultantUpdateView.ImageFile != null)
                 {
                     var image = new Image
@@ -191,14 +200,40 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
                     await _imageService.CreateAsync(image);
 
                 }
-                var result = await _userManager.UpdateAsync(user);
+                _consultantService.UpdateConsultantData(consultant);
+                var result = await _userManager.UpdateAsync(consultant.User);
                 return RedirectToAction("Index");
 
             }
             return View(consultantUpdateView);
 
         }
-        [HttpPost]
+        public async Task<IActionResult> Remove(int id)
+        {
+            var consultant = await _consultantService.GetByIdAsync(id);
+            User user = await _userManager.FindByIdAsync(consultant.UserId);
+            _consultantService.Delete(consultant);
+            _consultantService.DeleteUser(user);
+            //var resultRemove = await _userManager.RemoveFromRoleAsync(user, "Consultant");
+            //_consultantService.Delete(consultant);
+            //if (!resultRemove.Succeeded)
+            //{
+            //    foreach (var error in resultRemove.Errors)
+            //    {
+            //        ModelState.AddModelError("", error.Description);
+            //    }
+            //}
+            //var resultAdd = await _userManager.AddToRoleAsync(user, "Customer");
+            //if (!resultAdd.Succeeded)
+            //{
+            //    foreach (var error in resultAdd.Errors)
+            //    {
+            //        ModelState.AddModelError("", error.Description);
+            //    }
+            //}
+            return RedirectToAction("Index");
+        }
+            [HttpPost]
 
         public async Task<IActionResult> EditSpecialization(SpecializationEditViewModel specializationEditViewModel)
         {
@@ -210,12 +245,20 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         {
             education.CreatedTime= DateTime.Now;
             education.UpdatedTime = DateTime.Now;
-            _consultantService.ConsultantsEducationAdd(education);
+            await _educationService.CreateAsync(education);
             return RedirectToAction("Edit", new { id = education.ConsultantId });
         }
-        [HttpPost]
+        
         public async Task<IActionResult> DeleteEducation(int id)
         {
+            var education = await _educationService.GetByIdAsync(id);
+            if (education != null)
+            {
+                _educationService.Delete(education);
+                return RedirectToAction("Edit", new { id = education.ConsultantId });
+
+            }
+            return RedirectToAction("Index");
 
         }
         [HttpPost]
@@ -223,8 +266,20 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         {
             certificate.CreatedTime = DateTime.Now;
             certificate.UpdatedTime = DateTime.Now;
-            _consultantService.ConsultantsCertificateAdd(certificate);
+            await _certificateService.CreateAsync(certificate);
             return RedirectToAction("Edit", new { id = certificate.ConsultantId });
+        }
+        public async Task<IActionResult> DeleteCertificate(int id)
+        {
+            var certificate = await _certificateService.GetByIdAsync(id);
+            if (certificate != null)
+            {
+                _certificateService.Delete(certificate);
+                return RedirectToAction("Edit", new { id = certificate.ConsultantId });
+
+            }
+            return RedirectToAction("Index");
+
         }
     }
 }

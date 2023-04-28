@@ -21,15 +21,9 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             get { return _dbContext as ConsultancyProjectContext; }
         }
 
-        public void ConsultantsCertificateAdd(Certificate certificate)
+        public void DeleteUser(User user)
         {
-            AppContext.Certificates.Add(certificate);
-            AppContext.SaveChanges();
-        }
-
-        public void ConsultantsEducationAdd(Education education)
-        {
-            AppContext.Educations.Add(education);
+            AppContext.Remove(user);
             AppContext.SaveChanges();
         }
 
@@ -42,8 +36,23 @@ namespace Consultancy_Project.Data.Concrate.EfCore
                         .Include(c => c.Educations)
                         .Include(c => c.ConsultantsSpecializations)
                         .ThenInclude(cs => cs.Specialization)
+                        .Include(c=>c.User)
                         .FirstOrDefaultAsync();
             return result;
+        }
+
+        public async void UpdateConsultantData(Consultant consultant)
+        {
+            var consultantData = await AppContext.Consultants
+                                        .Where(x => x.Id == consultant.Id)
+                                        .FirstOrDefaultAsync();
+            consultantData.VisitsPrice = consultant.VisitsPrice;
+            consultantData.JobTitle=consultant.JobTitle;
+            consultantData.Promotion=consultant.Promotion;
+            await AppContext.SaveChangesAsync();
+            
+            
+
         }
     }
 }

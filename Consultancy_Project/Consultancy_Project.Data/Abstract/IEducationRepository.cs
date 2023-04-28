@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Consultancy_Project.Data.Abstract
 {
-    internal interface IEducationRepository:IGenericRepository<Education>
+    public interface IEducationRepository:IGenericRepository<Education>
     {
     }
 }

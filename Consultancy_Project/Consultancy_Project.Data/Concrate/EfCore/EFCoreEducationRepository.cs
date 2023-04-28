@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Consultancy_Project.Data.Concrate.EfCore
 {
-    internal class EFCoreEducationRepository : EfCoreGenericRepository<Education>, IEducationRepository
+    public class EFCoreEducationRepository : EfCoreGenericRepository<Education>, IEducationRepository
     {
         public EFCoreEducationRepository(ConsultancyProjectContext _appContext) : base(_appContext)
         {

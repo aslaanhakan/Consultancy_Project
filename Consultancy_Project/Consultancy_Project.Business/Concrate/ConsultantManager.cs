@@ -19,16 +19,6 @@ namespace Consultancy_Project.Business.Concrate
             _consultantRepository = consultantRepository;
         }
 
-        public void ConsultantsCertificateAdd(Certificate certificate)
-        {
-            _consultantRepository.ConsultantsCertificateAdd(certificate);
-        }
-
-        public void ConsultantsEducationAdd(Education education)
-        {
-            _consultantRepository.ConsultantsEducationAdd(education);
-        }
-
         public Task CreateAsync(Consultant consultant)
         {
             throw new NotImplementedException();
@@ -36,7 +26,12 @@ namespace Consultancy_Project.Business.Concrate
 
         public void Delete(Consultant consultant)
         {
-            throw new NotImplementedException();
+            _consultantRepository.Delete(consultant);
+        }
+
+        public void DeleteUser(User user)
+        {
+           _consultantRepository.DeleteUser(user);
         }
 
         public Task<List<Consultant>> GetAllAsync()
@@ -44,19 +39,24 @@ namespace Consultancy_Project.Business.Concrate
             throw new NotImplementedException();
         }
 
-        public Task<Consultant> GetByIdAsync(int id)
+        public async Task<Consultant> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _consultantRepository.GetByIdAsync(id);
         }
 
         public async Task<Consultant> GetConsultantFullDataByIdAsync(int id)
         {
-           return await _consultantRepository.GetConsultantFullDataByIdAsync(id);
+            return await _consultantRepository.GetConsultantFullDataByIdAsync(id);
         }
 
         public void Update(Consultant consultant)
         {
             throw new NotImplementedException();
+        }
+
+        public void UpdateConsultantData(Consultant consultant)
+        {
+            _consultantRepository.UpdateConsultantData(consultant);
         }
     }
 }

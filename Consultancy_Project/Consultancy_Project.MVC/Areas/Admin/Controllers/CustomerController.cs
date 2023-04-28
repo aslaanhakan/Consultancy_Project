@@ -124,6 +124,16 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
 
             }
             return View(customerUpdateView);
+
+        }
+        public async Task<IActionResult> Delete(string id)
+        {
+            //var user = await _userManager.FindByIdAsync(id);
+            var user = await _userManager.Users.Where(x => x.Id == id).Include(x => x.Image).Include(x => x.Consultant).Include(x => x.Customer).FirstOrDefaultAsync();
+            var result = await _userManager.DeleteAsync(user);
+
+            return RedirectToAction("Index");
+
         }
     }
 }

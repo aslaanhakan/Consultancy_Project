@@ -25,17 +25,18 @@ namespace Consultancy_Project.Data.Concrate.EfCore
 
         public void Delete(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Set<T>().Remove(entity);
+            _dbContext.SaveChanges();
         }
 
         public async Task<List<T>> GetAllAsync()
         {
-           return await _dbContext.Set<T>().ToListAsync();
+            return await _dbContext.Set<T>().ToListAsync();
         }
 
-        public Task<T> GetByIdAsync(int id)
+        public async Task<T> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await _dbContext.Set<T>().FindAsync(id);
         }
 
         public void Update(T entity)

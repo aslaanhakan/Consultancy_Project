@@ -1,6 +1,12 @@
 ﻿@model ConsultantUpdateViewModel
 
-<form>
+<form
+    asp-area="Admin"
+asp-controller="Consultant"
+asp-action="Edit"
+method="post">
+    <input type="hidden" asp-for="ConsultantId" />
+
     <div class="container-fluid pt-4 px-4">
         <div class="bg-light rounded h-100 p-4">
             <div class="row align-items-center justify-content-between">
@@ -125,10 +131,10 @@
                                             </h2>
                                             <div id="education-@education.Id" class="accordion-collapse collapse row"
                                                  aria-labelledby="educationHeading-@education.Id">
-                                                <div class="accordion-body col-10">
+                                                <div class="accordion-body col-11">
                                                     @education.SchoolName - @education.FacultyName - @education.DepartmentName - @education.GraduationYear
                                                 </div>
-                                                <div class=" accordion-body col-2">
+                                                <div class=" accordion-body col-1">
                                                     <a class="btn btn-outline-danger btn-sm"
                                                    asp-area="Admin"
                                                    asp-controller="Consultant"
@@ -157,10 +163,17 @@
                                                     @certificate.CertificateName (@certificate.CertificateTime )
                                                 </button>
                                             </h2>
-                                            <div id="certificate-@certificate.Id" class="accordion-collapse collapse"
+                                            <div id="certificate-@certificate.Id" class="accordion-collapse collapse row"
                                                  aria-labelledby="certificateHeading-@certificate.Id">
-                                                <div class="accordion-body">
+                                                <div class="accordion-body col-11">
                                                     @certificate.Institution - @certificate.CertificateName - @certificate.CertificateTime
+                                                </div>
+                                                <div class="accordion-body col-1">
+                                                    <a class="btn btn-outline-danger btn-sm"
+                                                   asp-area="Admin"
+                                                   asp-controller="Consultant"
+                                                   asp-action="DeleteCertificate"
+                                                   asp-route-id=@certificate.Id><i class="fa-solid fa-trash-can"></i></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -216,6 +229,8 @@
                 <label class="col col-form-label">En Son Güncelleme Zamanı: @Model.UpdateTime</label>
 
             </div>
+            <button type="submit" class="btn btn-success">Kaydet</button>
+
             <a type="submit" class="btn btn-primary" asp-area="Admin" asp-controller="Consultant" asp-action="Index">Geri Dön</a>
 
         </div>

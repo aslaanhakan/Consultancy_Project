@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Consultancy_Project.Data.Concrate.EfCore
 {
-    internal class EFCoreCertificateRepository : EfCoreGenericRepository<Certificate>, ICertificateRepository
+    public class EFCoreCertificateRepository : EfCoreGenericRepository<Certificate>, ICertificateRepository
     {
         public EFCoreCertificateRepository(ConsultancyProjectContext _appContext) : base(_appContext)
         {

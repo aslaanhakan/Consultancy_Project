@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Consultancy_Project.Data.Abstract
 {
-    internal interface ICertificateRepository:IGenericRepository<Certificate>
+    public interface ICertificateRepository:IGenericRepository<Certificate>
     {
     }
 }

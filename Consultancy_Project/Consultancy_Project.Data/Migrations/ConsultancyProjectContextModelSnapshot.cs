@@ -75,9 +75,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Psikolojik Danışmanlık Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 1,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7649),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4369),
                             Institution = "Amerikan Psikoloji Derneği",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7650)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4370)
                         },
                         new
                         {
@@ -85,9 +85,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Psikologlar için Uzmanlık Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 2,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7654),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4376),
                             Institution = "Amerikan Psikoloji Derneği (APA)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7655)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4376)
                         },
                         new
                         {
@@ -95,9 +95,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Sertifikalı Klinik Zihinsel Sağlık Danışmanı",
                             CertificateTime = 2015,
                             ConsultantId = 3,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7657),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4379),
                             Institution = "Ulusal Psikoloji Sertifikasyon Kurulu (National Board for Certified Counselors, NBCC)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7658)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4380)
                         },
                         new
                         {
@@ -105,9 +105,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Avrupa Psikolog (EuroPsy) Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 4,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7660),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4382),
                             Institution = "Avrupa Psikoloji Federasyonu (European Federation of Psychologists' Associations, EFPA)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7660)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4383)
                         },
                         new
                         {
@@ -115,9 +115,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Kognitif Davranış Terapisi (KDT) Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 5,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7662),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4385),
                             Institution = "İngiliz Psikoloji Derneği (British Psychological Society, BPS)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7663)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4386)
                         },
                         new
                         {
@@ -125,9 +125,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Psikologlar için Özel Uzmanlık Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 6,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7665),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4390),
                             Institution = "Kanada Psikologlar Derneği (Canadian Psychological Association, CPA)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7666)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4391)
                         },
                         new
                         {
@@ -135,9 +135,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Psikodrama Uzmanlık Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 1,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7668),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4393),
                             Institution = "Ulusal Psikodrama Derneği (National Psychodrama Association, NPA)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7669)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4394)
                         },
                         new
                         {
@@ -145,9 +145,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Sanat Terapisi Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 2,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7671),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4396),
                             Institution = "Amerikan Sanat Terapisi Derneği (American Art Therapy Association, AATA)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7671)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4397)
                         },
                         new
                         {
@@ -155,9 +155,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Hipnoterapi Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 2,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7673),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4399),
                             Institution = "Hipnoz ve Hipnoterapi Derneği (Hypnosis and Hypnotherapy Association, HHA)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7674)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4400)
                         },
                         new
                         {
@@ -165,9 +165,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Oyun Terapisi Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 6,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7677),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4403),
                             Institution = "Oyun Terapisi Derneği (Association for Play Therapy, APT)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7678)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4404)
                         },
                         new
                         {
@@ -175,9 +175,9 @@ namespace Consultancy_Project.Data.Migrations
                             CertificateName = "Çift ve Aile Terapisi Sertifikası",
                             CertificateTime = 2015,
                             ConsultantId = 7,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7680),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4406),
                             Institution = "Aile ve Çift Terapisi Derneği (American Association for Marriage and Family Therapy, AAMFT)",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7681)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4407)
                         });
                 });
 
@@ -220,71 +220,71 @@ namespace Consultancy_Project.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7387),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4037),
                             JobTitle = "Psikolojik Danışman",
                             Promotion = "Zorlu yaşam deneyimlerinizle baş etmenizde size destek olmak için burada. Kendinizi daha iyi hissetmek ve hayatınızda olumlu değişiklikler yapmak için birlikte çalışabiliriz.",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7388),
-                            UserId = "5314f669-d35e-4683-ac85-cfb51c03e0d9",
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4039),
+                            UserId = "2201d025-5b76-464d-aae3-edfe7aa48834",
                             VisitsPrice = 100m
                         },
                         new
                         {
                             Id = 2,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7397),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4048),
                             JobTitle = "Klinik Psikolog",
                             Promotion = "Yıllardır psikolojik danışmanlık yapıyorum ve kişisel gelişim ve ruh sağlığı konularında uzmanım. Size uygun terapi yöntemleri kullanarak hayatınızı daha mutlu ve sağlıklı hale getirmek için buradayım.",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7398),
-                            UserId = "8105cf00-98d1-4e1c-85e8-ff59f08495cb",
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4049),
+                            UserId = "2cb2f7e6-e238-4695-b794-faf3433291f3",
                             VisitsPrice = 100m
                         },
                         new
                         {
                             Id = 3,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7401),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4054),
                             JobTitle = "Psikolog",
                             Promotion = "Hayatınızdaki stresi, kaygıyı ve depresyonu azaltmanıza yardımcı olmak için burada. Kendinize ve yaşam kalitenize yatırım yapmak istiyorsanız, size destek olabilirim.",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7402),
-                            UserId = "af0b4cbd-f511-402a-a893-64c081598a74",
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4055),
+                            UserId = "66ce77b9-9237-4a93-a746-dfb276bb9c1b",
                             VisitsPrice = 100m
                         },
                         new
                         {
                             Id = 4,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7404),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4058),
                             JobTitle = "Psikolojik Danışman",
                             Promotion = "Psikolojik danışmanlıkta uzmanım ve çift terapisi konusunda özellikle deneyimliyim. İlişkilerinizde sorun yaşıyorsanız, size yardımcı olmak için buradayım.",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7405),
-                            UserId = "f23b11a4-46e3-45ec-a315-b06d584ca6f4",
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4059),
+                            UserId = "f84c1788-aa1c-4d9f-96a9-00e81ec7e580",
                             VisitsPrice = 100m
                         },
                         new
                         {
                             Id = 5,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7459),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4062),
                             JobTitle = "Psikolojik Danışman",
                             Promotion = "Herhangi bir sorununuzda size yardımcı olmak için burada. Kişisel gelişim, özsaygı, aile ilişkileri ve daha birçok konuda size destek olabilirim.",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7460),
-                            UserId = "54a970b0-9f71-49ec-8b4a-bc278ed975fb",
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4063),
+                            UserId = "4b9ebee9-26df-4513-afc8-88bda801b68c",
                             VisitsPrice = 100m
                         },
                         new
                         {
                             Id = 6,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7466),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4067),
                             JobTitle = "Psikolojik Danışman",
                             Promotion = "Çocukluk travmaları, kayıp ve yas gibi konularda danışmanlık yapmaktayım. Kendinizi daha iyi hissetmeniz ve zihinsel sağlığınızı korumanız için size yardımcı olabilirim.",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7466),
-                            UserId = "e43769c3-5ad5-424a-9e59-b7cfb1d59ed4",
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4068),
+                            UserId = "47de91d5-5a68-420a-8492-5118b25b4d03",
                             VisitsPrice = 100m
                         },
                         new
                         {
                             Id = 7,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7469),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4071),
                             JobTitle = "Psikolojik Danışman",
                             Promotion = "Stres yönetimi, öfke kontrolü ve bağımlılıkla mücadele konularında deneyimliyim. Kendinizi daha iyi hissetmek ve olumlu değişiklikler yapmak için size yardımcı olabilirim.",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7470),
-                            UserId = "2d2a26fc-ebfd-41ab-8cdd-3b836f758d84",
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4072),
+                            UserId = "2da82f70-29cf-4f0f-9ea1-56f94c0278fc",
                             VisitsPrice = 100m
                         });
                 });
@@ -558,37 +558,37 @@ namespace Consultancy_Project.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7334),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7336),
-                            UserId = "3c5daa4c-67ad-4df1-82eb-ad0f065f8f9b"
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3969),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3974),
+                            UserId = "1f4adf05-e534-4187-855b-d6d3e46d3c21"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7340),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7340),
-                            UserId = "50835d3d-d60d-42dd-b252-1b2246d10eb9"
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3980),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3981),
+                            UserId = "68cd7577-2024-4580-bbee-1460bfa02a51"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7342),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7343),
-                            UserId = "4a5459d2-77d5-4490-86ce-ce03a741d8ff"
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3984),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3985),
+                            UserId = "b9aae3cf-7715-4293-bd17-4f2b4dac52c8"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7345),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7346),
-                            UserId = "a4c2a0de-5829-4ce2-bf48-5f77a4d34f33"
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3987),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3987),
+                            UserId = "69296ea0-8cd2-4740-8fee-f188bd4c16ef"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7347),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7348),
-                            UserId = "e4dc147e-1b4d-4d21-b833-fedfbb6114d4"
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3990),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3991),
+                            UserId = "92f1cf4c-8094-4225-8193-feaad9432475"
                         });
                 });
 
@@ -689,144 +689,144 @@ namespace Consultancy_Project.Data.Migrations
                         {
                             Id = 1,
                             ConsultantId = 1,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7515),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4205),
                             DegreeofGraduation = "Lisans",
                             DepartmentName = "Psikolojik Danışmanlık ve Rehberlik",
                             FacultyName = "İktisadi ve İdari Bilimler Fakültesi",
                             GraduationYear = 2013,
                             SchoolName = "Anadolu Üniversitesi",
                             StartYear = 2009,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7515)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4206)
                         },
                         new
                         {
                             Id = 2,
                             ConsultantId = 2,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7520),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4214),
                             DegreeofGraduation = "Lisans",
                             DepartmentName = "Rehberlik ve Psikolojik Danışmanlık",
                             FacultyName = "Eğitim Bilimleri Fakültesi",
                             GraduationYear = 2015,
                             SchoolName = "Hacettepe Üniversitesi",
                             StartYear = 2013,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7521)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4215)
                         },
                         new
                         {
                             Id = 3,
                             ConsultantId = 3,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7525),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4218),
                             DegreeofGraduation = "Lisans",
                             DepartmentName = "Rehberlik ve Psikolojik Danışmanlık",
                             FacultyName = "Eğitim Bilimleri Fakültesi",
                             GraduationYear = 2016,
                             SchoolName = "Dokuz Eylül Üniversitesi",
                             StartYear = 2012,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7526)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4219)
                         },
                         new
                         {
                             Id = 4,
                             ConsultantId = 4,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7530),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4222),
                             DegreeofGraduation = "Lisans",
                             DepartmentName = "Psikolojik Danışmanlık ve Rehberlik",
                             FacultyName = "Eğitim Bilimleri Fakültesi",
                             GraduationYear = 2017,
                             SchoolName = "Gazi Üniversitesi",
                             StartYear = 2013,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7531)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4223)
                         },
                         new
                         {
                             Id = 5,
                             ConsultantId = 5,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7534),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4225),
                             DegreeofGraduation = "Lisans",
                             DepartmentName = "Rehberlik ve Psikolojik Danışmanlık",
                             FacultyName = "Eğitim Bilimleri Fakültesi",
                             GraduationYear = 2018,
                             SchoolName = "Marmara Üniversitesi",
                             StartYear = 2014,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7535)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4226)
                         },
                         new
                         {
                             Id = 6,
                             ConsultantId = 6,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7539),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4230),
                             DegreeofGraduation = "Lisans",
                             DepartmentName = "Özel Eğitim",
                             FacultyName = "Eğitim Bilimleri Fakültesi",
                             GraduationYear = 2015,
                             SchoolName = "Gazi Üniversitesi",
                             StartYear = 2011,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7540)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4231)
                         },
                         new
                         {
                             Id = 7,
                             ConsultantId = 7,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7543),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4236),
                             DegreeofGraduation = "Lisans",
                             DepartmentName = "Özel Eğitim",
                             FacultyName = "Eğitim Bilimleri Fakültesi",
                             GraduationYear = 2017,
                             SchoolName = "Ankara Üniversitesi",
                             StartYear = 2013,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7543)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4236)
                         },
                         new
                         {
                             Id = 8,
                             ConsultantId = 1,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7546),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4240),
                             DegreeofGraduation = "Yüksek Lisans",
                             DepartmentName = "Psikiyatri",
                             FacultyName = "Cerrahpaşa Tıp Fakültesi",
                             GraduationYear = 2015,
                             SchoolName = "İstanbul Üniversitesi",
                             StartYear = 2013,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7547)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4240)
                         },
                         new
                         {
                             Id = 9,
                             ConsultantId = 3,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7549),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4243),
                             DegreeofGraduation = "Yüksek Lisans",
                             DepartmentName = "Psikiyatri",
                             FacultyName = "Tıp Fakültesi",
                             GraduationYear = 2018,
                             SchoolName = "Ege Üniversitesi",
                             StartYear = 2016,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7550)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4244)
                         },
                         new
                         {
                             Id = 10,
                             ConsultantId = 7,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7554),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4247),
                             DegreeofGraduation = "Yüksek Lisans",
                             DepartmentName = "Psikiyatri",
                             FacultyName = "Tıp Fakültesi",
                             GraduationYear = 2019,
                             SchoolName = "Ege Üniversitesi",
                             StartYear = 2017,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7554)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4248)
                         },
                         new
                         {
                             Id = 11,
                             ConsultantId = 5,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7557),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4251),
                             DegreeofGraduation = "Yüksek Lisans",
                             DepartmentName = "Psikiyatri",
                             FacultyName = "Tıp Fakültesi",
                             GraduationYear = 2020,
                             SchoolName = "Ege Üniversitesi",
                             StartYear = 2018,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7557)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4252)
                         });
                 });
 
@@ -861,21 +861,21 @@ namespace Consultancy_Project.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "693d2e26-8e77-4ffb-bc56-10ac00b0143e",
+                            Id = "81a7cd0d-1a10-4bb8-8c56-ec882cb21fab",
                             Description = "Yönetici",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "38b01197-6e65-479c-846c-cdbc97bc05e8",
+                            Id = "c374ca7c-eee2-4c14-a95a-512150581312",
                             Description = "Kullanıcı",
                             Name = "Customer",
                             NormalizedName = "CUSTOMER"
                         },
                         new
                         {
-                            Id = "c79a1131-8a14-4b88-accd-0dff6d607dad",
+                            Id = "03cff1bb-c7b3-4122-aa83-3bba504b500d",
                             Description = "Danışanman",
                             Name = "Consultant",
                             NormalizedName = "CONSULTANT"
@@ -972,12 +972,12 @@ namespace Consultancy_Project.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ec40bfe8-297b-4a6e-9843-bb6ab63f3628",
+                            Id = "05b3d752-0546-4c73-80ea-db8b76a1d2b3",
                             AccessFailedCount = 0,
                             Address = " Özger Cad.No:6 Beşiktaş",
                             City = "İstanbul",
-                            ConcurrencyStamp = "449229c8-3163-492d-b012-482b8e05dd5b",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6480),
+                            ConcurrencyStamp = "7e52c22b-f3b7-4af0-a878-7c1f941b1171",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3075),
                             DateOfBirth = new DateTime(1996, 1, 20, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@consultancy.com",
                             EmailConfirmed = true,
@@ -987,21 +987,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN.CONSULTANCY.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJaVfID4sx08G0DM3mGCbqKuLgN5xmCD8oZvyJnlzvsC5nmUD3RIaMM40/G2K9PaZg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDqp8V3lrilPRW0xWL8Go68BKfzURFEUOTcb+czxEUv8fmLr6Bcq/oVjs/BvPKrGqQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "022bf6a6-56cf-4b24-8744-5e686b70f696",
+                            SecurityStamp = "d1fcbbcd-0933-4531-a954-197505917101",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6494),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3087),
                             UserName = "admin"
                         },
                         new
                         {
-                            Id = "5314f669-d35e-4683-ac85-cfb51c03e0d9",
+                            Id = "2201d025-5b76-464d-aae3-edfe7aa48834",
                             AccessFailedCount = 0,
                             Address = "Cemal Gürsel Cd. No:5 Kadıköy",
                             City = "İstanbul",
-                            ConcurrencyStamp = "3ca7c804-d991-4974-af0a-8112e17c8a61",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6520),
+                            ConcurrencyStamp = "85aa2979-d38e-416f-9f8f-f394a9746ca2",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3134),
                             DateOfBirth = new DateTime(1992, 3, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ayse.yilmaz@gmail.com",
                             EmailConfirmed = true,
@@ -1011,21 +1011,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "AYSE.YILMAZ@GMAIL.COM",
                             NormalizedUserName = "AYSEYILMAZ",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGXuMJpYe5BKldo5M+Xb5yS3N0tp3UrTBmvWJNSzI9udlm8HHGuXxO/hEdIfHe21TA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHQcTOOhhTbu5PcO1Qo0sJWkyhbcZaWimzhbSMx52+05s/tKeYB1OXlKuuKZEiXX2g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "070eb1f2-baac-4c9d-bc5b-680b58852f74",
+                            SecurityStamp = "9b284261-75f2-4bf5-9344-fa7fe011b3fa",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6521),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3136),
                             UserName = "ayseyilmaz"
                         },
                         new
                         {
-                            Id = "8105cf00-98d1-4e1c-85e8-ff59f08495cb",
+                            Id = "2cb2f7e6-e238-4695-b794-faf3433291f3",
                             AccessFailedCount = 0,
                             Address = "Atatürk Cd. No:15/4 Çankaya",
                             City = "Ankara",
-                            ConcurrencyStamp = "eaa6a9c9-60a2-4a45-8e57-a1b805ba76be",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6549),
+                            ConcurrencyStamp = "299928f1-c00e-4500-b651-8d7ca939ff0c",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3149),
                             DateOfBirth = new DateTime(1988, 11, 23, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "mehmet.ozkan@gmail.com",
                             EmailConfirmed = true,
@@ -1035,21 +1035,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "MEHMET.OZKAN@GMAIL.COM",
                             NormalizedUserName = "MEHMETOZKAN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPZvJkYM2Zsi8Xj0rV0XfSIKzP/2wK1Qh2+90FaG51+I7lCadxt6oVLKKlFIARWe6g==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDyIBMrDAX6v0HUK6C9poVJzCCfDPKk5xr4n0Xv5cdCdQSalketFiWuNdInElR4Ceg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "126a1fb3-1999-4fc0-9408-19026fcb7525",
+                            SecurityStamp = "f85be3fc-f447-4bd8-b813-b83373b87224",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6550),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3150),
                             UserName = "mehmetozkan"
                         },
                         new
                         {
-                            Id = "af0b4cbd-f511-402a-a893-64c081598a74",
+                            Id = "66ce77b9-9237-4a93-a746-dfb276bb9c1b",
                             AccessFailedCount = 0,
                             Address = "Karşıyaka Cd. No:8/3 Alsancak",
                             City = "İzmir",
-                            ConcurrencyStamp = "335245f2-2723-483f-bb63-bc210fbfc427",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6561),
+                            ConcurrencyStamp = "e2c38fe7-c6f6-4e07-aaef-347e9412d025",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3167),
                             DateOfBirth = new DateTime(1995, 6, 30, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "zeynep.gunes@gmail.com",
                             EmailConfirmed = true,
@@ -1059,21 +1059,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ZEYNEP.GUNES@GMAIL.COM",
                             NormalizedUserName = "ZEYNEPGUNES",
-                            PasswordHash = "AQAAAAIAAYagAAAAELGBS1uptZZp1kehL4BwH/9m7DcvURUpk33owcmKuYP9ZGV7UjKma7uxjEz7yw4vRg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECpF/x607gsL5UnpRX2+F2qmxY4vHmUEkNaPTr8nAn0VmF60zcLAkOVUdXMwg+LKgw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fd5d7c08-823b-4765-b2fe-de93a66e95bd",
+                            SecurityStamp = "aab3ecbf-f83e-4d29-bbd2-dac4d2cbb7a0",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6562),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3168),
                             UserName = "zeynepgunes"
                         },
                         new
                         {
-                            Id = "f23b11a4-46e3-45ec-a315-b06d584ca6f4",
+                            Id = "f84c1788-aa1c-4d9f-96a9-00e81ec7e580",
                             AccessFailedCount = 0,
                             Address = "Atatürk Mah. No:4 Bahçelievler",
                             City = "İstanbul",
-                            ConcurrencyStamp = "c8da70d5-2a66-42be-97b7-93602da704e7",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6575),
+                            ConcurrencyStamp = "3372080d-9c3d-4ace-8d66-1b0a4890fb43",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3181),
                             DateOfBirth = new DateTime(1990, 2, 8, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ali.demir@gmail.com",
                             EmailConfirmed = true,
@@ -1083,21 +1083,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ALI.DEMIR@GMAIL.COM",
                             NormalizedUserName = "ALIDEMIR",
-                            PasswordHash = "AQAAAAIAAYagAAAAEC6KkLkqPTRxvltixHbt7/wavBAhwjKrQzMKDOfkYU8quDDsI7FmBoLJWKFUUGKFKg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFkFNc1R9vMHkDdD0tnPKS2aF8biMCoDXf4i9zQB4PJn7zU3FbgurY8VFJZkYyCeFQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "84df651a-42b2-4657-9e70-668ce8ef62a4",
+                            SecurityStamp = "76ba3da3-047d-4ee8-97f4-6b72d587937d",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6576),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3182),
                             UserName = "alidemir"
                         },
                         new
                         {
-                            Id = "54a970b0-9f71-49ec-8b4a-bc278ed975fb",
+                            Id = "4b9ebee9-26df-4513-afc8-88bda801b68c",
                             AccessFailedCount = 0,
                             Address = "Mecidiyeköy Cd. No:23 Şişli",
                             City = "İstanbul",
-                            ConcurrencyStamp = "250b3e3f-c4a5-4f17-a07e-8f808ae9b129",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6595),
+                            ConcurrencyStamp = "076c9fa6-8923-4e15-aef3-d9dcd7abf305",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3199),
                             DateOfBirth = new DateTime(1987, 9, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "gizem.aydin@gmail.com",
                             EmailConfirmed = true,
@@ -1107,21 +1107,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "GIZEM.AYDIN@GMAIL.COM",
                             NormalizedUserName = "GIZEMAYDIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEM9rHUyG8OYjtg5S/Hch++yQ0Ms46HDNyxolvUibHcfDCxj+N8h/gBP4QT9hTifXag==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDUG66IagdemEAcA4yOD94EmZc7Jdc3vDPJ4JKkI0EatDtW1QGbkEeHMkfOXQEQepA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b3d6ab90-d770-49c3-a421-e84f72b604df",
+                            SecurityStamp = "9adb8790-efd4-4d88-a136-ddbeec53e006",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6596),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3200),
                             UserName = "gizemaydin"
                         },
                         new
                         {
-                            Id = "e43769c3-5ad5-424a-9e59-b7cfb1d59ed4",
+                            Id = "47de91d5-5a68-420a-8492-5118b25b4d03",
                             AccessFailedCount = 0,
                             Address = "Turan Cd. No:7 Bornova",
                             City = "İzmir",
-                            ConcurrencyStamp = "5a814ca6-c9e5-47db-ab26-65219c8d0789",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6607),
+                            ConcurrencyStamp = "24aeec22-4f8d-4e24-bae1-3b49cac7072a",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3217),
                             DateOfBirth = new DateTime(1993, 12, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "can.ergun@gmail.com",
                             EmailConfirmed = true,
@@ -1131,21 +1131,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CAN.ERGUN@GMAIL.COM",
                             NormalizedUserName = "CANERGUN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKVoi+ZfyA8YpaNJlFeFazPAOSATRAa74Z7/MSNl/QlB73ftQZFESeNEMUVOxILZEQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENVydPgip5cPyWo9c1jPRv3QjeqIojzCUVFfWaFTQ/yb0rlMsEcPYLGtPUAqyYe8Yg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ed60a740-54ea-43e3-878f-dcb3979a87fb",
+                            SecurityStamp = "5920ecff-9eac-4cb6-9379-166e5e16825e",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6609),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3218),
                             UserName = "canergun"
                         },
                         new
                         {
-                            Id = "2d2a26fc-ebfd-41ab-8cdd-3b836f758d84",
+                            Id = "2da82f70-29cf-4f0f-9ea1-56f94c0278fc",
                             AccessFailedCount = 0,
                             Address = "Halilpaşa Konağı Ap. No:18 Beşiktaş",
                             City = "İstanbul",
-                            ConcurrencyStamp = "e996b976-5b47-4bd3-8597-0905fe5fd279",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6623),
+                            ConcurrencyStamp = "9025603d-5729-4973-9b2b-3d681acca891",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3231),
                             DateOfBirth = new DateTime(1985, 5, 18, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "deniz@asdasd.com",
                             EmailConfirmed = true,
@@ -1155,21 +1155,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "DENIZ@ASDASD.COM",
                             NormalizedUserName = "DENIZ",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAazFYbvvHojd6MaiCfKI0Ga9jn4sjnV0CPiW3LnUfjwFqYGMgxtwSy1dAEfTlNrIg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJ81VriggG7uKn6Y70QKOzxqsupQsOENFJRi8s1/B5h4bvkECbl/7G/aohiNx2IIIA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "247debb5-71ab-4df4-8f4f-42d6361b590b",
+                            SecurityStamp = "b4f2a540-7e5f-4d90-a138-5938b2ed68ae",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6625),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3231),
                             UserName = "deniz"
                         },
                         new
                         {
-                            Id = "3c5daa4c-67ad-4df1-82eb-ad0f065f8f9b",
+                            Id = "1f4adf05-e534-4187-855b-d6d3e46d3c21",
                             AccessFailedCount = 0,
                             Address = "Kuştepe Mah. Gümüşsuyu Cad. No:12 Şişli",
                             City = "İstanbul",
-                            ConcurrencyStamp = "036ea6b5-88dc-4252-9505-37df0fdea834",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6636),
+                            ConcurrencyStamp = "be910080-8880-45af-b774-af6eddca102e",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3244),
                             DateOfBirth = new DateTime(1992, 9, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "ali.yildirim@hotmail.com",
                             EmailConfirmed = true,
@@ -1179,21 +1179,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ALI.YILDIRIM@HOTMAIL.COM",
                             NormalizedUserName = "ALIYILDIRIM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEKeIrxYhI0wYpdO1RNiZ2zCauOnmyYoCBYJkQy2UkZV8g9k+1Pn/rvsq2ZzO5MatKg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJQHOtS6mmCDdMzyvMB6/SOLSSroIYuvsdzc10Bd6F0ySVFw3IDDUL2QOs8ZFiCwfA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "28bd79a8-504f-4668-8d01-c92f9280c579",
+                            SecurityStamp = "0eb57fb3-217f-48b5-acb1-275431ae11dc",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6638),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3244),
                             UserName = "aliyildirim"
                         },
                         new
                         {
-                            Id = "50835d3d-d60d-42dd-b252-1b2246d10eb9",
+                            Id = "68cd7577-2024-4580-bbee-1460bfa02a51",
                             AccessFailedCount = 0,
                             Address = "Mecidiyeköy Mah. Dereboyu Cad. No:23 Şişli",
                             City = "İstanbul",
-                            ConcurrencyStamp = "5cc05897-43e7-4581-b1f1-fae448322dd3",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6773),
+                            ConcurrencyStamp = "8933590b-4b99-4ebc-bb6a-a6003fe5d32c",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3283),
                             DateOfBirth = new DateTime(1988, 2, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "melis.ozturk@gmail.com",
                             EmailConfirmed = true,
@@ -1203,21 +1203,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "MELIS.OZTURK@GMAIL.COM",
                             NormalizedUserName = "MELISOZTURK",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJcw6xWz40kgtctvZSuRmVCqENu70rd3eP1eLSVHwCxJi6G1LTJ3LV0XllQxadPa3A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGygaugHl7Pi30kwpdhQki7ydMl0pNylELFr6p1B3th79njyT5y35mzTAQ1UwlgVNA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "a34e34ce-4ccf-4aa5-bfb0-85f27e2e7ecb",
+                            SecurityStamp = "f10307fb-619f-4499-922c-fc66897369ab",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6775),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3284),
                             UserName = "melisozturk"
                         },
                         new
                         {
-                            Id = "4a5459d2-77d5-4490-86ce-ce03a741d8ff",
+                            Id = "b9aae3cf-7715-4293-bd17-4f2b4dac52c8",
                             AccessFailedCount = 0,
                             Address = "Mecidiyeköy Mah. Vefa Cad. No:11 Şişli",
                             City = "İstanbul",
-                            ConcurrencyStamp = "adb12668-f17f-4657-8512-60c7c7364988",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6792),
+                            ConcurrencyStamp = "e2614eb9-05eb-4efa-9db0-6c873a23d603",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3352),
                             DateOfBirth = new DateTime(1995, 7, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "can.sahin@hotmail.com",
                             EmailConfirmed = true,
@@ -1227,21 +1227,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "CAN.SAHIN@HOTMAIL.COM",
                             NormalizedUserName = "CANSAHIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAELsOmyk65OSEwLxknh74OqBmxxPQcwGVpWfzNWvR3LDdkk4FfT9mD2eGTku+craFyQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBWj2MF5Ge6tZ7uuWCf6AMbIThwXprH/H/x/MPgkYPxMpFRHSGgrvfGMLKaEnpFYMA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ad5b8f7c-df88-448d-8ab9-31df3dbc6eb8",
+                            SecurityStamp = "c25f3b09-bf6a-45f4-af35-8e4484b6a70b",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6792),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3352),
                             UserName = "cansahin"
                         },
                         new
                         {
-                            Id = "a4c2a0de-5829-4ce2-bf48-5f77a4d34f33",
+                            Id = "69296ea0-8cd2-4740-8fee-f188bd4c16ef",
                             AccessFailedCount = 0,
                             Address = "Etiler Mah. Bebek Cad. No:17 Beşiktaş",
                             City = "İstanbul",
-                            ConcurrencyStamp = "832bc8cc-bd59-4c53-bd54-d517742de5a6",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6806),
+                            ConcurrencyStamp = "03bbc799-fa8c-49d0-9bf5-fd22ec1aaf6f",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3369),
                             DateOfBirth = new DateTime(1983, 11, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "esra.avci@gmail.com",
                             EmailConfirmed = true,
@@ -1251,21 +1251,21 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "ESRA.AVCI@GMAIL.COM",
                             NormalizedUserName = "ESRAAVCI",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBl86dpHNYjpLxqE79+SLFaXShRsoxr3e6JKJiber05AHYNO57U9/kh3hr2EO7JqUw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEOB5gf1vhc+AYslu10T4VGUrjhg1eBVUGOA8eEoxA7YtOK8fyf7xoq4XWbnHeRIG+g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "416afa3e-acd5-41d6-b7fa-d0e3fc648799",
+                            SecurityStamp = "fe0a9cf9-983b-4d95-84cc-13d5ae881137",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6807),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3370),
                             UserName = "esraavci"
                         },
                         new
                         {
-                            Id = "e4dc147e-1b4d-4d21-b833-fedfbb6114d4",
+                            Id = "92f1cf4c-8094-4225-8193-feaad9432475",
                             AccessFailedCount = 0,
                             Address = "İnönü Cd. No:12/1 Kartal",
                             City = "İstanbul",
-                            ConcurrencyStamp = "e4afa130-99b0-4fc5-90b5-446995df5a1a",
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6822),
+                            ConcurrencyStamp = "3f4a10c7-9643-4aff-9a15-0f446348fa8a",
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3383),
                             DateOfBirth = new DateTime(1997, 8, 2, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "fatma.kara@gmail.com",
                             EmailConfirmed = true,
@@ -1275,11 +1275,11 @@ namespace Consultancy_Project.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "FATMA.KARA@GMAIL.COM",
                             NormalizedUserName = "FATMAKARA",
-                            PasswordHash = "AQAAAAIAAYagAAAAENSjrC1CfhFFjckzBrjaHB4eOvycLsiYSalXicQPTaB8HsUYmy5cYXQKi3n0sMWakw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMb6GzUf0LA9akhj01OkwrqarP/0n3szlXhF/ODzO4xhaL2ItyY3FSZ0We8bW2UOoA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "dd0c0080-21bf-4029-985c-1a4cee8541bf",
+                            SecurityStamp = "558c9133-bcdb-4d3c-b000-b0a054d24c2c",
                             TwoFactorEnabled = false,
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(6823),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3383),
                             UserName = "fatmakara"
                         });
                 });
@@ -1315,106 +1315,106 @@ namespace Consultancy_Project.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7849),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7851),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4608),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4610),
                             Url = "1.jpg",
-                            UserId = "ec40bfe8-297b-4a6e-9843-bb6ab63f3628"
+                            UserId = "05b3d752-0546-4c73-80ea-db8b76a1d2b3"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7857),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7858),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4617),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4618),
                             Url = "2.jpg",
-                            UserId = "5314f669-d35e-4683-ac85-cfb51c03e0d9"
+                            UserId = "2201d025-5b76-464d-aae3-edfe7aa48834"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7861),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7862),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4621),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4621),
                             Url = "3.jpg",
-                            UserId = "8105cf00-98d1-4e1c-85e8-ff59f08495cb"
+                            UserId = "2cb2f7e6-e238-4695-b794-faf3433291f3"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7864),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7864),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4624),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4625),
                             Url = "4.jpg",
-                            UserId = "af0b4cbd-f511-402a-a893-64c081598a74"
+                            UserId = "66ce77b9-9237-4a93-a746-dfb276bb9c1b"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7866),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7867),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4627),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4628),
                             Url = "5.jpg",
-                            UserId = "f23b11a4-46e3-45ec-a315-b06d584ca6f4"
+                            UserId = "f84c1788-aa1c-4d9f-96a9-00e81ec7e580"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7876),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7877),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4638),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4639),
                             Url = "6.jpg",
-                            UserId = "54a970b0-9f71-49ec-8b4a-bc278ed975fb"
+                            UserId = "4b9ebee9-26df-4513-afc8-88bda801b68c"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7879),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7879),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4641),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4642),
                             Url = "7.jpg",
-                            UserId = "e43769c3-5ad5-424a-9e59-b7cfb1d59ed4"
+                            UserId = "47de91d5-5a68-420a-8492-5118b25b4d03"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7881),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7882),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4645),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4646),
                             Url = "8.jpg",
-                            UserId = "2d2a26fc-ebfd-41ab-8cdd-3b836f758d84"
+                            UserId = "2da82f70-29cf-4f0f-9ea1-56f94c0278fc"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7884),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7885),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4648),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4649),
                             Url = "9.jpg",
-                            UserId = "3c5daa4c-67ad-4df1-82eb-ad0f065f8f9b"
+                            UserId = "1f4adf05-e534-4187-855b-d6d3e46d3c21"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7888),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7889),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4653),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4653),
                             Url = "10.jpg",
-                            UserId = "50835d3d-d60d-42dd-b252-1b2246d10eb9"
+                            UserId = "68cd7577-2024-4580-bbee-1460bfa02a51"
                         },
                         new
                         {
                             Id = 11,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7891),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7891),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4656),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4657),
                             Url = "11.jpg",
-                            UserId = "4a5459d2-77d5-4490-86ce-ce03a741d8ff"
+                            UserId = "b9aae3cf-7715-4293-bd17-4f2b4dac52c8"
                         },
                         new
                         {
                             Id = 12,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7893),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7894),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4659),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4660),
                             Url = "12.jpg",
-                            UserId = "a4c2a0de-5829-4ce2-bf48-5f77a4d34f33"
+                            UserId = "69296ea0-8cd2-4740-8fee-f188bd4c16ef"
                         },
                         new
                         {
                             Id = 13,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7896),
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7897),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4662),
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(4663),
                             Url = "13.jpg",
-                            UserId = "e4dc147e-1b4d-4d21-b833-fedfbb6114d4"
+                            UserId = "92f1cf4c-8094-4225-8193-feaad9432475"
                         });
                 });
 
@@ -1446,90 +1446,90 @@ namespace Consultancy_Project.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7251),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3869),
                             Description = "Depresyon belirtileri gösteren kişilere destek olmak ve tedavi sürecinde yardımcı olmak.",
                             Name = "Depresyon",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7253)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3871)
                         },
                         new
                         {
                             Id = 2,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7257),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3875),
                             Description = "Kaygı bozukluğu yaşayan bireylere destek olmak ve kaygı düzeylerini azaltmak için terapi yöntemleri uygulamak.",
                             Name = "Kaygı Bozukluğu",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7261)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3882)
                         },
                         new
                         {
                             Id = 3,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7273),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3903),
                             Description = "Bağımlılık sorunu yaşayan kişilere destek sağlamak ve bağımlılıktan kurtulmalarına yardımcı olmak için tedavi yöntemleri uygulamak.",
                             Name = "Bağımlılık",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7274)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3904)
                         },
                         new
                         {
                             Id = 4,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7276),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3906),
                             Description = "Öfke kontrolü sorunu yaşayan bireylere destek vermek ve öfke yönetimi becerilerini geliştirmelerine yardımcı olmak.",
                             Name = "Öfke Kontrolü",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7277)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3907)
                         },
                         new
                         {
                             Id = 5,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7278),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3909),
                             Description = "Aile içi ilişkilerde yaşanan sorunlara destek sağlamak ve aile üyelerinin birbirleriyle iletişimini iyileştirmek için terapi yöntemleri uygulamak.",
                             Name = "Aile Terapisi",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7279)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3910)
                         },
                         new
                         {
                             Id = 6,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7282),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3913),
                             Description = "Stresli durumlarla başa çıkmada zorlanan bireylere destek vermek ve stres yönetimi becerilerini geliştirmelerine yardımcı olmak.",
                             Name = "Stres Yönetimi",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7283)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3914)
                         },
                         new
                         {
                             Id = 7,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7285),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3916),
                             Description = "Bireylerin kendilerini daha iyi tanımalarına ve kişisel gelişimlerine destek olmak için terapi yöntemleri uygulamak.",
                             Name = "Kişisel Gelişim",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7285)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3917)
                         },
                         new
                         {
                             Id = 8,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7287),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3919),
                             Description = "Cinsel sorunlar yaşayan bireylere destek sağlamak ve cinsel işlev bozukluklarıyla başa çıkmalarına yardımcı olmak için tedavi yöntemleri uygulamak.",
                             Name = "Cinsel Sorunlar",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7288)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3920)
                         },
                         new
                         {
                             Id = 9,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7289),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3922),
                             Description = "Çiftler arasındaki sorunlara destek vermek ve ilişkilerini iyileştirmelerine yardımcı olmak için terapi yöntemleri uygulamak.",
                             Name = "Çift Terapisi",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7290)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3923)
                         },
                         new
                         {
                             Id = 10,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7293),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3926),
                             Description = "Travmatik bir olay sonrasında yaşanan stres ve kaygıya destek sağlamak ve travma sonrası stres bozukluğu tedavisi için yöntemler uygulamak.",
                             Name = "Travma Sonrası Stres Bozukluğu",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7294)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3927)
                         },
                         new
                         {
                             Id = 11,
-                            CreatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7295),
+                            CreatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3929),
                             Description = "Yeme bozukluğu yaşayan bireylere destek vermek ve yeme bozukluğu tedavisi için terapi yöntemleri uygulamak.",
                             Name = "Yeme Bozuklukları",
-                            UpdatedTime = new DateTime(2023, 4, 25, 16, 42, 54, 151, DateTimeKind.Local).AddTicks(7296)
+                            UpdatedTime = new DateTime(2023, 4, 28, 16, 51, 35, 535, DateTimeKind.Local).AddTicks(3930)
                         });
                 });
 
@@ -1618,68 +1618,68 @@ namespace Consultancy_Project.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "ec40bfe8-297b-4a6e-9843-bb6ab63f3628",
-                            RoleId = "693d2e26-8e77-4ffb-bc56-10ac00b0143e"
+                            UserId = "05b3d752-0546-4c73-80ea-db8b76a1d2b3",
+                            RoleId = "81a7cd0d-1a10-4bb8-8c56-ec882cb21fab"
                         },
                         new
                         {
-                            UserId = "5314f669-d35e-4683-ac85-cfb51c03e0d9",
-                            RoleId = "c79a1131-8a14-4b88-accd-0dff6d607dad"
+                            UserId = "2201d025-5b76-464d-aae3-edfe7aa48834",
+                            RoleId = "03cff1bb-c7b3-4122-aa83-3bba504b500d"
                         },
                         new
                         {
-                            UserId = "8105cf00-98d1-4e1c-85e8-ff59f08495cb",
-                            RoleId = "c79a1131-8a14-4b88-accd-0dff6d607dad"
+                            UserId = "2cb2f7e6-e238-4695-b794-faf3433291f3",
+                            RoleId = "03cff1bb-c7b3-4122-aa83-3bba504b500d"
                         },
                         new
                         {
-                            UserId = "af0b4cbd-f511-402a-a893-64c081598a74",
-                            RoleId = "c79a1131-8a14-4b88-accd-0dff6d607dad"
+                            UserId = "66ce77b9-9237-4a93-a746-dfb276bb9c1b",
+                            RoleId = "03cff1bb-c7b3-4122-aa83-3bba504b500d"
                         },
                         new
                         {
-                            UserId = "f23b11a4-46e3-45ec-a315-b06d584ca6f4",
-                            RoleId = "c79a1131-8a14-4b88-accd-0dff6d607dad"
+                            UserId = "f84c1788-aa1c-4d9f-96a9-00e81ec7e580",
+                            RoleId = "03cff1bb-c7b3-4122-aa83-3bba504b500d"
                         },
                         new
                         {
-                            UserId = "54a970b0-9f71-49ec-8b4a-bc278ed975fb",
-                            RoleId = "c79a1131-8a14-4b88-accd-0dff6d607dad"
+                            UserId = "4b9ebee9-26df-4513-afc8-88bda801b68c",
+                            RoleId = "03cff1bb-c7b3-4122-aa83-3bba504b500d"
                         },
                         new
                         {
-                            UserId = "e43769c3-5ad5-424a-9e59-b7cfb1d59ed4",
-                            RoleId = "c79a1131-8a14-4b88-accd-0dff6d607dad"
+                            UserId = "47de91d5-5a68-420a-8492-5118b25b4d03",
+                            RoleId = "03cff1bb-c7b3-4122-aa83-3bba504b500d"
                         },
                         new
                         {
-                            UserId = "2d2a26fc-ebfd-41ab-8cdd-3b836f758d84",
-                            RoleId = "c79a1131-8a14-4b88-accd-0dff6d607dad"
+                            UserId = "2da82f70-29cf-4f0f-9ea1-56f94c0278fc",
+                            RoleId = "03cff1bb-c7b3-4122-aa83-3bba504b500d"
                         },
                         new
                         {
-                            UserId = "3c5daa4c-67ad-4df1-82eb-ad0f065f8f9b",
-                            RoleId = "38b01197-6e65-479c-846c-cdbc97bc05e8"
+                            UserId = "1f4adf05-e534-4187-855b-d6d3e46d3c21",
+                            RoleId = "c374ca7c-eee2-4c14-a95a-512150581312"
                         },
                         new
                         {
-                            UserId = "50835d3d-d60d-42dd-b252-1b2246d10eb9",
-                            RoleId = "38b01197-6e65-479c-846c-cdbc97bc05e8"
+                            UserId = "68cd7577-2024-4580-bbee-1460bfa02a51",
+                            RoleId = "c374ca7c-eee2-4c14-a95a-512150581312"
                         },
                         new
                         {
-                            UserId = "4a5459d2-77d5-4490-86ce-ce03a741d8ff",
-                            RoleId = "38b01197-6e65-479c-846c-cdbc97bc05e8"
+                            UserId = "b9aae3cf-7715-4293-bd17-4f2b4dac52c8",
+                            RoleId = "c374ca7c-eee2-4c14-a95a-512150581312"
                         },
                         new
                         {
-                            UserId = "a4c2a0de-5829-4ce2-bf48-5f77a4d34f33",
-                            RoleId = "38b01197-6e65-479c-846c-cdbc97bc05e8"
+                            UserId = "69296ea0-8cd2-4740-8fee-f188bd4c16ef",
+                            RoleId = "c374ca7c-eee2-4c14-a95a-512150581312"
                         },
                         new
                         {
-                            UserId = "e4dc147e-1b4d-4d21-b833-fedfbb6114d4",
-                            RoleId = "38b01197-6e65-479c-846c-cdbc97bc05e8"
+                            UserId = "92f1cf4c-8094-4225-8193-feaad9432475",
+                            RoleId = "c374ca7c-eee2-4c14-a95a-512150581312"
                         });
                 });
 

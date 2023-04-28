@@ -17,9 +17,9 @@ namespace Consultancy_Project.Business.Abstract
         Task<List<Consultant>> GetAllAsync();
         void Update(Consultant consultant);
         void Delete(Consultant consultant);
-        void ConsultantsEducationAdd(Education education);
+        void UpdateConsultantData(Consultant consultant);
+        void DeleteUser(User user);
 
-        void ConsultantsCertificateAdd(Certificate certificate);
 
     }
 }
