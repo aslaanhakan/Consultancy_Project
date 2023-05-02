@@ -34,7 +34,7 @@
                     {
                     <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="dropdown-item ">Admin Panel</a>
                     }
-                    <a href="category.html" class="dropdown-item ">Kullanıcı Bilgileri</a>
+                    <a asp-area="" asp-controller="Account" asp-action="ProfileManage" asp-route-id="@User.Identity.Name" class="dropdown-item ">Kullanıcı Bilgileri</a>
                     <a href="testimonial.html" class="dropdown-item ">Cüzdan Bilgileri</a>
 
                     <a asp-area="" asp-controller="Account" asp-action="Logout" class=" dropdown-item bg-danger text-light rounded-0 d-block">Çıkış Yap<i class="ms-3 fa fa-arrow-right "></i></a>

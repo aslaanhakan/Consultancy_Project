@@ -41,7 +41,12 @@ namespace Consultancy_Project.Business.Concrate
 
         public void Update(Image image)
         {
-            throw new NotImplementedException();
+           _imageRepository.Update(image);
+        }
+
+        public void UpdateImage(Image image)
+        {
+            _imageRepository.UpdateImage(image);
         }
     }
 }

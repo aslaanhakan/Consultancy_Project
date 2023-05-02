@@ -20,5 +20,15 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             get { return _dbContext as ConsultancyProjectContext; }
         }
 
+        public void UpdateImage(Image image)
+        {
+            var result = AppContext.Images.Where(x => x.UserId == image.UserId).FirstOrDefault();
+
+            result.Url = image.Url;
+            result.UpdatedTime = image.UpdatedTime;
+            result.UserId= image.UserId;
+            AppContext.Update(result);
+            AppContext.SaveChanges();
+        }
     }
 }

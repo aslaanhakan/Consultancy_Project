@@ -12,29 +12,35 @@ namespace Consultancy_Project.Business.Concrate
     public class CustomerManager : ICustomerService
     {
         private readonly ICustomerRepository _customerService;
-        public Task CreateAsync(Customer customer)
+
+        public CustomerManager(ICustomerRepository customerService)
         {
-            throw new NotImplementedException();
+            _customerService = customerService;
         }
 
-        public void Delete(Customer customer)
+        public async Task CreateAsync(Customer customer)
         {
-            throw new NotImplementedException();
+            await _customerService.CreateAsync(customer);
+        }
+
+        public  void Delete(Customer customer)
+        {
+            _customerService.Delete(customer);
         }
 
         public Task<List<Customer>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return _customerService.GetAllAsync();
         }
 
         public Task<Customer> GetByIdAsync(int id)
         {
-            throw new NotImplementedException();
+           return _customerService.GetByIdAsync(id);
         }
 
         public void Update(Customer customer)
         {
-            throw new NotImplementedException();
+            _customerService.Update(customer);
         }
     }
 }

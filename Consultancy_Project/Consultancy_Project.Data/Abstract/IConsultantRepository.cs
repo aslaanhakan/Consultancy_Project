@@ -12,6 +12,5 @@ namespace Consultancy_Project.Data.Abstract
     {
         Task<Consultant> GetConsultantFullDataByIdAsync(int id);     
         void UpdateConsultantData(Consultant consultant);
-        void DeleteUser(User user);
     }
 }

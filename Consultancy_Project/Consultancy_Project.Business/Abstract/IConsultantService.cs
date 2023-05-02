@@ -18,8 +18,5 @@ namespace Consultancy_Project.Business.Abstract
         void Update(Consultant consultant);
         void Delete(Consultant consultant);
         void UpdateConsultantData(Consultant consultant);
-        void DeleteUser(User user);
-
-
     }
 }

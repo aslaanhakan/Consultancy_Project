@@ -9,5 +9,7 @@ namespace Consultancy_Project.Data.Abstract
 {
     public interface IImageRepository:IGenericRepository<Image>
     {
+        void UpdateImage(Image image);
+
     }
 }

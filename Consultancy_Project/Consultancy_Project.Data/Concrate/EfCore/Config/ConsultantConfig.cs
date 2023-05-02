@@ -19,8 +19,7 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Config
             builder.Property(x=>x.Promotion).IsRequired();
             builder.Property(x=>x.VisitsPrice).IsRequired();
             builder.Property(x => x.JobTitle).IsRequired();
-            builder.Property(x => x.CreatedTime).IsRequired();
-            builder.Property(x => x.UpdatedTime).IsRequired();
+            
         }
     }
 }

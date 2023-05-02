@@ -41,7 +41,9 @@ namespace Consultancy_Project.Data.Concrate.EfCore
 
         public void Update(T entity)
         {
-            throw new NotImplementedException();
+            _dbContext.Update(entity);
+            _dbContext.SaveChangesAsync();
+
         }
     }
 }

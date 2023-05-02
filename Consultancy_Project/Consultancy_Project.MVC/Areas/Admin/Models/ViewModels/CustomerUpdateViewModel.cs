@@ -23,16 +23,16 @@ namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
         [DisplayName("Şehir")]
         public string? City { get; set; }
         public IFormFile? ImageFile { get; set; }
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
         [DisplayName("Email")]
         [Required(ErrorMessage = "Email alanı boş bırakılmamaz.")]
         public string Email { get; set; }
         [DisplayName("Telefon")]
         public string? Phone { get; set; }
         [DisplayName("Oluşturma Zamanı")]
-        public DateTime CreatedTime { get; set; }
+        public DateTime? CreatedTime { get; set; }
         [DisplayName("Güncellenme Zamanı")]
-        public DateTime UpdateTime { get; set; }
+        public DateTime? UpdateTime { get; set; }
         [DisplayName("Telefon Doğrulaması")]
         public bool PhoneConfirmed { get; set; }
         [DisplayName("Email Doğrulaması")]

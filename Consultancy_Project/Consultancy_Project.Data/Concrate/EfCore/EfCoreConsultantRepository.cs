@@ -21,12 +21,6 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             get { return _dbContext as ConsultancyProjectContext; }
         }
 
-        public void DeleteUser(User user)
-        {
-            AppContext.Remove(user);
-            AppContext.SaveChanges();
-        }
-
         public async Task<Consultant> GetConsultantFullDataByIdAsync(int id)
         {
             var result = await AppContext

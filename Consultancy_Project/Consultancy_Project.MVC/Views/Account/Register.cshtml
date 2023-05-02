@@ -1,0 +1,95 @@
+﻿@model RegisterViewModel
+
+<!-- Pills navs -->
+<div class=" my-5 row justify-content-center">
+    <div class=" col-6 ">
+        <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="tab-login" data-mdb-toggle="pill" asp-area="" asp-controller="Account" asp-action="Login" role="tab"
+                   aria-controls="pills-login" aria-selected="true">Giriş Yap</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link  active" id="tab-register" data-mdb-toggle="pill" asp-area="" asp-controller="Account" asp-action="Register" role="tab"
+                   aria-controls="pills-register" aria-selected="false">Kayıt Ol</a>
+            </li>
+        </ul>
+        <!-- Pills navs -->
+        <!-- Pills content -->
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+                <form asp-area="" asp-controller="Account" asp-action="Register" method="post">
+                    <div class="text-center mb-3">
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+
+                        <button type="button" class="btn btn-link btn-floating mx-1">
+                            <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+
+                    <p class="text-center">İle Kayıt Ol Yada:</p>
+                    <!-- FirstName input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" asp-for="FirstName"></label>
+                        <input type="text" asp-for="FirstName" class="form-control" />
+                        <span class="text-danger" asp-validation-for="FirstName"></span>
+
+                    </div>
+                    <!-- LastName input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" asp-for="LastName"></label>
+                        <input type="text" asp-for="LastName" class="form-control" />
+                        <span class="text-danger" asp-validation-for="LastName"></span>
+
+                    </div>
+
+                    <!-- Username input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" asp-for="UserName"></label>
+                        <input type="text" asp-for="UserName" class="form-control" />
+                        <span class="text-danger" asp-validation-for="UserName"></span>
+
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" asp-for="Email"></label>
+                        <input type="email" asp-for="Email" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Email"></span>
+
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" asp-for="Password"></label>
+                        <input type="password" asp-for="Password" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Password"></span>
+
+                    </div>
+
+                    <!-- Repeat Password input -->
+                    <div class="form-outline mb-4">
+                        <label class="form-label" asp-for="RePassword"></label>
+                        <input type="password" asp-for="RePassword" class="form-control" />
+                        <span class="text-danger" asp-validation-for="RePassword"></span>
+
+                    </div>
+
+
+                    <!-- Submit button -->
+                    <div class="row justify-content-center"><button type="submit" class="btn btn-primary btn-block mb-3 col-4">Kayıt Ol</button></div>
+                </form>
+            </div>
+        </div>
+        <!-- Pills content -->
+    </div>
+</div>

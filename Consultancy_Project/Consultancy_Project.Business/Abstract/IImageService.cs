@@ -14,5 +14,6 @@ namespace Consultancy_Project.Business.Abstract
         Task<List<Image>> GetAllAsync();
         void Update(Image image);
         void Delete(Image image);
+        void UpdateImage(Image image);
     }
 }

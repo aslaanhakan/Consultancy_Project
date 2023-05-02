@@ -23,26 +23,26 @@ namespace Consultancy_Project.MVC.Areas.Admin.Models.ViewModels
         public string? Address { get; set; }
         [DisplayName("Şehir")]
         public string? City { get; set; }
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
         [DisplayName("Email")]
         [Required(ErrorMessage = "Email alanı boş bırakılmamaz.")]
         public string Email { get; set; }
         [DisplayName("Telefon")]
         public string? Phone { get; set; }
         [DisplayName("Oluşturma Zamanı")]
-        public DateTime CreatedTime { get; set; }
+        public DateTime? CreatedTime { get; set; }
         [DisplayName("Güncellenme Zamanı")]
-        public DateTime UpdateTime { get; set; }
+        public DateTime? UpdateTime { get; set; }
         [DisplayName("Telefon Doğrulaması")]
         public bool PhoneConfirmed { get; set; }
         [DisplayName("Email Doğrulaması")]
         public bool EmailConfirmed { get; set; }
         [DisplayName("Tanıtım Yazısı")]
-        public string Promotion { get; set; }
+        public string? Promotion { get; set; }
         [DisplayName("Seans Ücreti")]
         public decimal? VisitsPrice { get; set; }
         [DisplayName("Unvan")]
-        public string JobTitle { get; set; }
+        public string? JobTitle { get; set; }
         public  List<Education> Educations { get; set; }
         public  List<Specialization> Specializations { get; set; }
        

@@ -19,7 +19,7 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Config
             builder.Property(x => x.CreatedTime).IsRequired();
             builder.Property(x => x.UpdatedTime).IsRequired();
 
-            builder.Property(x => x.Url).IsRequired().HasMaxLength(500);
+            builder.Property(x => x.Url).IsRequired();
         }
     }
 }

@@ -24,8 +24,9 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         private ISpecializationService _specializationService;
         private ICertificateService _certificateService;
         private IEducationService _educationService;
+        private ICustomerService _customerService;
 
-        public ConsultantController(UserManager<User> userManager, RoleManager<Role> roleManager, IImageService imageService, IConsultantService consultantService, ISpecializationService specializationService, ICertificateService certificateService, IEducationService educationService)
+        public ConsultantController(UserManager<User> userManager, RoleManager<Role> roleManager, IImageService imageService, IConsultantService consultantService, ISpecializationService specializationService, ICertificateService certificateService, IEducationService educationService, ICustomerService customerService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
@@ -34,6 +35,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             _specializationService = specializationService;
             _certificateService = certificateService;
             _educationService = educationService;
+            _customerService = customerService;
         }
 
         public async Task<IActionResult> Index()
@@ -213,24 +215,30 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
             var consultant = await _consultantService.GetByIdAsync(id);
             User user = await _userManager.FindByIdAsync(consultant.UserId);
             _consultantService.Delete(consultant);
-            _consultantService.DeleteUser(user);
-            //var resultRemove = await _userManager.RemoveFromRoleAsync(user, "Consultant");
-            //_consultantService.Delete(consultant);
-            //if (!resultRemove.Succeeded)
-            //{
-            //    foreach (var error in resultRemove.Errors)
-            //    {
-            //        ModelState.AddModelError("", error.Description);
-            //    }
-            //}
-            //var resultAdd = await _userManager.AddToRoleAsync(user, "Customer");
-            //if (!resultAdd.Succeeded)
-            //{
-            //    foreach (var error in resultAdd.Errors)
-            //    {
-            //        ModelState.AddModelError("", error.Description);
-            //    }
-            //}
+            
+            var resultRemove = await _userManager.RemoveFromRoleAsync(user, "Consultant");
+            if (!resultRemove.Succeeded)
+            {
+                foreach (var error in resultRemove.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
+            var resultAdd = await _userManager.AddToRoleAsync(user, "Customer");
+            var customer = new Customer
+            {
+                UserId = user.Id,
+                
+
+            };
+            _customerService.CreateAsync(customer);
+            if (!resultAdd.Succeeded)
+            {
+                foreach (var error in resultAdd.Errors)
+                {
+                    ModelState.AddModelError("", error.Description);
+                }
+            }
             return RedirectToAction("Index");
         }
             [HttpPost]

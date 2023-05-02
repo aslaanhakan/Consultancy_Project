@@ -42,11 +42,12 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Details(string id)
         {
             var customer = await _userManager.Users.Where(x => x.Id == id).Include(x => x.Image).FirstOrDefaultAsync();
+            
             CustomerDetailsViewModel customerDetailsView = new CustomerDetailsViewModel()
             {
                 FirstName = customer.FirstName,
                 LastName = customer.LastName,
-                Email = customer.Email,
+                Email = customer.Email,                
                 ImageUrl = customer.Image.Url,
                 UserName = customer.UserName,
                 Address = customer.Address,
@@ -128,12 +129,13 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Delete(string id)
         {
-            //var user = await _userManager.FindByIdAsync(id);
-            var user = await _userManager.Users.Where(x => x.Id == id).Include(x => x.Image).Include(x => x.Consultant).Include(x => x.Customer).FirstOrDefaultAsync();
-            var result = await _userManager.DeleteAsync(user);
-
+            if (id!=null)
+            {
+                var user = await _userManager.Users.Where(x => x.Id == id).Include(x => x.Image).Include(x => x.Consultant).Include(x => x.Customer).FirstOrDefaultAsync();
+                var result = await _userManager.DeleteAsync(user);
+            }
             return RedirectToAction("Index");
-
+            
         }
     }
 }

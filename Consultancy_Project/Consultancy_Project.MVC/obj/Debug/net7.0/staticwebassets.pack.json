@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\Images\\029f79a3-ce52-4cd2-85ef-ab2232637b53.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\08c46e25-2f72-40b0-ac54-a1f9193c4a65.jpg",
+      "PackagePath": "staticwebassets\\Images\\08c46e25-2f72-40b0-ac54-a1f9193c4a65.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\1.jpg",
       "PackagePath": "staticwebassets\\Images\\1.jpg"
     },
@@ -37,8 +41,16 @@
       "PackagePath": "staticwebassets\\Images\\2.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\2900e8b1-0c71-4aae-813c-bfdb57c34a51.jpg",
+      "PackagePath": "staticwebassets\\Images\\2900e8b1-0c71-4aae-813c-bfdb57c34a51.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\3.jpg",
       "PackagePath": "staticwebassets\\Images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\358cb095-a96c-480e-a5cc-60de7ee55998.jpg",
+      "PackagePath": "staticwebassets\\Images\\358cb095-a96c-480e-a5cc-60de7ee55998.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\4.jpg",
@@ -57,8 +69,16 @@
       "PackagePath": "staticwebassets\\Images\\7.jpg"
     },
     {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\788b069e-2af6-48fc-a866-97b3c515a679.jpg",
+      "PackagePath": "staticwebassets\\Images\\788b069e-2af6-48fc-a866-97b3c515a679.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\8.jpg",
       "PackagePath": "staticwebassets\\Images\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\80b01274-4ec0-493e-bda2-b878df714e01.jpg",
+      "PackagePath": "staticwebassets\\Images\\80b01274-4ec0-493e-bda2-b878df714e01.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\9.jpg",
@@ -67,6 +87,26 @@
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\NonPic.jpg",
       "PackagePath": "staticwebassets\\Images\\NonPic.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\a40fabe1-cbf7-4646-be21-595af621ac95.jpg",
+      "PackagePath": "staticwebassets\\Images\\a40fabe1-cbf7-4646-be21-595af621ac95.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\cde71c7d-7859-4a26-826f-ab4e02fbe5d9.jpg",
+      "PackagePath": "staticwebassets\\Images\\cde71c7d-7859-4a26-826f-ab4e02fbe5d9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\db1e8e2a-9caf-4d78-a341-2618e237443c.jpg",
+      "PackagePath": "staticwebassets\\Images\\db1e8e2a-9caf-4d78-a341-2618e237443c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\e841dc2b-e519-42b7-93ba-94ecaebf24a2.jpg",
+      "PackagePath": "staticwebassets\\Images\\e841dc2b-e519-42b7-93ba-94ecaebf24a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\eb0f86ea-d8b0-4b06-9426-e55ce37447c4.jpg",
+      "PackagePath": "staticwebassets\\Images\\eb0f86ea-d8b0-4b06-9426-e55ce37447c4.jpg"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\Images\\img\\about-1.jpg",
@@ -133,10 +173,6 @@
       "PackagePath": "staticwebassets\\css\\adminstyle.css"
     },
     {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\login.css",
-      "PackagePath": "staticwebassets\\css\\login.css"
-    },
-    {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -155,10 +191,6 @@
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\adminmain.js",
       "PackagePath": "staticwebassets\\js\\adminmain.js"
-    },
-    {
-      "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\login.js",
-      "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
       "Id": "C:\\Users\\Admin\\Documents\\GitHub\\Consultancy_Project\\Consultancy_Project\\Consultancy_Project.MVC\\wwwroot\\js\\site.js",

@@ -29,11 +29,6 @@ namespace Consultancy_Project.Business.Concrate
             _consultantRepository.Delete(consultant);
         }
 
-        public void DeleteUser(User user)
-        {
-           _consultantRepository.DeleteUser(user);
-        }
-
         public Task<List<Consultant>> GetAllAsync()
         {
             throw new NotImplementedException();
