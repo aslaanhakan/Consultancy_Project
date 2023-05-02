@@ -29,9 +29,9 @@ namespace Consultancy_Project.Business.Concrate
             _consultantRepository.Delete(consultant);
         }
 
-        public Task<List<Consultant>> GetAllAsync()
+        public async Task<List<Consultant>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _consultantRepository.GetAllAsync();
         }
 
         public async Task<Consultant> GetByIdAsync(int id)
