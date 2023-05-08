@@ -52,7 +52,6 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Details(int id)
         {
-            var user = await _userManager.Users.Include(x=>x.Image).ToListAsync();
             var consultant = await _consultantService.GetConsultantFullDataByIdAsync(id);
             ConsultantDetailsViewModel consultantDetailsView = new ConsultantDetailsViewModel()
             {
@@ -105,7 +104,6 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Edit(int id)
         {
             var specializations = await _specializationService.GetAllAsync();
-            var user = await _userManager.Users.Include(x => x.Image).ToListAsync();
             var consultant = await _consultantService.GetConsultantFullDataByIdAsync(id);
             ConsultantUpdateViewModel consultantUpdateView = new ConsultantUpdateViewModel()
             {

@@ -1,0 +1,346 @@
+﻿@model ConsultantUpdateViewModel
+
+<form asp-area=""
+      asp-controller="Consultant"
+      asp-action="Edit"
+      method="post">
+    <input type="hidden" asp-for="ConsultantId" />
+    <div class="container-fluid pt-4 px-4">
+        <div class="bg-light rounded h-100 p-4">
+            <div class="row">
+                <div class="mb-3 col-sm-12 ">
+                    <div class="bg-light rounded h-100">
+                        <h3 class="mb-4">@Model.FirstName @Model.LastName</h3>
+                        <h6 class="mb-4">Danışmanlık Bilgileri</h6>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-education-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education"
+                                        aria-selected="true">
+                                    Eğitimler
+                                </button>
+                                <button class="nav-link" id="nav-certificate-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-certificate" type="button" role="tab"
+                                        aria-controls="nav-certificate" aria-selected="false">
+                                    Sertifikalar
+                                </button>
+                                <button class="nav-link" id="nav-specialization-tab" data-bs-toggle="tab"
+                                        data-bs-target="#nav-specialization" type="button" role="tab"
+                                        aria-controls="nav-specialization" aria-selected="false">
+                                    Uzmanlık Alanı
+                                </button>
+                            </div>
+                        </nav>
+                        <div class="tab-content pt-3" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab">
+                                <div class="accordion" id="accordionEducation">
+                                    @foreach (var education in Model.Educations)
+                                    {
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="educationHeading-@education.Id">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#education-@education.Id" aria-expanded="true"
+                                                    aria-controls="education-@education.Id">
+                                                    @education.DepartmentName (@education.DegreeofGraduation )
+                                                </button>
+                                            </h2>
+                                            <div id="education-@education.Id" class="accordion-collapse collapse row"
+                                             aria-labelledby="educationHeading-@education.Id">
+                                                <div class="accordion-body col-11">
+                                                    @education.SchoolName - @education.FacultyName - @education.DepartmentName - @education.GraduationYear
+                                                </div>
+                                                <div class=" accordion-body col-1">
+                                                    <a class="btn btn-outline-danger btn-sm"
+                                                   asp-area="Admin"
+                                                   asp-controller="Consultant"
+                                                   asp-action="DeleteEducation"
+                                                   asp-route-id=@education.Id><i class="fa-solid fa-trash-can"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                    <button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#educationExampleModal">
+                                        <i class="fa-solid fa-circle-plus"></i> Ekle
+                                    </button>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-certificate" role="tabpanel" aria-labelledby="nav-certificate-tab">
+                                <div class="accordion" id="accordionCertificate">
+                                    @foreach (var certificate in Model.Certificates)
+                                    {
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="certificateHeading-@certificate.Id">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#certificate-@certificate.Id" aria-expanded="true"
+                                                    aria-controls="certificate-@certificate.Id">
+                                                    @certificate.CertificateName (@certificate.CertificateTime )
+                                                </button>
+                                            </h2>
+                                            <div id="certificate-@certificate.Id" class="accordion-collapse collapse row"
+                                             aria-labelledby="certificateHeading-@certificate.Id">
+                                                <div class="accordion-body col-11">
+                                                    @certificate.Institution - @certificate.CertificateName - @certificate.CertificateTime
+                                                </div>
+                                                <div class="accordion-body col-1">
+                                                    <a class="btn btn-outline-danger btn-sm"
+                                                   asp-area="Admin"
+                                                   asp-controller="Consultant"
+                                                   asp-action="DeleteCertificate"
+                                                   asp-route-id=@certificate.Id><i class="fa-solid fa-trash-can"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    }
+                                    <button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#certificateExampleModal">
+                                        <i class="fa-solid fa-circle-plus"></i> Ekle
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-specialization" role="tabpanel" aria-labelledby="nav-specialization-tab">
+                                <ul class="list-group">
+                                    @foreach (var specialization in Model.Specializations)
+                                    {
+                                        <li class="list-group-item bg-light float-end">@specialization.Name</li>
+                                    }
+
+                                </ul>
+                                <button type="button" class="btn btn-success mt-2" data-bs-toggle="modal" data-bs-target="#specializationExampleModal">
+                                    <i class="fa-solid fa-circle-plus"></i> Ekle-Çıkar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row mb-3 col-sm-12 col-xl-6">
+                        <label class="col col-form-label" asp-for="JobTitle"></label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" asp-for="JobTitle">
+                        </div>
+                    </div>
+                    <div class="row mb-3 col-sm-12 col-xl-6">
+                        <label class="col col-form-label" asp-for="VisitsPrice"></label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" asp-for="VisitsPrice">
+                        </div>
+                    </div>
+                    <div class="row mb-3 col-12 ">
+                        <label class="col col-form-label" asp-for="Promotion"></label>
+                        <div class="col-12">
+                            <textarea id="editor" type="text" class="form-control" asp-for="Promotion"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12">
+                <label class="col col-form-label">Oluşturma Zamanı: @Model.CreatedTime</label>
+            </div>
+            <div class="col-12">
+                <label class="col col-form-label">En Son Güncelleme Zamanı: @Model.UpdateTime</label>
+
+            </div>
+            <button type="submit" class="btn btn-success">Kaydet</button>
+
+            <a type="submit" class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Index">Geri Dön</a>
+
+        </div>
+    </div>
+</form>
+
+
+<!-- Add Education Modal -->
+<form asp-area="Admin"
+      asp-controller="Consultant"
+      asp-action="AddEducation"
+      method="post">
+    <input type="hidden" asp-for="ConsultantId" />
+
+    <div class="modal fade" id="educationExampleModal" tabindex="-1" aria-labelledby="educationExampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="educationExampleModalLabel">Eğitim Bilgisi Ekle</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="row mb-3 col-sm-12 col-xl-4">
+                            <label class="col col-form-label" asp-for="SchoolName"></label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" asp-for="SchoolName">
+                            </div>
+                        </div>
+                        <div class="row mb-3 col-sm-12 col-xl-4">
+                            <label class="col col-form-label" asp-for="FacultyName"></label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" asp-for="FacultyName">
+                            </div>
+                        </div>
+                        <div class="row mb-3 col-sm-12 col-xl-4">
+                            <label class="col col-form-label" asp-for="DepartmentName"></label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" asp-for="DepartmentName">
+                            </div>
+                        </div>
+                        <div class="row mb-3 col-sm-12 col-xl-4">
+                            <label class="col col-form-label" asp-for="DegreeofGraduation"></label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" asp-for="DegreeofGraduation">
+                            </div>
+                        </div>
+                        <div class="row mb-3 col-sm-12 col-xl-4">
+                            <label class="col col-form-label" asp-for="StartYear"></label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" asp-for="StartYear">
+                            </div>
+                        </div>
+                        <div class="row mb-3 col-sm-12 col-xl-4">
+                            <label class="col col-form-label" asp-for="GraduationYear"></label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" asp-for="GraduationYear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- Add Certificate Modal -->
+<form asp-area="Admin"
+      asp-controller="Consultant"
+      asp-action="AddCertificate"
+      method="post">
+    <input type="hidden" asp-for="ConsultantId" />
+
+    <div class="modal fade" id="certificateExampleModal" tabindex="-1" aria-labelledby="certificateExampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="certificateExampleModalLabel">Sertifika Bilgisi Ekle</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="row mb-3 col-sm-12 col-xl-8">
+                            <label class="col col-form-label" asp-for="Institution"></label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" asp-for="Institution">
+                            </div>
+                        </div>
+                        <div class="row mb-3 col-sm-12 col-xl-4">
+                            <label class="col col-form-label" asp-for="CertificateTime"></label>
+                            <div class="col-sm-12">
+                                <input type="number" class="form-control" asp-for="CertificateTime">
+                            </div>
+                        </div>
+                        <div class="row mb-3 col-12 ">
+                            <label class="col col-form-label" asp-for="CertificateName"></label>
+                            <div class="col-sm-12">
+                                <input type="text" class="form-control" asp-for="CertificateName">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- Add Specialization Modal -->
+<form asp-area="Admin"
+      asp-controller="Consultant"
+      asp-action="EditSpecialization"
+      method="post">
+    <input type="hidden" asp-for="ConsultantId" />
+    <div class="modal fade" id="specializationExampleModal" tabindex="-1" aria-labelledby="specializationExampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="specializationExampleModalLabel">Uzmanlık Bilgisi Ekle</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        @*NonMembers*@
+                        <div class="col-6">
+                            <h6 class="bg-primary text-white p-3">Olmayan Uzmanlıklar</h6>
+                            @if (Model.NonSpecialization.Count == 0)
+                            {
+                                <div class="alert alert-warning">
+                                    Bütün uzmanlıklar ekli.
+                                </div>
+                            }
+                            else
+                            {
+                                <table class="table table-sm table-bordered">
+                                    @foreach (var specialization in Model.NonSpecialization)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="form-check-input" name="IdsToAddSpecialization" value="@specialization.Id" />
+                                                <label class="form-check-label">
+                                                    @specialization.Name
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    }
+                                </table>
+                            }
+                        </div>
+                        @*Members*@
+                        <div class="col-6">
+                            <h6 class="bg-primary text-white p-3">Olan Uzmanlıklar</h6>
+                            @if (Model.Specializations.Count == 0)
+                            {
+                                <div class="alert alert-warning">
+                                    Hiç bir uzmanlık eklenmemiş.
+                                </div>
+                            }
+                            else
+                            {
+                                <table class="table table-sm table-bordered">
+                                    @foreach (var specialization in Model.Specializations)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" class="form-check-input" name="IdsToRemoveSpecialization" value="@specialization.Id" />
+                                                <label class="form-check-label">
+                                                    @specialization.Name
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    }
+                                </table>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Kaydet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+@section Styles{
+    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+}
+@section Scripts{
+    <script>
+        CKEDITOR.replace('editor');
+    </script>
+}

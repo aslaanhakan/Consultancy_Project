@@ -39,6 +39,11 @@ namespace Consultancy_Project.Business.Concrate
             return await _consultantRepository.GetByIdAsync(id);
         }
 
+        public async Task<List<Consultant>> GetConsultantsFullDataAsync()
+        {
+            return await _consultantRepository.GetConsultantsFullDataAsync();
+        }
+
         public async Task<Consultant> GetConsultantFullDataByIdAsync(int id)
         {
             return await _consultantRepository.GetConsultantFullDataByIdAsync(id);

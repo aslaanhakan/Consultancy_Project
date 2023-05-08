@@ -21,6 +21,19 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             get { return _dbContext as ConsultancyProjectContext; }
         }
 
+        public async Task<List<Consultant>> GetConsultantsFullDataAsync()
+        {
+            var result = await AppContext
+                        .Consultants
+                        .Include(c => c.Certificates)
+                        .Include(c => c.Educations)
+                        .Include(c => c.ConsultantsSpecializations)
+                        .ThenInclude(cs => cs.Specialization)
+                        .Include(c => c.User)
+                        .ThenInclude(x=>x.Image)
+                        .ToListAsync();
+            return result;
+        }
         public async Task<Consultant> GetConsultantFullDataByIdAsync(int id)
         {
             var result = await AppContext
@@ -31,6 +44,7 @@ namespace Consultancy_Project.Data.Concrate.EfCore
                         .Include(c => c.ConsultantsSpecializations)
                         .ThenInclude(cs => cs.Specialization)
                         .Include(c=>c.User)
+                        .ThenInclude(c=>c.Image)
                         .FirstOrDefaultAsync();
             return result;
         }

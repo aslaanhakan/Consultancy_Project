@@ -4,15 +4,15 @@
 }
 <!-- Carousel Start -->
 <div class="container-fluid p-0 mt-3">
-    <div class="owl-carousel header-carousel position-relative">
-        <div class="owl-carousel-item position-relative">
+    <div class="position-relative">
+        <div class=" position-relative">
             <img class="img-fluid" src="~/Images/img/carousel-1.jpg" alt="">
             <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(43, 57, 64, .5);">
                 <div class="container">
-                    <div class="row justify-content-start">
-                        <div class="col-10 col-lg-8 ">
-                            <h1 class="display-3 text-white animated slideInDown mb-4">Zihninize iyi gelecek bir adım:</h1>
-                            <h3 class="display-6 text-white animated slideInDown mb-4"> Online terapiye başlayın</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-lg-8  text-center">
+                            <h2 class="display-4 text-white animated  mb-4">Zihninize iyi gelecek bir adım:</h2>
+                            <h3 class="display-6 text-white animated mb-4"> Online terapiye başlayın</h3>
                             <p class="fs-5 fw-medium text-white mb-4 pb-2">Zihninizi dinlendirmek, kendinize zaman ayırmak için mükemmel bir fırsat: <strong>Consultancy!</strong> Hemen kaydolun ve hayatınıza biraz nefes aldırın.</p>
                             @if (!User.Identity.IsAuthenticated)
                             {
@@ -118,7 +118,7 @@
                 <p><i class="fa fa-check text-primary me-3"></i>Gizlilik</p>
                 <p><i class="fa fa-check text-primary me-3"></i>Her Bütçeye Uygun</p>
                 <p><i class="fa fa-check text-primary me-3"></i> 7/24 Ulaşılabilir</p>
-                <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+               @* <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>*@
             </div>
         </div>
     </div>
@@ -149,27 +149,45 @@
 
             <div class="tab-content">
                 <div id="tab-1" class="tab-pane fade show p-0 active">
+
                     @foreach (var consultant in Model.Consultants)
                     {
                         <div class="job-item p-4 mb-4">
                             <div class="row g-4">
 
                                 <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                                    <img class="flex-shrink-0 img-fluid border rounded" src="~/Images/@consultant.Image.Url" alt="" style="width: 150px; height: 200px;">
+                                    <img class="flex-shrink-0 img-fluid border rounded" src="~/Images/@consultant.User.Image.Url" alt="" style="width: 150px; height: 200px;">
                                     <div class="text-start ps-4 col-12">
-                                        <h5 class="mb-3">@consultant.FirstName @consultant.LastName</h5>
-                                        <h6 class="mb-3 muted">@consultant.Consultant.JobTitle</h6>
-                                        @*html okuyucu oalrak düzelteceğim*@
-                                        <div class="text-truncate me-0">@consultant.Consultant.Promotion</div>
-                                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>New York, USA</span>
-                                        <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>Full Time</span>
-                                        <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>$123 - $456</span>
+                                        <h5 class="mb-3">@consultant.User.FirstName @consultant.User.LastName</h5>
+                                        <h6 class="mb-3 ">@consultant.JobTitle</h6>
+                                        <div class=" mb-3">
+                                            <span class=" me-3"><i class="far fa-clock text-primary me-2"></i>Görüntülü 45 dk./ Sesli Görüşme 45 dk.</span> 
+                                            <span class=" me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>@($"{consultant.VisitsPrice:C2}")</span>
+                                        </div>
+                                        @foreach (var item in consultant.ConsultantsSpecializations)
+                                        {
+                                            <span class=" badge rounded-pill bg-primary text-white me-3">@item.Specialization.Name</span>
+                                        }
+                                        <div class="mb-3">
+                                            @if (consultant.Promotion.Length > 100)
+                                            {
+                                                <p>@Html.Raw(consultant.Promotion.Substring(0, 350))...</p>
+                                                <a asp-area="" asp-controller="Consultant" asp-action="ConsultantDetails" asp-route-id="@consultant.Id" class="btn btn-primary">Devamını oku</a>
+                                            }
+                                            else
+                                            {
+                                                <p>@Html.Raw(consultant.Promotion)</p>
+                                            }
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                                     <div class="d-flex mb-3">
                                         <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a>
-                                        <a class="btn btn-primary" href="">Apply Now</a>
+                                        <a class="btn btn-primary" href="">Randevu Al</a>
+                                    </div>
+                                    <div class="d-flex mb-3">
+                                        <a class="btn btn-primary" href="">Hemen Seansa Başla</a>
                                     </div>
                                     <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date Line: 01 Jan, 2045</small>
                                 </div>

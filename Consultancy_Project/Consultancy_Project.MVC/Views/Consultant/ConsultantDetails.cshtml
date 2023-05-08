@@ -1,0 +1,92 @@
+﻿@model ConsultantDetailsViewModel
+
+
+<section style="background-color: #eee;">
+    <div class="container py-5">
+        <div class="text-center bg-light py-5">
+            @foreach (var item in Model.Specializations)
+            {
+                <span class=" badge rounded-pill bg-primary text-white me-3">@item.Name</span>
+            }
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card mb-4 border-0">
+                    <div class="card-body text-center">
+                        <img src="~/Images/@Model.ImageUrl" alt="avatar"
+                             class="rounded-circle img-fluid" style="width: 250px;">
+                        <div class="d-flex justify-content-center my-3">
+                            <button class="btn btn-primary  w-100">Randevu Al</button>
+
+                        </div>
+                        <div class="d-flex justify-content-center my-3 ">
+                            <button class="btn btn-info w-100">Hemen Seansa Başla</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-4 mb-lg-0 border-0">
+                    <div class="card-body p-0">
+                        <ul class="list-group list-group-flush rounded-3">
+                            <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                <div class="display-6 fw-bold">
+                                    Eğitim Bilgileri
+                                </div>
+                            </li>
+                            @foreach (var education in Model.Educations)
+                            {
+                                <li class="list-group-item p-3">
+                                    <p class="mb-0">@education.StartYear - @education.GraduationYear</p>
+                                    <p class="mb-0">@education.DegreeofGraduation</p>
+                                    <p class="mb-0">@education.FacultyName</p>
+                                    <p class="mb-0">@education.DepartmentName</p>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="card mb-4  border-0">
+                    <div class="card-body">
+                        <div>
+                            <h3 class="my-3">@Model.FirstName @Model.LastName</h3>
+                            <h5 class="my-3">@Model.JobTitle</h5>
+                            <div>
+                                <span class=" me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>@($"{Model.VisitsPrice:C2}")</span>
+                                <span class=" me-3"><i class="far fa-clock text-primary me-2"></i>Görüntülü 45 dk./ Sesli Görüşme 45 dk.</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>@Html.Raw(Model.Promotion)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion mt-5" id="accordionCertificate">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="certificateHeading">
+                        <button class="accordion-button collapsed  p-4" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#certificate" aria-expanded="true"
+                                aria-controls="certificate">
+                            Sertifikalar
+                        </button>
+                    </h2>
+                    @foreach (var certificate in Model.Certificates)
+                    {
+
+                        <div id="certificate" class="accordion-collapse collapse"
+                         aria-labelledby="certificateHeading">
+                            <div class="accordion-body">
+                                @certificate.Institution - @certificate.CertificateName - @certificate.CertificateTime
+                            </div>
+                        </div>
+
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -5,6 +5,7 @@ namespace Consultancy_Project.MVC.Models
 {
     public class HomePageViewModel
     {
-        public List<User> Consultants { get; set; }
+        public List<Consultant> Consultants { get; set; }
+        public List<Specialization> Specializations { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Consultancy_Project.Business.Abstract;
+using Consultancy_Project.Entity.Concrate;
 using Consultancy_Project.Entity.Concrate.Identity;
 using Consultancy_Project.MVC.Models;
 using Microsoft.AspNetCore.Identity;
@@ -12,21 +13,25 @@ namespace Consultancy_Project.MVC.Controllers
     {
         private readonly UserManager<User> _userManager;
         private IConsultantService _consultantService;
-
-        public HomeController(IConsultantService consultantService, UserManager<User> userManager)
+        private ISpecializationService _specializationService;
+        public HomeController(IConsultantService consultantService, UserManager<User> userManager, ISpecializationService specializationService)
         {
             _consultantService = consultantService;
             _userManager = userManager;
+            _specializationService = specializationService;
         }
 
         public async Task<IActionResult> Index()
         {
-            var result = await _consultantService.GetAllAsync();
-            var consultants = await _userManager.Users.Where(x=>x.Consultant!=null).Include(x=> x.Consultant).Include(x=>x.Image).ToListAsync();
+            var result = await _consultantService.GetConsultantsFullDataAsync();
+            var specializations = await _specializationService.GetAllAsync();
+
             var homePageDatas = new HomePageViewModel()
             {
-                Consultants = consultants,
+                Consultants = result,     
+                Specializations=specializations,
             };
+            
             return View(homePageDatas);
         }
 
