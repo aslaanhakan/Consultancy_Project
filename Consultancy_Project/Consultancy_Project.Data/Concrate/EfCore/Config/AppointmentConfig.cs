@@ -22,6 +22,7 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Config
             builder.Property(x => x.CustomerId).IsRequired();
             builder.Property(x => x.AppointmentTime).IsRequired();
 
+
         }
     }
 }

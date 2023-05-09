@@ -56,7 +56,9 @@ builder.Services.AddScoped<ICustomerService, CustomerManager>();
 builder.Services.AddScoped<ISpecializationService, SpecializationManager>();
 builder.Services.AddScoped<IEducationService, EducationManager>();
 builder.Services.AddScoped<ICertificateService, CertificateManager>();
+builder.Services.AddScoped<IAppointmentService, AppointmentManager>();
 
+builder.Services.AddScoped<IAppointmentRepository, EfCoreAppointmentRepository>();
 builder.Services.AddScoped<IEducationRepository, EFCoreEducationRepository>();
 builder.Services.AddScoped<ICertificateRepository, EFCoreCertificateRepository>();
 builder.Services.AddScoped<ISpecializationRepository, EfCoreSpecializationRepository>();

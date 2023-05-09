@@ -8,5 +8,10 @@ namespace Consultancy_Project.MVC.Controllers
         {
             return View();
         }
+        public async Task<IActionResult> ConsultantAppoinmentCalender()
+        {
+
+            return View();
+        }
     }
 }

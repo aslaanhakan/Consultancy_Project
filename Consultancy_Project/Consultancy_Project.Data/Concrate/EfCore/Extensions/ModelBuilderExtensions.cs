@@ -109,13 +109,13 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Extensions
             #region Consultant
             List<Consultant> consultants = new List<Consultant>
             {
-                new Consultant {Id=1,UserId=users[1].Id, Promotion="Zorlu yaşam deneyimlerinizle baş etmenizde size destek olmak için burada. Kendinizi daha iyi hissetmek ve hayatınızda olumlu değişiklikler yapmak için birlikte çalışabiliriz.",  VisitsPrice = 100, JobTitle="Psikolojik Danışman"},
-                new Consultant {Id=2,UserId=users[2].Id, Promotion="Yıllardır psikolojik danışmanlık yapıyorum ve kişisel gelişim ve ruh sağlığı konularında uzmanım. Size uygun terapi yöntemleri kullanarak hayatınızı daha mutlu ve sağlıklı hale getirmek için buradayım.", VisitsPrice = 100, JobTitle="Klinik Psikolog"},
-                new Consultant {Id=3,UserId=users[3].Id, Promotion="Hayatınızdaki stresi, kaygıyı ve depresyonu azaltmanıza yardımcı olmak için burada. Kendinize ve yaşam kalitenize yatırım yapmak istiyorsanız, size destek olabilirim.", VisitsPrice = 100 ,  JobTitle="Psikolog"},
-                new Consultant {Id=4,UserId=users[4].Id, Promotion="Psikolojik danışmanlıkta uzmanım ve çift terapisi konusunda özellikle deneyimliyim. İlişkilerinizde sorun yaşıyorsanız, size yardımcı olmak için buradayım.", VisitsPrice = 100, JobTitle="Psikolojik Danışman"},
-                new Consultant {Id=5,UserId=users[5].Id, Promotion="Herhangi bir sorununuzda size yardımcı olmak için burada. Kişisel gelişim, özsaygı, aile ilişkileri ve daha birçok konuda size destek olabilirim.", VisitsPrice = 100 , JobTitle="Psikolojik Danışman"},
-                new Consultant {Id=6,UserId=users[6].Id, Promotion="Çocukluk travmaları, kayıp ve yas gibi konularda danışmanlık yapmaktayım. Kendinizi daha iyi hissetmeniz ve zihinsel sağlığınızı korumanız için size yardımcı olabilirim.", VisitsPrice = 100 , JobTitle="Psikolojik Danışman"},
-                new Consultant {Id=7,UserId=users[7].Id, Promotion="Stres yönetimi, öfke kontrolü ve bağımlılıkla mücadele konularında deneyimliyim. Kendinizi daha iyi hissetmek ve olumlu değişiklikler yapmak için size yardımcı olabilirim.", VisitsPrice = 100, JobTitle="Psikolojik Danışman"}
+                new Consultant {Id=1,UserId=users[1].Id, Promotion="Zorlu yaşam deneyimlerinizle baş etmenizde size destek olmak için burada. Kendinizi daha iyi hissetmek ve hayatınızda olumlu değişiklikler yapmak için birlikte çalışabiliriz.",  VisitsPrice = 100, JobTitle="Psikolojik Danışman", Confirmation=true },
+                new Consultant {Id=2,UserId=users[2].Id, Promotion="Yıllardır psikolojik danışmanlık yapıyorum ve kişisel gelişim ve ruh sağlığı konularında uzmanım. Size uygun terapi yöntemleri kullanarak hayatınızı daha mutlu ve sağlıklı hale getirmek için buradayım.", VisitsPrice = 100, JobTitle="Klinik Psikolog", Confirmation=true},
+                new Consultant {Id=3,UserId=users[3].Id, Promotion="Hayatınızdaki stresi, kaygıyı ve depresyonu azaltmanıza yardımcı olmak için burada. Kendinize ve yaşam kalitenize yatırım yapmak istiyorsanız, size destek olabilirim.", VisitsPrice = 100 ,  JobTitle="Psikolog", Confirmation = true},
+                new Consultant {Id=4,UserId=users[4].Id, Promotion="Psikolojik danışmanlıkta uzmanım ve çift terapisi konusunda özellikle deneyimliyim. İlişkilerinizde sorun yaşıyorsanız, size yardımcı olmak için buradayım.", VisitsPrice = 100, JobTitle="Psikolojik Danışman", Confirmation = true},
+                new Consultant {Id=5,UserId=users[5].Id, Promotion="Herhangi bir sorununuzda size yardımcı olmak için burada. Kişisel gelişim, özsaygı, aile ilişkileri ve daha birçok konuda size destek olabilirim.", VisitsPrice = 100 , JobTitle="Psikolojik Danışman", Confirmation = true},
+                new Consultant {Id=6,UserId=users[6].Id, Promotion="Çocukluk travmaları, kayıp ve yas gibi konularda danışmanlık yapmaktayım. Kendinizi daha iyi hissetmeniz ve zihinsel sağlığınızı korumanız için size yardımcı olabilirim.", VisitsPrice = 100 , JobTitle="Psikolojik Danışman", Confirmation = true},
+                new Consultant {Id=7,UserId=users[7].Id, Promotion="Stres yönetimi, öfke kontrolü ve bağımlılıkla mücadele konularında deneyimliyim. Kendinizi daha iyi hissetmek ve olumlu değişiklikler yapmak için size yardımcı olabilirim.", VisitsPrice = 100, JobTitle="Psikolojik Danışman", Confirmation = true}
             };
             modelBuilder.Entity<Consultant>().HasData(consultants);
             #endregion
@@ -123,7 +123,10 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Extensions
             #region Appointment
             List<Appointment> appointments = new List<Appointment>()
             {
-                new Appointment {Id=1, AppointmentDate=new DateTime(2023, 1, 1),ConsultantId=consultants[0].Id,CustomerId=customers[0].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime=AppointmentTime.Saat10_11},
+                new Appointment {Id=1, AppointmentDate=new DateOnly(2023, 1, 1),ConsultantId=consultants[0].Id,CustomerId=customers[0].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="10:00-11:00" , AppointmentState=AppointmentState.Successful},
+                new Appointment {Id=2, AppointmentDate=new DateOnly(2023, 1, 1),ConsultantId=consultants[1].Id,CustomerId=customers[1].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="13:00-14:00", AppointmentState=AppointmentState.Unsuccessful},
+                new Appointment {Id=3, AppointmentDate=new DateOnly(2023, 5, 20),ConsultantId=consultants[2].Id,CustomerId=customers[2].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="15:00-16:00", AppointmentState=AppointmentState.Waiting},
+                new Appointment {Id=4, AppointmentDate=new DateOnly(2023, 5, 25),ConsultantId=consultants[3].Id,CustomerId=customers[3].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="18:00-19:00", AppointmentState=AppointmentState.Cancellation},
             };
             modelBuilder.Entity<Appointment>().HasData(appointments);
             #endregion

@@ -164,12 +164,14 @@
                                             <span class=" me-3"><i class="far fa-clock text-primary me-2"></i>Görüntülü 45 dk./ Sesli Görüşme 45 dk.</span> 
                                             <span class=" me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>@($"{consultant.VisitsPrice:C2}")</span>
                                         </div>
-                                        @foreach (var item in consultant.ConsultantsSpecializations)
-                                        {
-                                            <span class=" badge rounded-pill bg-primary text-white me-3">@item.Specialization.Name</span>
-                                        }
                                         <div class="mb-3">
-                                            @if (consultant.Promotion.Length > 100)
+                                            @foreach (var item in consultant.ConsultantsSpecializations)
+                                            {
+                                                <span class=" badge rounded-pill bg-primary text-white me-3">@item.Specialization.Name</span>
+                                            }
+                                        </div>
+                                        <div class="mb-3">
+                                            @if (consultant.Promotion.Length > 350)
                                             {
                                                 <p>@Html.Raw(consultant.Promotion.Substring(0, 350))...</p>
                                                 <a asp-area="" asp-controller="Consultant" asp-action="ConsultantDetails" asp-route-id="@consultant.Id" class="btn btn-primary">Devamını oku</a>
