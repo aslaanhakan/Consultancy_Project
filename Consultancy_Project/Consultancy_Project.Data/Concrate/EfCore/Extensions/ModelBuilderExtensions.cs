@@ -120,6 +120,13 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Extensions
             modelBuilder.Entity<Consultant>().HasData(consultants);
             #endregion
 
+            #region Appointment
+            List<Appointment> appointments = new List<Appointment>()
+            {
+                new Appointment {Id=1, AppointmentDate=new DateTime(2023, 1, 1),ConsultantId=consultants[0].Id,CustomerId=customers[0].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime=AppointmentTime.Saat10_11},
+            };
+            modelBuilder.Entity<Appointment>().HasData(appointments);
+            #endregion
 
             #region Educations
             List<Education> educations = new List<Education>()
