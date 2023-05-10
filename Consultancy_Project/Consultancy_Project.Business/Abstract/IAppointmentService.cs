@@ -15,6 +15,9 @@ namespace Consultancy_Project.Business.Abstract
         void Update(Appointment appointment);
         void Delete(Appointment appointment);
         Task<List<Appointment>> GetAllFullDataAsync();
+        Task<List<Appointment>> GetAllDataByConsultantIdAsync(int consultantId);
+        Task<List<Appointment>> GetAllDataByCustomerIdAsync(int customerId);
+        Task<List<Appointment>> GetAllDataByUserIdAsync(string userId, string userRole);
 
     }
 }

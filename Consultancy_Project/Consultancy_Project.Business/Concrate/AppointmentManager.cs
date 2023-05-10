@@ -33,6 +33,21 @@ namespace Consultancy_Project.Business.Concrate
            return await _appointmentRepository.GetAllAsync();
         }
 
+        public async Task<List<Appointment>> GetAllDataByConsultantIdAsync(int consultantId)
+        {
+            return await _appointmentRepository.GetAllDataByConsultantIdAsync(consultantId);
+        }
+
+        public async Task<List<Appointment>> GetAllDataByCustomerIdAsync(int customerId)
+        {
+            return await _appointmentRepository.GetAllDataByCustomerIdAsync(customerId);
+        }
+
+        public async Task<List<Appointment>> GetAllDataByUserIdAsync(string userId, string userRole)
+        {
+            return await _appointmentRepository.GetAllDataByUserIdAsync(userId, userRole);
+        }
+
         public async Task<List<Appointment>> GetAllFullDataAsync()
         {
             return await _appointmentRepository.GetAllFullDataAsync();

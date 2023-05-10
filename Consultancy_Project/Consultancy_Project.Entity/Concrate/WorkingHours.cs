@@ -3,7 +3,6 @@
     public class WorkingHours
     {
         public int Id { get; set; }
-        public string AppoinmentHour { get; set; }
-        public List<Calendar> Calendars { get; set; }
+        public string Hour { get; set; }
     }
 }

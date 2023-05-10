@@ -15,6 +15,38 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Extensions
     {
         public static void SeedData(this ModelBuilder modelBuilder)
         {
+            #region WorkingHours
+            List<WorkingHours> workingHours = new List<WorkingHours>()
+            {
+                new WorkingHours {Id=1, Hour="00:00-01:00" },
+                new WorkingHours {Id=2, Hour="01:00-02:00" },
+                new WorkingHours {Id=3, Hour="02:00-03:00" },
+                new WorkingHours {Id=4, Hour="03:00-04:00" },
+                new WorkingHours {Id=5, Hour="04:00-05:00" },
+                new WorkingHours {Id=6, Hour="05:00-06:00" },
+                new WorkingHours {Id=7, Hour="06:00-07:00" },
+                new WorkingHours {Id=8, Hour="07:00-08:00" },
+                new WorkingHours {Id=9, Hour="08:00-09:00" },
+                new WorkingHours {Id=10, Hour="09:00-10:00" },
+                new WorkingHours {Id=11, Hour="10:00-11:00" },
+                new WorkingHours {Id=12, Hour="11:00-12:00" },
+                new WorkingHours {Id=13, Hour="12:00-13:00" },
+                new WorkingHours {Id=14, Hour="13:00-14:00" },
+                new WorkingHours {Id=15, Hour="14:00-15:00" },
+                new WorkingHours {Id=16, Hour="15:00-16:00" },
+                new WorkingHours {Id=17, Hour="16:00-17:00" },
+                new WorkingHours {Id=18, Hour="17:00-18:00" },
+                new WorkingHours {Id=19, Hour="18:00-19:00" },
+                new WorkingHours {Id=20, Hour="19:00-20:00" },
+                new WorkingHours {Id=21, Hour="20:00-21:00" },
+                new WorkingHours {Id=22, Hour="21:00-22:00" },
+                new WorkingHours {Id=23, Hour="22:00-23:00" },
+                new WorkingHours {Id=24, Hour="23:00-00:00" },
+
+            };
+            modelBuilder.Entity<WorkingHours>().HasData(workingHours);
+            #endregion
+          
             #region Users
             List<User> users = new List<User>
             {
@@ -120,24 +152,26 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Extensions
             modelBuilder.Entity<Consultant>().HasData(consultants);
             #endregion
 
-            #region Calendar
-
-            #endregion
-            List<Calendar> calendars = new List<Calendar>()
+            #region Available
+            List<Available> availables = new List<Available>()
             {
-                new Calendar {Id=1, Date=new DateOnly(2023, 5, 15), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, TimeRange = new string[] { "9:00-10:00", "10:00-11:00", "11:00-12:00" , "15:00-16:00"} },
-                new Calendar {Id=2, Date=new DateOnly(2023, 5, 16), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, TimeRange = new string[] { "9:00-10:00", "10:00-11:00", "11:00-12:00" , "15:00-16:00"} },
-                new Calendar {Id=3, Date=new DateOnly(2023, 5, 17), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, TimeRange = new string[] { "9:00-10:00", "10:00-11:00", "11:00-12:00" , "15:00-16:00"} },
-                new Calendar {Id=4, Date=new DateOnly(2023, 5, 22), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, TimeRange = new string[] { "9:00-10:00", "10:00-11:00", "11:00-12:00" , "15:00-16:00"} }
+                new Available {Id=1, Date=new DateOnly(2023, 5, 15), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, WorkingHoursId=15 },
+                new Available {Id=2, Date=new DateOnly(2023, 5, 16), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, WorkingHoursId=20 },
+                new Available {Id=3, Date=new DateOnly(2023, 5, 17), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, WorkingHoursId=16 },
+                new Available {Id=4, Date=new DateOnly(2023, 5, 22), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, WorkingHoursId=13 },
+                new Available {Id=5, Date=new DateOnly(2023, 5, 22), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, WorkingHoursId=14 },
+                new Available {Id=6, Date=new DateOnly(2023, 5, 22), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, WorkingHoursId=15 }
             };
-            modelBuilder.Entity<Calendar>().HasData(calendars);
+            modelBuilder.Entity<Available>().HasData(availables);
+            #endregion
+
             #region Appointment
             List<Appointment> appointments = new List<Appointment>()
             {
-                new Appointment {Id=1, AppointmentDate=new DateOnly(2023, 1, 1),ConsultantId=consultants[0].Id,CustomerId=customers[0].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="10:00-11:00" , AppointmentState=AppointmentState.Successful},
-                new Appointment {Id=2, AppointmentDate=new DateOnly(2023, 1, 1),ConsultantId=consultants[1].Id,CustomerId=customers[1].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="13:00-14:00", AppointmentState=AppointmentState.Unsuccessful},
-                new Appointment {Id=3, AppointmentDate=new DateOnly(2023, 5, 20),ConsultantId=consultants[2].Id,CustomerId=customers[2].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="15:00-16:00", AppointmentState=AppointmentState.Waiting},
-                new Appointment {Id=4, AppointmentDate=new DateOnly(2023, 5, 25),ConsultantId=consultants[3].Id,CustomerId=customers[3].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="18:00-19:00", AppointmentState=AppointmentState.Cancellation},
+                new Appointment {Id=1, AppointmentDate=new DateOnly(2023, 1, 1),ConsultantId=1,CustomerId=customers[0].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="10:00-11:00" , AppointmentState=AppointmentState.Successful,Price=200},
+                new Appointment {Id=2, AppointmentDate=new DateOnly(2023, 1, 1),ConsultantId=1,CustomerId=customers[1].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="13:00-14:00", AppointmentState=AppointmentState.Unsuccessful,Price= 200},
+                new Appointment {Id=3, AppointmentDate=new DateOnly(2023, 5, 20),ConsultantId=2,CustomerId=customers[2].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="15:00-16:00", AppointmentState=AppointmentState.Waiting},
+                new Appointment {Id=4, AppointmentDate=new DateOnly(2023, 5, 25),ConsultantId=2,CustomerId=customers[3].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="18:00-19:00", AppointmentState=AppointmentState.Cancellation},
             };
             modelBuilder.Entity<Appointment>().HasData(appointments);
             #endregion

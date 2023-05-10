@@ -14,6 +14,7 @@ namespace Consultancy_Project.Entity.Concrate
         public int CustomerId { get; set; }
         public DateOnly AppointmentDate { get; set; }
         public string AppointmentTime { get; set; }
+        public decimal Price { get; set; }
         public AppointmentState AppointmentState { get; set; }
         public DateTime CreatedTime { get; set; }
         public DateTime UpdatedTime { get; set; }
