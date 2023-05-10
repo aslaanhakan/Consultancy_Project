@@ -109,7 +109,7 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Extensions
             #region Consultant
             List<Consultant> consultants = new List<Consultant>
             {
-                new Consultant {Id=1,UserId=users[1].Id, Promotion="Zorlu yaşam deneyimlerinizle baş etmenizde size destek olmak için burada. Kendinizi daha iyi hissetmek ve hayatınızda olumlu değişiklikler yapmak için birlikte çalışabiliriz.",  VisitsPrice = 100, JobTitle="Psikolojik Danışman", Confirmation=true },
+                new Consultant {Id=1,UserId=users[1].Id, Promotion="Zorlu yaşam deneyimlerinizle baş etmenizde size destek olmak için burada. Kendinizi daha iyi hissetmek ve hayatınızda olumlu değişiklikler yapmak için birlikte çalışabiliriz.",  VisitsPrice = 250, JobTitle="Psikolojik Danışman", Confirmation=true },
                 new Consultant {Id=2,UserId=users[2].Id, Promotion="Yıllardır psikolojik danışmanlık yapıyorum ve kişisel gelişim ve ruh sağlığı konularında uzmanım. Size uygun terapi yöntemleri kullanarak hayatınızı daha mutlu ve sağlıklı hale getirmek için buradayım.", VisitsPrice = 100, JobTitle="Klinik Psikolog", Confirmation=true},
                 new Consultant {Id=3,UserId=users[3].Id, Promotion="Hayatınızdaki stresi, kaygıyı ve depresyonu azaltmanıza yardımcı olmak için burada. Kendinize ve yaşam kalitenize yatırım yapmak istiyorsanız, size destek olabilirim.", VisitsPrice = 100 ,  JobTitle="Psikolog", Confirmation = true},
                 new Consultant {Id=4,UserId=users[4].Id, Promotion="Psikolojik danışmanlıkta uzmanım ve çift terapisi konusunda özellikle deneyimliyim. İlişkilerinizde sorun yaşıyorsanız, size yardımcı olmak için buradayım.", VisitsPrice = 100, JobTitle="Psikolojik Danışman", Confirmation = true},
@@ -120,6 +120,17 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Extensions
             modelBuilder.Entity<Consultant>().HasData(consultants);
             #endregion
 
+            #region Calendar
+
+            #endregion
+            List<Calendar> calendars = new List<Calendar>()
+            {
+                new Calendar {Id=1, Date=new DateOnly(2023, 5, 15), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, TimeRange = new string[] { "9:00-10:00", "10:00-11:00", "11:00-12:00" , "15:00-16:00"} },
+                new Calendar {Id=2, Date=new DateOnly(2023, 5, 16), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, TimeRange = new string[] { "9:00-10:00", "10:00-11:00", "11:00-12:00" , "15:00-16:00"} },
+                new Calendar {Id=3, Date=new DateOnly(2023, 5, 17), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, TimeRange = new string[] { "9:00-10:00", "10:00-11:00", "11:00-12:00" , "15:00-16:00"} },
+                new Calendar {Id=4, Date=new DateOnly(2023, 5, 22), ConsultantId=consultants[0].Id, CreatedTime= DateTime.Now, UpdatedTime=DateTime.Now, TimeRange = new string[] { "9:00-10:00", "10:00-11:00", "11:00-12:00" , "15:00-16:00"} }
+            };
+            modelBuilder.Entity<Calendar>().HasData(calendars);
             #region Appointment
             List<Appointment> appointments = new List<Appointment>()
             {

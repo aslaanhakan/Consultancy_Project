@@ -18,6 +18,7 @@ namespace Consultancy_Project.Entity.Concrate
         public string JobTitle { get; set; }
         public bool Confirmation { get; set; }
         public virtual User User { get; set; }
+        public virtual List<Calendar> Calendar { get; set; }
         public virtual Appointment Appointment { get; set; }
         public virtual List<Education> Educations { get; set; }
         public virtual List<Certificate> Certificates { get; set; }

@@ -27,6 +27,9 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Context
         public DbSet<Specialization> Specializations { get; set; }
         public DbSet<ConsultantsSpecializations> ConsultantsSpecializations { get; set; }
         public DbSet<Image> Images { get; set; }
+        public DbSet<Calendar> Calendars{ get; set; }
+        public DbSet<WorkingHours> WorkingHours { get; set; }
+        public DbSet<CalendarWorkingHours> CalendarWorkingHours { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(AppointmentConfig).Assembly);
