@@ -62,5 +62,14 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             
 
         }
+
+        public async Task<Consultant> GetConsultantAvailablesByUserIdAsync(string userId)
+        {
+            return await AppContext 
+                        .Consultants
+                        .Where(x=>x.UserId== userId)
+                        .Include(x=>x.Availables)
+                        .FirstOrDefaultAsync();
+        }
     }
 }

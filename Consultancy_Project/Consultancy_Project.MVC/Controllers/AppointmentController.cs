@@ -12,14 +12,16 @@ namespace Consultancy_Project.MVC.Controllers
     {
         private IAppointmentService _appointmentService;
         private IConsultantService _consultantService;
+        private IAvailableService _availableService;
         private readonly UserManager<User> _userManager;
         private readonly RoleManager<Role> _roleManager;
-        public AppointmentController(IAppointmentService appointmentService, IConsultantService consultantService, UserManager<User> userManager, RoleManager<Role> roleManager)
+        public AppointmentController(IAppointmentService appointmentService, IConsultantService consultantService, UserManager<User> userManager, RoleManager<Role> roleManager, IAvailableService availableService)
         {
             _appointmentService = appointmentService;
             _consultantService = consultantService;
             _userManager = userManager;
             _roleManager = roleManager;
+            _availableService = availableService;
         }
 
         public async Task<IActionResult> Index(string id)
@@ -57,10 +59,24 @@ namespace Consultancy_Project.MVC.Controllers
             }).ToList();
             return View(appointmentViewModel);
         }
-        public async Task<IActionResult> AppointmentDetails(int id)
+        public async Task<IActionResult> Available(string id)
         {
-
-            return View();
+            var name = id;
+            var user = await _userManager.FindByNameAsync(name);
+            var consultant = await _consultantService.GetConsultantAvailablesByUserIdAsync(user.Id);
+            var groupDate = await _availableService.GetAvailablesGroupByDateAsync(consultant.Id);
+            var workingHours = await _availableService.GetAllWorkingHours();
+            //DateTime dateTime = DateTime.Parse(groupDate[0].ToString());
+            //DateOnly dateOnly = DateOnly.FromDateTime(dateTime);
+            var availableViewModel = new AvailableViewModel
+            {
+                Consultant = consultant,
+                User = consultant.User,
+                GroupDate = groupDate,
+                WorkingHours = workingHours,
+                ActiveAvailable = consultant.Availables,
+            };
+            return View(availableViewModel);
         }
     }
 }

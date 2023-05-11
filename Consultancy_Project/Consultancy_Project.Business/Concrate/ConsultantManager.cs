@@ -19,9 +19,9 @@ namespace Consultancy_Project.Business.Concrate
             _consultantRepository = consultantRepository;
         }
 
-        public Task CreateAsync(Consultant consultant)
+        public async Task CreateAsync(Consultant consultant)
         {
-            throw new NotImplementedException();
+           await _consultantRepository.CreateAsync(consultant);
         }
 
         public void Delete(Consultant consultant)
@@ -51,12 +51,17 @@ namespace Consultancy_Project.Business.Concrate
 
         public void Update(Consultant consultant)
         {
-            throw new NotImplementedException();
+            _consultantRepository.Update(consultant);
         }
 
         public void UpdateConsultantData(Consultant consultant)
         {
             _consultantRepository.UpdateConsultantData(consultant);
+        }
+
+        public async Task<Consultant> GetConsultantAvailablesByUserIdAsync(string userId)
+        {
+            return await _consultantRepository.GetConsultantAvailablesByUserIdAsync(userId);
         }
     }
 }

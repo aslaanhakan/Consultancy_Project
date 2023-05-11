@@ -19,6 +19,7 @@ namespace Consultancy_Project.Business.Abstract
         void Delete(Consultant consultant);
         void UpdateConsultantData(Consultant consultant);
         Task<List<Consultant>> GetConsultantsFullDataAsync();
+        Task<Consultant> GetConsultantAvailablesByUserIdAsync(string userId);
 
     }
 }

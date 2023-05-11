@@ -9,14 +9,13 @@
     <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Ana Sayfa</a>
         <a asp-area="" asp-controller="Appointment" asp-action="Index" asp-route-id="@User.Identity.Name" class="nav-item nav-link">Randevular</a>
-        
         @if (User.IsInRole("Consultant"))
         {
             <div class="nav-item dropdown">
-                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danışmanlık İşlemleri</a>
+                <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danışman</a>
                 <div class="dropdown-menu rounded-0 m-0">
                     <a asp-area="" asp-controller="Consultant" asp-action="Edit" asp-route-id="@User.Identity.Name" class="dropdown-item">Danışmanlık Bilgileri</a>
-                    <a asp-area="" asp-controller="Consultant" asp-action="Edit" asp-route-id="@User.Identity.Name" class="dropdown-item">Randevu Saati Ekle</a>
+                    <a asp-area="" asp-controller="Appointment" asp-action="Available" asp-route-id="@User.Identity.Name" class="dropdown-item">Çalışma Saatleri</a>
 
                 </div>
             </div>
@@ -26,7 +25,8 @@
         {
             <a asp-area="" asp-controller="Consultant" asp-action="Request" class="nav-item nav-link">Danışman Ol</a>
         }
-        <a href="contact.html" class="nav-item nav-link">Contact</a>
+        <a class="nav-item nav-link">İletişim</a>
+
         @if (User.Identity.IsAuthenticated)
         {
             <div class="nav-item dropdown bg-primary">
@@ -36,10 +36,13 @@
                     {
                     <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="dropdown-item ">Admin Panel</a>
                     }
+                   
+
                     <a asp-area="" asp-controller="Account" asp-action="ProfileManage" asp-route-id="@User.Identity.Name" class="dropdown-item ">Kullanıcı Bilgileri</a>
                     <a href="testimonial.html" class="dropdown-item ">Cüzdan Bilgileri</a>
 
                     <a asp-area="" asp-controller="Account" asp-action="Logout" class=" dropdown-item bg-danger text-light rounded-0 d-block">Çıkış Yap<i class="ms-3 fa fa-arrow-right "></i></a>
+
                 </div>
             </div>
 
@@ -48,6 +51,7 @@
         {
             <a asp-area="" asp-controller="Account" asp-action="Login" class="btn btn-primary rounded-0 py-4 px-lg-5 d-lg-block">Giriş Yap<i class="fa fa-arrow-right ms-3"></i></a>
         }
+
     </div>
     
 </div>
