@@ -1,0 +1,48 @@
+﻿@model List<AppointmentViewModel>
+
+<div class="container-fluid pt-4 px-4">
+    <div class="bg-light text-center rounded p-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+            <h6 class="mb-0">Tüm Randevular</h6>
+            @*<a asp-area="Admin" asp-controller="Appointment" asp-action="Index">Hepsini Gör</a>*@
+        </div>
+        @if (Model.Count!=0)
+        {
+            <div class="table-responsive">
+                <table class="table text-start align-middle table-bordered table-hover mb-0">
+                    <thead>
+                        <tr class="text-dark">
+                            <th scope="col"></th>
+                            <th scope="col">Tarih</th>
+                            <th scope="col">Danışman</th>
+                            <th scope="col">Danışan</th>
+                            <th scope="col">Fiyat</th>
+                            <th scope="col">Durum</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                            int i = 1;
+                        }
+                        @foreach (var appointment in Model)
+                        {
+                            <tr>
+                                <td>@(i++)</td>
+                                <td>@appointment.AppointmentDate / @appointment.AppointmentTime</td>
+                                <td>@appointment.UserConsultant.FirstName @appointment.UserConsultant.LastName</td>
+                                <td>@appointment.UserCustomer.FirstName @appointment.UserCustomer.LastName</td>
+                                <td>@appointment.Price</td>
+                                <td>@appointment.AppointmentState</td>
+                                <td><a class="btn btn-sm btn-primary" href="">Detail</a></td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }else
+        {
+            <div class="alert alert-warning">Gösterilecek Randevu Bulunamadı!</div>
+        }
+    </div>
+</div>

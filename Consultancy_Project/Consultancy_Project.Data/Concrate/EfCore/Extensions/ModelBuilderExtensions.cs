@@ -170,8 +170,8 @@ namespace Consultancy_Project.Data.Concrate.EfCore.Extensions
             {
                 new Appointment {Id=1, AppointmentDate=new DateOnly(2023, 1, 1),ConsultantId=1,CustomerId=customers[0].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="10:00-11:00" , AppointmentState=AppointmentState.Successful,Price=200},
                 new Appointment {Id=2, AppointmentDate=new DateOnly(2023, 1, 1),ConsultantId=1,CustomerId=customers[1].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="13:00-14:00", AppointmentState=AppointmentState.Unsuccessful,Price= 200},
-                new Appointment {Id=3, AppointmentDate=new DateOnly(2023, 5, 20),ConsultantId=2,CustomerId=customers[2].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="15:00-16:00", AppointmentState=AppointmentState.Waiting},
-                new Appointment {Id=4, AppointmentDate=new DateOnly(2023, 5, 25),ConsultantId=2,CustomerId=customers[3].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="18:00-19:00", AppointmentState=AppointmentState.Cancellation},
+                new Appointment {Id=3, AppointmentDate=new DateOnly(2023, 5, 20),ConsultantId=2,CustomerId=customers[2].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="15:00-16:00", AppointmentState=AppointmentState.Waiting ,Price= 150},
+                new Appointment {Id=4, AppointmentDate=new DateOnly(2023, 5, 25),ConsultantId=2,CustomerId=customers[3].Id, CreatedTime= DateTime.Now,UpdatedTime=DateTime.Now,AppointmentTime="18:00-19:00", AppointmentState=AppointmentState.Cancellation ,Price= 150},
             };
             modelBuilder.Entity<Appointment>().HasData(appointments);
             #endregion

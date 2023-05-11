@@ -9,16 +9,18 @@
     <div class="navbar-nav ms-auto p-4 p-lg-0">
         <a asp-area="" asp-controller="Home" asp-action="Index" class="nav-item nav-link active">Ana Sayfa</a>
         <a asp-area="" asp-controller="Appointment" asp-action="Index" asp-route-id="@User.Identity.Name" class="nav-item nav-link">Randevular</a>
-        <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Jobs</a>
-            <div class="dropdown-menu rounded-0 m-0">
-                <a href="job-list.html" class="dropdown-item">Job List</a>
-                <a href="job-detail.html" class="dropdown-item">Job Detail</a>
-            </div>
-        </div>
+        
         @if (User.IsInRole("Consultant"))
         {
-            <a asp-area="" asp-controller="Consultant" asp-action="Edit" asp-route-id="@User.Identity.Name" class="nav-item nav-link">Danışmanlık Bilgileri</a>
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danışmanlık İşlemleri</a>
+                <div class="dropdown-menu rounded-0 m-0">
+                    <a asp-area="" asp-controller="Consultant" asp-action="Edit" asp-route-id="@User.Identity.Name" class="dropdown-item">Danışmanlık Bilgileri</a>
+                    <a asp-area="" asp-controller="Consultant" asp-action="Edit" asp-route-id="@User.Identity.Name" class="dropdown-item">Randevu Saati Ekle</a>
+
+                </div>
+            </div>
+           
         }
         else
         {

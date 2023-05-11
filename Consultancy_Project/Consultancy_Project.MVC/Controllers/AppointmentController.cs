@@ -1,11 +1,13 @@
 ﻿using Consultancy_Project.Business.Abstract;
 using Consultancy_Project.Entity.Concrate.Identity;
 using Consultancy_Project.MVC.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Consultancy_Project.MVC.Controllers
 {
+    [Authorize]
     public class AppointmentController : Controller
     {
         private IAppointmentService _appointmentService;
@@ -25,9 +27,23 @@ namespace Consultancy_Project.MVC.Controllers
             var name = id;
             var user = await _userManager.FindByNameAsync(name);
             var userRole = await _userManager.GetRolesAsync(user);
-
+            if (userRole[0]=="Admin")
+            {
+                var appointmentAdmin = await _appointmentService.GetAllFullDataAsync();
+                var appointmentViewModelAdmin = appointmentAdmin.Select(x => new AppointmentViewModel
+                {
+                    Id = x.Id,
+                    UserCustomer = x.Customer.User,
+                    UserConsultant = x.Consultant.User,
+                    AppointmentDate = x.AppointmentDate,
+                    AppointmentState = x.AppointmentState,
+                    AppointmentTime = x.AppointmentTime,
+                    UpdatedTime = x.UpdatedTime,
+                    Price=x.Price,
+                }).ToList();
+                return View(appointmentViewModelAdmin);
+            }
             var appointment = await _appointmentService.GetAllDataByUserIdAsync(user.Id, userRole[0]);
-            //var appointment = await _appointmentService.GetAllFullDataAsync();
             var appointmentViewModel = appointment.Select(x => new AppointmentViewModel
             {
                 Id = x.Id,
@@ -37,7 +53,7 @@ namespace Consultancy_Project.MVC.Controllers
                 AppointmentState = x.AppointmentState,
                 AppointmentTime = x.AppointmentTime,
                 UpdatedTime = x.UpdatedTime,
-
+                Price = x.Price,
             }).ToList();
             return View(appointmentViewModel);
         }

@@ -8,6 +8,7 @@ namespace Consultancy_Project.MVC.Models
         public int Id { get; set; }
         public int ConsultantId { get; set; }
         public int CustomerId { get; set; }
+        public decimal Price { get; set; }
         public DateOnly AppointmentDate { get; set; }
         public string AppointmentTime { get; set; }
         public AppointmentState AppointmentState { get; set; }

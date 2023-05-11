@@ -28,6 +28,7 @@ namespace Consultancy_Project.MVC.Areas.Admin.Controllers
                 AppointmentState = x.AppointmentState,
                 AppointmentTime = x.AppointmentTime,
                 UpdatedTime = x.UpdatedTime,
+                Price= x.Price,
 
             }).ToList();
             return View(appointmentViewModel);

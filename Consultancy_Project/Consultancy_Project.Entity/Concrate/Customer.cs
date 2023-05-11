@@ -13,7 +13,7 @@ namespace Consultancy_Project.Entity.Concrate
         public int Id { get; set; }
         public string UserId { get; set; }
         public virtual User User { get; set; }
-        public virtual Appointment Appointment { get; set; }
+        public virtual List<Appointment> Appointment { get; set; }
         public virtual List<CustomersConsultans> CustomersConsultans { get; set; }
     }
 }
