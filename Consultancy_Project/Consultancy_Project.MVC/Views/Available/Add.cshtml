@@ -1,0 +1,10 @@
+﻿@model AvailableAddViewModel
+
+@foreach (var available in Model.DateOfAvailables)
+{
+    @if ()
+    {
+        <input type="checkbox" class="btn-check" id="btn-check-outlined_@available.Id" autocomplete="off">
+        <label class="btn btn-outline-primary" for="btn-check-outlined_@available.Id"> @available.WorkingHours</label>
+    }
+}

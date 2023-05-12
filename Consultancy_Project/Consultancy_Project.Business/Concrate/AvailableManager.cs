@@ -33,6 +33,11 @@ namespace Consultancy_Project.Business.Concrate
             throw new NotImplementedException();
         }
 
+        public async Task<List<Available>> GetAllAvailablesOfDateAsync(DateOnly date, int id)
+        {
+            return await _availaleRepository.GetAllAvailablesOfDateAsync(date,id);
+        }
+
         public async Task<List<WorkingHours>> GetAllWorkingHours()
         {
             return await _availaleRepository.GetAllWorkingHours();

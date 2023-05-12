@@ -59,24 +59,6 @@ namespace Consultancy_Project.MVC.Controllers
             }).ToList();
             return View(appointmentViewModel);
         }
-        public async Task<IActionResult> Available(string id)
-        {
-            var name = id;
-            var user = await _userManager.FindByNameAsync(name);
-            var consultant = await _consultantService.GetConsultantAvailablesByUserIdAsync(user.Id);
-            var groupDate = await _availableService.GetAvailablesGroupByDateAsync(consultant.Id);
-            var workingHours = await _availableService.GetAllWorkingHours();
-            //DateTime dateTime = DateTime.Parse(groupDate[0].ToString());
-            //DateOnly dateOnly = DateOnly.FromDateTime(dateTime);
-            var availableViewModel = new AvailableViewModel
-            {
-                Consultant = consultant,
-                User = consultant.User,
-                GroupDate = groupDate,
-                WorkingHours = workingHours,
-                ActiveAvailable = consultant.Availables,
-            };
-            return View(availableViewModel);
-        }
+        
     }
 }

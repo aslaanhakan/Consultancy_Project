@@ -15,7 +15,7 @@
                 <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Danışman</a>
                 <div class="dropdown-menu rounded-0 m-0">
                     <a asp-area="" asp-controller="Consultant" asp-action="Edit" asp-route-id="@User.Identity.Name" class="dropdown-item">Danışmanlık Bilgileri</a>
-                    <a asp-area="" asp-controller="Appointment" asp-action="Available" asp-route-id="@User.Identity.Name" class="dropdown-item">Çalışma Saatleri</a>
+                    <a asp-area="" asp-controller="Available" asp-action="Index" asp-route-id="@User.Identity.Name" class="dropdown-item">Çalışma Saatleri</a>
 
                 </div>
             </div>

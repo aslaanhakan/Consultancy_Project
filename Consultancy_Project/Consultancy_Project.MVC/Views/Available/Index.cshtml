@@ -1,0 +1,68 @@
+﻿@model AvailableViewModel
+<form asp-area=""
+      asp-controller="Available"
+      asp-action="Add"
+      method="get">
+    <input type="hidden" class="form-control" name="Id" asp-for="Consultant.Id" >
+
+    <div class="alert alert-primary row m-0 mt-5 align-items-md-center" role="alert">
+        <div class="row justify-content-between">
+            <div class="fw-bold mb-1">
+                Uygunluk Eklenecek Tarihi Seçiniz:
+            </div>
+            <div class="col-sm-6 ">
+                @{
+                    DateTime today = DateTime.Now;
+                    int year = today.Year;
+                    int yearPart = year;
+                    int monthPart = today.Month;
+                    int dayPart = today.Day;
+                    int maxDayPart = today.Day + 14;
+
+                    DateTime minimumDateOfAvialable = new DateTime(yearPart, monthPart, dayPart);
+                    DateTime maximumDateOfAvialable = new DateTime(yearPart, monthPart, maxDayPart);
+                }
+                <input type="date" class="form-control" name="Date" value="@minimumDateOfAvialable.ToString("yyyy-MM-dd")" min="@minimumDateOfAvialable.ToString("yyyy-MM-dd")" max="@maximumDateOfAvialable.ToString("yyyy-MM-dd")">
+            </div>
+            <div class="col-sm-1 ">
+                <button type="submit" class="btn btn-outline-success">
+                    <i class="fa-solid fa-square-plus"></i></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+</form>
+@{
+    var i = 0;
+}
+@foreach (var item in Model.GroupDate)
+{
+    i++;
+    <div class="accordion mt-2" id="accordionAvailable_@item">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="availableHeading_@item">
+                <button class="accordion-button collapsed  p-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#available_@item.DayOfYear" aria-expanded="true"
+                        aria-controls="available_@item">
+                    @item
+                </button>
+            </h2>
+
+            <div id="available_@item.DayOfYear" class="accordion-collapse collapse" aria-labelledby="availableHeading_@item">
+                <div class="accordion-body">
+                    <span>
+                        @foreach (var available in Model.ActiveAvailable)
+                        {
+                            @if (item == available.Date)
+                            {
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined_@available.Id" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btn-check-outlined_@available.Id"> @available.WorkingHours.Hour</label>
+                            }
+                        }
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+}

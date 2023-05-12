@@ -20,6 +20,15 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             get { return _dbContext as ConsultancyProjectContext; }
         }
 
+        public Task<List<Available>> GetAllAvailablesOfDateAsync(DateOnly date, int id)
+        {
+            return AppContext
+                    .Availables
+                    .Where(x => x.Date == date && x.ConsultantId == id)
+                    .ToListAsync();
+
+        }
+
         public async Task<List<WorkingHours>> GetAllWorkingHours()
         {
             return await AppContext.WorkingHours.ToListAsync();
@@ -30,7 +39,7 @@ namespace Consultancy_Project.Data.Concrate.EfCore
             var result = await AppContext
                         .Availables
                         .Where(a => a.ConsultantId == id)
-                        .Select(x=>x.Date)
+                        .Select(x => x.Date)
                         .Distinct()
                         .ToListAsync();
             return result;

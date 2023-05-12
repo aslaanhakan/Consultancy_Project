@@ -16,6 +16,8 @@ namespace Consultancy_Project.Business.Abstract
         void Delete(Available available);
         Task<List<DateOnly>> GetAvailablesGroupByDateAsync(int id);
         Task<List<WorkingHours>> GetAllWorkingHours();
+        Task<List<Available>> GetAllAvailablesOfDateAsync(DateOnly date, int id);
+
 
     }
 }
