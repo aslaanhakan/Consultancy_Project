@@ -1,10 +1,20 @@
 ﻿@model AvailableAddViewModel
+<form asp-area=""
+      asp-controller="Available"
+      asp-action="Add"
+method="post">
+    <div class=" my-5">
+        @foreach (var hour in Model.WorkingHours)
+        {
 
-@foreach (var hour in Model.WorkingHours)
-{
-    <input type="checkbox" class="btn-check" id="btn-check-outlined_@hour.Id" autocomplete="off" @if (Model.DateOfAvailables!=null)
-    {
-       @(Model.DateOfAvailables.Any(x=>x.WorkingHoursId==hour.Id)? "checked" : "")
-       }>
-    <label class="btn btn-outline-primary" for="btn-check-outlined_@hour.Id"> @hour.Hour</label>
-}
+            <input type="checkbox" class="btn-check " id="btn-check-outlined_@hour.Id" name="SelectedHours" value="@hour.Id" autocomplete="off" @if (Model.DateOfAvailables != null)
+            {
+                @(Model.DateOfAvailables.Any(x => x.WorkingHoursId == hour.Id) ? "checked" : "")
+            }>
+            <label class="btn btn-outline-primary" for="btn-check-outlined_@hour.Id"> @hour.Hour</label>
+
+
+        }
+        <button type="submit" class="btn btn-primary"> Ekle</button>
+    </div>
+</form>

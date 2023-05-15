@@ -53,5 +53,11 @@ namespace Consultancy_Project.MVC.Controllers
             };
             return View(availableViewModel);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Add (AvailableAddViewModel availableAddViewModel)
+        {
+            return View();
+        }
     }
 }
