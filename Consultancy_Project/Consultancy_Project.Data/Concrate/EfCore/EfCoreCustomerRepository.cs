@@ -19,5 +19,10 @@ namespace Consultancy_Project.Data.Concrate.EfCore
         {
             get { return _dbContext as ConsultancyProjectContext; }
         }
+
+        public async Task<Customer> GetByUserIdAsync(string userId)
+        {
+            return await AppContext.Customers.Where(x=>x.UserId==userId).FirstOrDefaultAsync();
+        }
     }
 }

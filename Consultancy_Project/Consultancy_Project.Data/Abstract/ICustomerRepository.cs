@@ -9,5 +9,6 @@ namespace Consultancy_Project.Data.Abstract
 {
     public interface ICustomerRepository:IGenericRepository<Customer>
     {
+        Task<Customer> GetByUserIdAsync(string userId);
     }
 }

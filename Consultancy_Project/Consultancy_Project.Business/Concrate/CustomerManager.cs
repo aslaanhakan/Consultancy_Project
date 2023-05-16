@@ -38,6 +38,11 @@ namespace Consultancy_Project.Business.Concrate
            return _customerService.GetByIdAsync(id);
         }
 
+        public async Task<Customer> GetByUserIdAsync(string userId)
+        {
+            return await _customerService.GetByUserIdAsync(userId);
+        }
+
         public void Update(Customer customer)
         {
             _customerService.Update(customer);

@@ -12,5 +12,6 @@ namespace Consultancy_Project.Data.Abstract
         Task<List<DateOnly>> GetAvailablesGroupByDateAsync(int id);
         Task<List<WorkingHours>> GetAllWorkingHours();
         Task<List<Available>> GetAllAvailablesOfDateAsync(DateOnly date,int id);
+        void CreateAvailableOfDate(int consultantId , int[] selectedHours, DateOnly date);
     }
 }

@@ -27,8 +27,6 @@ namespace Consultancy_Project.MVC.Controllers
                 var consultant = await _consultantService.GetConsultantAvailablesByUserIdAsync(user.Id);
                 var groupDate = await _availableService.GetAvailablesGroupByDateAsync(consultant.Id);
                 var workingHours = await _availableService.GetAllWorkingHours();
-                //DateTime dateTime = DateTime.Parse(groupDate[0].ToString());
-                //DateOnly dateOnly = DateOnly.FromDateTime(dateTime);
                 var availableViewModel = new AvailableViewModel
                 {
                     Consultant = consultant,
@@ -50,6 +48,7 @@ namespace Consultancy_Project.MVC.Controllers
                 WorkingHours= workingHours,
                 ConsultantId = id,
                 DateOfAvailables = availableOfDate,
+                Date=date,
             };
             return View(availableViewModel);
         }
@@ -57,7 +56,9 @@ namespace Consultancy_Project.MVC.Controllers
         [HttpPost]
         public async Task<IActionResult> Add (AvailableAddViewModel availableAddViewModel)
         {
-            return View();
+            var user = _userManager.Users.Where(x=>x.Consultant.Id == availableAddViewModel.ConsultantId).FirstOrDefault();
+             _availableService.CreateAvailableOfDate(availableAddViewModel.ConsultantId,availableAddViewModel.SelectedHours, availableAddViewModel.Date);
+            return Redirect($"Index/{user.UserName}");
         }
     }
 }

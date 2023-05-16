@@ -14,5 +14,7 @@ namespace Consultancy_Project.Business.Abstract
         Task<List<Customer>> GetAllAsync();
         void Update(Customer customer);
         void Delete(Customer customer);
+        Task<Customer> GetByUserIdAsync(string userId);
+
     }
 }

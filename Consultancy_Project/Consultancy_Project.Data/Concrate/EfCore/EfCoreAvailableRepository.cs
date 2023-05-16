@@ -41,8 +41,32 @@ namespace Consultancy_Project.Data.Concrate.EfCore
                         .Where(a => a.ConsultantId == id)
                         .Select(x => x.Date)
                         .Distinct()
+                        .OrderBy(x=>x.DayOfYear)
                         .ToListAsync();
             return result;
+
+        }
+
+        public async void CreateAvailableOfDate(int consultantId, int[] selectedHours, DateOnly date)
+        {
+            List<Available> availables = new List<Available>();
+            if (selectedHours!=null)
+            {
+                foreach (var hour in selectedHours)
+                {
+                    availables.Add(new Available
+                    {
+                        ConsultantId = consultantId,
+                        WorkingHoursId = hour,
+                        Date = date,
+                        CreatedTime = DateTime.Now,
+                        UpdatedTime = DateTime.Now,
+                    });
+
+                }
+                await AppContext.Availables.AddRangeAsync(availables);
+                await AppContext.SaveChangesAsync();
+            }
 
         }
     }

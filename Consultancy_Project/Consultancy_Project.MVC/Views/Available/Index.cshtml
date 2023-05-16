@@ -3,7 +3,7 @@
       asp-controller="Available"
       asp-action="Add"
       method="get">
-    <input type="hidden" class="form-control" name="Id" asp-for="Consultant.Id" >
+    <input type="hidden" class="form-control" name="Id" asp-for="Consultant.Id">
 
     <div class="alert alert-primary row m-0 mt-5 align-items-md-center" role="alert">
         <div class="row justify-content-between">
@@ -36,33 +36,42 @@
 @{
     var i = 0;
 }
-@foreach (var item in Model.GroupDate)
+@if (Model.GroupDate.Count > 0)
 {
-    i++;
-    <div class="accordion mt-2" id="accordionAvailable_@item">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="availableHeading_@item">
-                <button class="accordion-button collapsed  p-4" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#available_@item.DayOfYear" aria-expanded="true"
-                        aria-controls="available_@item">
-                    @item
-                </button>
-            </h2>
+    @foreach (var item in Model.GroupDate)
+    {
+        if (item.DayOfYear >= DateTime.Today.DayOfYear)
+        {
+            i++;
+            <div class="accordion mt-2" id="accordionAvailable_@item">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="availableHeading_@item">
+                        <button class="accordion-button collapsed  p-4" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#available_@item.DayOfYear" aria-expanded="true"
+                    aria-controls="available_@item">
+                            @item
+                        </button>
+                    </h2>
 
-            <div id="available_@item.DayOfYear" class="accordion-collapse collapse" aria-labelledby="availableHeading_@item">
-                <div class="accordion-body">
-                    <span>
-                        @foreach (var available in Model.ActiveAvailable)
-                        {
-                            @if (item == available.Date)
-                            {
-                                <input type="checkbox" class="btn-check" id="btn-check-outlined_@available.Id" autocomplete="off">
-                                <label class="btn btn-outline-primary" for="btn-check-outlined_@available.Id"> @available.WorkingHours.Hour</label>
-                            }
-                        }
-                    </span>
+                    <div id="available_@item.DayOfYear" class="accordion-collapse collapse" aria-labelledby="availableHeading_@item">
+                        <div class="accordion-body">
+                            <span>
+                                @foreach (var available in Model.ActiveAvailable)
+                                {
+                                    @if (item == available.Date)
+                                    {
+                                        <input type="checkbox" class="btn-check" id="btn-check-outlined_@available.Id" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="btn-check-outlined_@available.Id"> @available.WorkingHours.Hour</label>
+                                    }
+                                }
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
+        }
+    }
+
+}else{
+    <div class="my-3 alert alert-warning"> Gösterilecek çalışma saati yok.</div>
 }

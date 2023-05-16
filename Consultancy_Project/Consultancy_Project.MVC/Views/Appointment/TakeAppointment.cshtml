@@ -1,0 +1,76 @@
+﻿@model AppointmentCreateViewModel
+<form asp-area=""
+      asp-controller="Appointment"
+      asp-action="TakeAppointment"
+      method="post">
+    <input type="hidden" asp-for="ConsultantId" />
+    <div class="alert alert-primary row m-0 mt-5 align-items-md-center" role="alert">
+        <div class="row justify-content-between">
+            <div class="fw-bold mb-1">
+                Randevu Tarihi Seçiniz:
+            </div>
+            <div class="col-sm-6 ">
+                @{
+                    DateTime today = DateTime.Now;
+                    int year = today.Year;
+                    int yearPart = year;
+                    int monthPart = today.Month;
+                    int dayPart = today.Day;
+                    int maxDayPart = today.Day + 14;
+
+                    DateTime minimumDateOfAvialable = new DateTime(yearPart, monthPart, dayPart);
+                    DateTime maximumDateOfAvialable = new DateTime(yearPart, monthPart, maxDayPart);
+                }
+                <input type="date" class="form-control" name="Date" min="@minimumDateOfAvialable.ToString("yyyy-MM-dd")" max="@maximumDateOfAvialable.ToString("yyyy-MM-dd")">
+            </div>
+
+        </div>
+
+    </div>
+    @if (Model.GroupDate.Count > 0)
+    {
+        @foreach (var item in Model.GroupDate)
+        {
+            if (item.DayOfYear >= DateTime.Today.DayOfYear)
+            {
+                <div class="accordion mt-2" id="accordionAvailable_@item">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="availableHeading_@item">
+                            <button class="accordion-button collapsed  p-4" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#available_@item.DayOfYear" aria-expanded="true"
+                        aria-controls="available_@item">
+                                @item
+                            </button>
+                        </h2>
+
+                        <div id="available_@item.DayOfYear" class="accordion-collapse collapse" aria-labelledby="availableHeading_@item">
+                            <div class="accordion-body">
+                                <span>
+                                    @foreach (var available in Model.ActiveAvailable)
+                                    {
+                                        @if (item == available.Date)
+                                        {
+                                            <input type="checkbox" class="btn-check" id="btn-check-outlined_@available.Id" name="SelectedHour" value="@available.WorkingHoursId" autocomplete="off">
+                                            <label class="btn btn-outline-primary" for="btn-check-outlined_@available.Id"> @available.WorkingHours.Hour</label>
+                                        }
+                                    }
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+
+        }
+
+        <div class="mt-2">
+            <button class="btn btn-primary" id="myButton"> Randevu Al</button>
+        </div>
+    }
+    else
+    {
+        <div class=" my-3 alert alert-warning"> Gösterilecek uygun  randevu saati yok.</div>
+
+    }
+</form>

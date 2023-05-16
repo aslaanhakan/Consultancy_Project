@@ -23,6 +23,11 @@ namespace Consultancy_Project.Business.Concrate
             throw new NotImplementedException();
         }
 
+        public void CreateAvailableOfDate(int consultantId, int[] selectedHours, DateOnly date)
+        {
+            _availaleRepository.CreateAvailableOfDate(consultantId,selectedHours,date);
+        }
+
         public void Delete(Available entity)
         {
             throw new NotImplementedException();

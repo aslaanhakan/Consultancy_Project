@@ -45,6 +45,8 @@ namespace Consultancy_Project.Data.Concrate.EfCore
                         .ThenInclude(cs => cs.Specialization)
                         .Include(c=>c.User)
                         .ThenInclude(c=>c.Image)
+                        .Include(c=>c.Availables)
+                        .ThenInclude(a=>a.WorkingHours)
                         .FirstOrDefaultAsync();
             return result;
         }
